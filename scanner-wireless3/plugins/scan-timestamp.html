@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp settings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 使容器占满全屏高度 */
+            margin: 0; /* 去掉默认的边距 */
+            flex-direction: column; /* 垂直排列 */
+        }
+        #qrcode, #barcode {
+            margin: 20px;
+            padding: 20px; /* 添加白边 */
+            background-color: white; /* 白边背景 */
+            display: inline-block; /* 使容器适应内容大小 */
+            border-radius: 10px; /* 可选：使边角圆润 */
+        }
+        label {
+            max-width: 300px; /* 设置标签最大宽度 */
+            word-wrap: break-word; /* 自动换行 */
+            margin-bottom: 5px; /* 标签与输入框之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div id="qrcode"></div>
+    <svg id="barcode"></svg>
+    <script>
+        function generateCodes() {
+		
+            // 生成时间戳指令
+			var date =new Date();
+            let qr = document.getElementById("qrcode");
+			date=new Date(date.setSeconds(date.getSeconds() + 1))
+			//var Y = date.getFullYear().toString().slice(-2);
+			//var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1):date.getMonth()+1);
+			//var D = (date.getDate()< 10 ? '0'+date.getDate():date.getDate());
+			//var h = (date.getHours() < 10 ? '0'+date.getHours():date.getHours());
+			//var m = (date.getMinutes() < 10 ? '0'+date.getMinutes():date.getMinutes());
+			//var s = date.getSeconds() < 10 ? '0'+date.getSeconds():date.getSeconds();
+			//qrcode1.makeCode("%RTCTIME#"+Y+"/"+M+"/"+D+","+h+":"+m+":"+s);
+			//JsBarcode("#barcode","%RTCTIME#"+Y+"/"+M+"/"+D+","+h+":"+m+":"+s);
+			var offset =date.getTimezoneOffset();
+			var tamp=Math.round(date / 1000)- offset * 60;
+            var cmd = "%RTCSTAMP#"+tamp;;
+            $("#qrcode").empty(); // 清空旧的二维码
+            $("#qrcode").qrcode({
+                text: cmd,
+                width: 256,
+                height: 256
+            });
+
+            // 生成条形码
+            JsBarcode("#barcode", cmd, {
+                format: "CODE128", // 条形码格式
+                width: 2,          // 条形宽度
+                height: 100,       // 条形高度
+                displayValue: true  // 显示条形码值
+            });
+        }
+
+        $(document).ready(function() {
+            // 初始生成
+            generateCodes();
+            // 每秒刷新二维码和条形码
+            setInterval(generateCodes, 1000);
+        });
+    </script>
+</body>
+</html>

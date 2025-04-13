@@ -1,0 +1,16 @@
+#rtd-footer-container {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}

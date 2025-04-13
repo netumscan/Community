@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi MQTT Configure</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 使容器占满全屏高度 */
+            margin: 0; /* 去掉默认的边距 */
+            flex-direction: column; /* 垂直排列 */
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column; /* 垂直排列标签和输入框 */
+            align-items: flex-start; /* 左对齐 */
+            margin-bottom: 20px; /* 输入框间距 */
+        }
+        #qrcode {
+            margin: 20px;
+            padding: 20px; /* 添加白边 */
+            background-color: white; /* 白边背景 */
+            display: inline-block; /* 使容器适应内容大小 */
+            border-radius: 10px; /* 可选：使边角圆润 */
+        }
+        input {
+            padding: 10px;
+            width: 300px;
+            margin-top: 5px; /* 标签与输入框之间的间距 */
+        }
+        label {
+            max-width: 300px; /* 设置标签最大宽度 */
+            word-wrap: break-word; /* 自动换行 */
+            margin-bottom: 5px; /* 标签与输入框之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <label for="inputText1">WiFi Name</label>
+        <input type="text" id="inputText1" placeholder="WiFi Name" value="NETUM">
+    </div>
+    
+    <div class="input-group">
+        <label for="inputText2">WiFi Password</label>
+        <input type="password" id="inputText2" placeholder="WiFi Password" value="12345678">
+    </div>
+    
+    <div class="input-group">
+        <label for="inputText3">Host Address</label>
+        <input type="text" id="inputText3" placeholder="Host Address" value="mqtt.handy.pub">
+    </div>
+    
+    <div class="input-group">
+        <label for="inputText4">Username</label>
+        <input type="text" id="inputText4" placeholder="Username" value="netum">
+    </div>
+    
+    <div class="input-group">
+        <label for="inputText5">User password</label>
+        <input type="password" id="inputText5" placeholder="User password" value="netum@2022">
+    </div>
+    
+    <div class="input-group">
+        <label for="inputText6">Publish topic</label>
+        <input type="text" id="inputText6" placeholder="Publish topic" value="WFSCAN">
+    </div>
+    
+    <div id="qrcode"></div>
+    
+    <script>
+        function generateCodes() {
+            var text1 = $("#inputText1").val();
+            var text2 = $("#inputText2").val();
+            var text3 = $("#inputText3").val();
+            var text4 = $("#inputText4").val();
+            var text5 = $("#inputText5").val();
+            var text6 = $("#inputText6").val();
+
+            $("#qrcode").empty(); // 清空旧的二维码
+            if (!text1 || !text3 || !text4 || !text5 || !text6) {
+                return; // 不生成二维码
+            }
+            var cmd = "AT+URL=2,"+text3+","+text4+","+text5+","+text6+";AT+RAP="+text1;
+            if (text2) {
+                cmd += "," + text2;
+            }
+
+            // 生成二维码
+            $("#qrcode").qrcode({
+                text: cmd,
+                width: 256,
+                height: 256
+            });
+        }
+
+        $(document).ready(function() {
+            // 默认生成
+            generateCodes();
+
+            // 监听输入框的变化
+            $("input").on("input", function() {
+                generateCodes();
+            });
+        });
+    </script>
+</body>
+</html>

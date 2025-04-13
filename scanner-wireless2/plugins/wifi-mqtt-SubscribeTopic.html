@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change MQTT Subscribe Topic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 使容器占满全屏高度 */
+            margin: 0; /* 去掉默认的边距 */
+            flex-direction: column; /* 垂直排列 */
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column; /* 垂直排列标签和输入框 */
+            align-items: flex-start; /* 左对齐 */
+            margin-bottom: 20px; /* 输入框间距 */
+        }
+        #qrcode {
+            margin: 20px;
+            padding: 20px; /* 添加白边 */
+            background-color: white; /* 白边背景 */
+            display: inline-block; /* 使容器适应内容大小 */
+            border-radius: 10px; /* 可选：使边角圆润 */
+        }
+        input {
+            padding: 10px;
+            width: 300px;
+            margin-top: 5px; /* 标签与输入框之间的间距 */
+        }
+        label {
+            max-width: 300px; /* 设置标签最大宽度 */
+            word-wrap: break-word; /* 自动换行 */
+            margin-bottom: 5px; /* 标签与输入框之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <label for="inputText">Subscribe Topic</label>
+        <input type="text" id="inputText" placeholder="Subscribe Topic">
+    </div>
+    <div id="qrcode"></div>
+    <script>
+        function generateCodes(text) {
+            var cmd="%IOTSUBTP#"+text+"#";
+			// 清空旧的二维码和条形码
+            $("#qrcode").empty();
+
+            // 生成二维码
+            $("#qrcode").qrcode({
+                text: cmd,
+                width: 256,
+                height: 256
+            });
+        }
+
+        $(document).ready(function() {
+            // 默认生成
+            var defaultText = "sub123";
+            $("#inputText").val(defaultText);
+            generateCodes(defaultText);
+
+            // 监听输入框的变化
+            $("#inputText").on("input", function() {
+                var inputText = $(this).val();
+                generateCodes(inputText);
+            });
+        });
+    </script>
+</body>
+</html>

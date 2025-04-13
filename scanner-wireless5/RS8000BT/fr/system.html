@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Paramètres système &#8212; RS8000BT Scanner User Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=11d075df" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=4aee20ba"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'system';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Mode de fonctionnement" href="working.html" />
+    <link rel="prev" title="Guide d’installation rapide du scanner sans fil RS8000BT" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RS8000BT Scanner User Manual</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../en" title="English" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/us.png" class="icon-link-image" alt="English"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../de" title="German" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/de.png" class="icon-link-image" alt="German"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../fr" title="French" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/fr.png" class="icon-link-image" alt="French"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../it" title="Italian" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/it.png" class="icon-link-image" alt="Italian"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../es" title="Spanish" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/es.png" class="icon-link-image" alt="Spanish"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de fonctionnement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Questions fréquemment posées</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/system.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Paramètres système</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurer les paramètres par défaut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenir la version du firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Paramètres sonores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Volume élevé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">moyen volume</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Faible volume</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Étui sonore</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Informations sur la batterie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">L’heure du sommeil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Hiberner maintenant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Dormir après 1 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Dormir après 3 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Dormir après 10 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Dormir après 30 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Pas de sommeil</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>Paramètres système<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
+<section id="id2">
+<h2>Restaurer les paramètres par défaut<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
+<p>Lorsqu’une erreur inconnue se produit sur le scanner, vous pouvez réinitialiser le scanner en restaurant les paramètres par défaut.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../../media/2523IFSNO24B.png"><img alt="../../media/2523IFSNO24B.png" src="../../media/2523IFSNO24B.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Restaurer les paramètres par défaut</span><a class="headerlink" href="#id17" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Restaurer les valeurs par défaut Restaurer le mode récepteur 2.4G par défaut.</p>
+</div>
+</section>
+<section id="id3">
+<h2>Obtenir la version du firmware<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="../../media/24SW23VER.png"><img alt="../../media/24SW23VER.png" src="../../media/24SW23VER.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Obtenir la version du firmware</span><a class="headerlink" href="#id18" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id4">
+<h2>Paramètres sonores<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
+<p>Scannez le code de réglage correspondant pour activer/désactiver l’invite sonore du scanner</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../../media/24BUZZ231.png"><img alt="../../media/24BUZZ231.png" src="../../media/24BUZZ231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Son activé <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id19" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../../media/24BUZZ230.png"><img alt="../../media/24BUZZ230.png" src="../../media/24BUZZ230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Son désactivé</span><a class="headerlink" href="#id20" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<section id="id5">
+<h3>Volume élevé<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../../media/24BUZZ231.png"><img alt="../../media/24BUZZ231.png" src="../../media/24BUZZ231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Volume élevé</span><a class="headerlink" href="#id21" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id6">
+<h3>moyen volume<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../../media/24BUZZ232.png"><img alt="../../media/24BUZZ232.png" src="../../media/24BUZZ232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">moyen volume</span><a class="headerlink" href="#id22" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id7">
+<h3>Faible volume<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../../media/24BUZZ233.png"><img alt="../../media/24BUZZ233.png" src="../../media/24BUZZ233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">moyen volume</span><a class="headerlink" href="#id23" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id8">
+<h3>Étui sonore<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
+<div class="admonition- admonition">
+<p class="admonition-title">Code d’analyse du mode de stockage, invite d’arrêt</p>
+<audio controls="controls">
+    <source src="../../media/storage-mode.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">Invite de mise sous tension, invite de commande de configuration, invite de fin de transfert en mode de téléchargement</p>
+<audio controls="controls">
+    <source src="../../media/startup.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">Un bip court : invite de réussite de la numérisation du code-barres</p>
+<audio controls="controls">
+    <source src="../../media/one-beeps.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition-s admonition">
+<p class="admonition-title">Bips courts continus pendant 30 secondes : mode d’appairage en attente de l’insertion du récepteur, le bip s’arrête une fois l’appairage réussi</p>
+<audio controls="controls">
+    <source src="../../media/pair2.4G.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">(Lors de la numérisation du code) Alarme de basse tension de la batterie</p>
+<audio controls="controls">
+    <source src="../../media/two-beeps.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">Alarme d’erreur de stockage ou de surcapacité de stockage en mode inventaire</p>
+<audio controls="controls">
+    <source src="../../media/three-beeps.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">Tonalité d’avertissement de panne de batterie faible</p>
+<audio controls="controls">
+    <source src="../../media/five-beeps.m4a" type="audio/mpeg">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2>Informations sur la batterie<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="../../media/25BAT_VOL23.png"><img alt="../../media/25BAT_VOL23.png" src="../../media/25BAT_VOL23.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Informations sur la batterie</span><a class="headerlink" href="#id24" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>*Obtenez la signification de la tension lors du téléchargement des données d’alimentation. *   ≥ 4,2 V complètement chargé.   ≤3,7 V La batterie est faible et émettra deux bips lorsque vous scannerez le code, indiquant qu’elle doit être chargée (elle peut être utilisée normalement).   ≤3,5 V La batterie est faible et le bouton émet cinq bips, indiquant qu’une charge est nécessaire.</p>
+</div>
+</section>
+<section id="id10">
+<h2>L’heure du sommeil<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h2>
+<p>En scannant le code de réglage suivant, vous pouvez configurer le scanner pour qu’il entre en mode veille après une certaine période de temps pendant laquelle aucun code n’est scanné, afin de réduire la consommation d’énergie.</p>
+<section id="id11">
+<h3>Hiberner maintenant<a class="headerlink" href="#id11" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Hiberner maintenant</span><a class="headerlink" href="#id25" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id12">
+<h3>Dormir après 1 minutes<a class="headerlink" href="#id12" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="../../media/24RF23ST02.png"><img alt="../../media/24RF23ST02.png" src="../../media/24RF23ST02.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dormir après 1 minutes</span><a class="headerlink" href="#id26" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id13">
+<h3>Dormir après 3 minutes<a class="headerlink" href="#id13" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="../../media/24RF23ST06.png"><img alt="../../media/24RF23ST06.png" src="../../media/24RF23ST06.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dormir après 3 minutes</span><a class="headerlink" href="#id27" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id14">
+<h3>Dormir après 10 minutes<a class="headerlink" href="#id14" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../../media/24RF23ST20.png"><img alt="../../media/24RF23ST20.png" src="../../media/24RF23ST20.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dormir après 10 minutes</span><a class="headerlink" href="#id28" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id15">
+<h3>Dormir après 30 minutes<a class="headerlink" href="#id15" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="../../media/24RF23ST60.png"><img alt="../../media/24RF23ST60.png" src="../../media/24RF23ST60.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dormir après 30 minutes</span><a class="headerlink" href="#id29" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id16">
+<h3>Pas de sommeil<a class="headerlink" href="#id16" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="../../media/24RF23ST00.png"><img alt="../../media/24RF23ST00.png" src="../../media/24RF23ST00.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Pas de sommeil</span><a class="headerlink" href="#id30" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Guide d’installation rapide du scanner sans fil <strong>RS8000BT</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="working.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Mode de fonctionnement</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurer les paramètres par défaut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenir la version du firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Paramètres sonores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Volume élevé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">moyen volume</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Faible volume</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Étui sonore</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Informations sur la batterie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">L’heure du sommeil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Hiberner maintenant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Dormir après 1 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Dormir après 3 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Dormir après 10 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Dormir après 30 minutes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Pas de sommeil</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par NETUM
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, NETUM.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
