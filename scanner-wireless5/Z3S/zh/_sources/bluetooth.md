@@ -1,116 +1,113 @@
-# 蓝牙模式
-
+# Bluetooth Mode
 
 ```{figure} ../../media/2523IFSNO244.png
 :align: center
 :width: 300px
 
-蓝牙模式
+Bluetooth Mode
 ```
 
-- 扫描蓝牙模式，再按一下按键启动，即可切换到蓝牙传输，打开蓝牙搜索设备进行配对，配对成功就可以通过蓝牙传输数据。
-- 蓝牙名称：`barcode scanner`或者`NETUM Bluetooth`
-- 切换到蓝牙模式，蓝色指示灯会亮。
+- Scan the Bluetooth mode, then press the button to start, you can switch to Bluetooth transmission, turn on Bluetooth to search for devices for pairing, and after successful pairing, you can transmit data via Bluetooth.
+- Bluetooth name: `barcode scanner` or `NETUM Bluetooth`
+- Switch to Bluetooth mode and the blue indicator light will light up.
 
 
 ```{note}
-蓝灯代表的意思是。  
-①蓝灯闪烁，代表未连接。  
-②蓝灯常亮，代表已连接。  
+The blue light means:<br>①The blue light flashes, indicating that it is not connected.<br>②The blue light is on, indicating it is connected.
 ```
 
 
-## 蓝牙HID
+## Bluetooth HID
 
 ```{figure} ../../media/AT2BMODE3D2.png
 :align: center
 :width: 300px
 
-蓝牙HID`默认`
+Bluetooth HID `Default`
 ```
 
- ## 蓝牙SPP
+ ## Bluetooth SPP
 
 ```{figure} ../../media/AT2BMODE3D1.png
 :align: center
 :width: 300px
 
-蓝牙SPP
+Bluetooth SPP
 ```
 
-## 蓝牙BLE
+## Bluetooth BLE
 
 ```{figure} ../../media/AT2BMODE3D3.png
 :align: center
 :width: 300px
 
-蓝牙BLE
+Bluetooth BLE
 ```
 
 ```{note}
-蓝牙SPP和蓝牙BLE是软件对接使用的模式，如果需要通过系统蓝牙搜索配对，需要使用[蓝牙HID](#蓝牙hid)
+Bluetooth SPP and Bluetooth BLE are modes used for software docking. If you need to search and pair through system Bluetooth, you need to use [Bluetooth HID](#bluetooth-hid)
 ```
-## 清除配对信息
+## Clear Pairing Information
 
 ```{figure} ../../media/2525ALL-CH.png
 :align: center
 :width: 300px
 
-清除配对信息
+Clear Pairing Information
 ```
 
 ```{note}
-重新配对新的设备、或者配对不上可以扫描该设置码重新配对
+Re-pair with a new device, or if pairing fails, scan the setup code to pair again.
 ```
 
-## iOS弹出/隐藏键盘
+## IOS Popup/Hide Keyboard
 ```{figure} ../../media/25250S.png
 :align: center
 :width: 300px
 
-iOS弹出/隐藏键盘
+IOS Popup/Hide Keyboard
 ```
 
 ```{note}
-也可以在不扫码情况下，连续按两次扫描键弹出/隐藏键盘，这个功能只支持IOS系统蓝牙配对使用
+You can also press the scan button twice in a row to pop up/hide the keyboard without scanning the code. This function only supports Bluetooth pairing on iOS system.
 ```
 
-## 蓝牙键盘传输速度
+## Bluetooth Keyboard Transmission Speed
 
 
 ```{figure} ../../media/AT2BHIDDLY.png
 :align: center
 :width: 300px
 
-获取蓝牙键盘传输速度
+Get Bluetooth Keyboard Transmission Speed
 ```
-### 高速
+### High Speed
 
 ```{figure} ../../media/AT2BHIDDLY3D2.png
 :align: center
 :width: 300px
 
-高速
+High Speed
 ```
 
-### 中速
+### Medium Speed
 
 ```{figure} ../../media/AT2BHIDDLY3D10.png
 :align: center
 :width: 300px
 
-中速
+Medium Speed
 ```
 
-### 低速
+### Low Speed
 ```{figure} ../../media/AT2BHIDDLY3D25.png
 :align: center
 :width: 300px
 
-低速
+Low Speed
 ```
 
-## 修改蓝牙名称
+## Modify Bluetooth Name
 ```{raw} html
     <iframe src="../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
 

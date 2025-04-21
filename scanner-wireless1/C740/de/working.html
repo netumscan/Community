@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'working';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Kabelloser Modus" href="wireless.html" />
+    <link rel="next" title="Drahtlos-Modus" href="wireless.html" />
     <link rel="prev" title="Systemeinstellungen" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,10 +242,10 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Arbeitsmodus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wireless.html">Kabelloser Modus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireless.html">Drahtlos-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Häufig gestellte Fragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -383,13 +394,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Normalmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Speichermodus</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Datenupload</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Gesamtspeicher</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Gespeicherten Barcode löschen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Autosave-Modus aus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Autosave-Modus aktiviert</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-mode">Normaler Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storage-mode">Speichermodus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload1">Daten hochladen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-storage-quantity">Gesamte Lagermenge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-stored-barcode">Gespeicherten Barcode löschen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-automatic-storage-mode">Automatischer Speichermodus deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-automatic-storage-mode2">Automatischer Speichermodus einschalten</a></li>
 </ul>
 </li>
 </ul>
@@ -403,71 +414,71 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Arbeitsmodus<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Wenn der Arbeitsbereich außerhalb der Reichweite des 2,4G-Empfängers oder des Bluetooth-Signals liegt, können Sie den Speichermodus des Scanners aktivieren, indem Sie die unten beschriebenen Schritte ausführen. In diesem Modus werden alle gescannten Daten direkt im Scanner gespeichert. Vor dem Hochladen werden die Daten dauerhaft im Scanner gespeichert, sodass Sie die Daten hochladen können, wenn sich der Scanner in Empfangsreichweite befindet.</p>
-<section id="id2">
-<h2>Normalmodus<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id13">
+  <section id="working-mode">
+<h1>Arbeitsmodus<a class="headerlink" href="#working-mode" title="Link to this heading">#</a></h1>
+<p>Im Arbeitsbereich außerhalb des Bereichs 2. G Empfänger oder Bluetooth Signal können Sie den Speichermodus des Scanners aktivieren, indem Sie die unten beschriebenen Schritte befolgen. In diesem Modus werden alle gescannten Daten direkt im Scanner gespeichert. Vor dem Hochladen der Daten Es wird dauerhaft im Scanner gespeichert, so dass Sie die Daten hochladen können, wenn sich der Scanner im Empfangs-Signalbereich befindet.</p>
+<section id="normal-mode">
+<h2>Normaler Modus<a class="headerlink" href="#normal-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2523NORMD.png"><img alt="../../media/2523NORMD.png" src="../../media/2523NORMD.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Normalmodus<code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Normaler Modus <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Stellen Sie es auf den Normalmodus und scannen Sie den Code, um Daten sofort hochzuladen.</p>
+<p>Auf normalen Modus setzen und Daten werden sofort nach dem Scannen hochgeladen.</p>
 </div>
 </section>
-<section id="id3">
-<h2>Speichermodus<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="storage-mode">
+<h2>Speichermodus<a class="headerlink" href="#storage-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/2523INVMD.png"><img alt="../../media/2523INVMD.png" src="../../media/2523INVMD.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Speichermodus</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Speichermodus</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Stellen Sie den Speichermodus ein. Durch das Scannen des Codes werden die Daten nicht sofort hochgeladen, sondern im Scanner gespeichert.</p>
+<p>Speichermodus einstellen. Nach erfolgreichem Scannen werden die Daten nicht sofort hochgeladen, sondern im Scanner gespeichert.</p>
 </div>
-<section id="id5">
-<h3>Datenupload<a class="footnote-reference brackets" href="#id6" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="data-upload1">
+<h3>Daten hochladen<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#data-upload1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/2523TXMEM.png"><img alt="../../media/2523TXMEM.png" src="../../media/2523TXMEM.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Datenupload</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Daten hochladen</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Laden Sie die im Scanner gespeicherten Daten hoch.</p>
+<p>Die im Scanner gespeicherten Daten hochladen.</p>
 </div>
 </section>
-<section id="id7">
-<h3>Gesamtspeicher<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="total-storage-quantity">
+<h3>Gesamte Lagermenge<a class="headerlink" href="#total-storage-quantity" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25232BTCNT.png"><img alt="../../media/25232BTCNT.png" src="../../media/25232BTCNT.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Gesamtspeicher</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Gesamte Lagermenge</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Überprüfen Sie, wie viele Datensätze gespeichert sind.</p>
+<p>Überprüfen Sie, wie viele Daten gespeichert sind.</p>
 </div>
 </section>
-<section id="id8">
-<h3>Gespeicherten Barcode löschen<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="clear-stored-barcode">
+<h3>Gespeicherten Barcode löschen<a class="headerlink" href="#clear-stored-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/25232ANEW2A.png"><img alt="../../media/25232ANEW2A.png" src="../../media/25232ANEW2A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Gespeicherten Barcode löschen</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Gespeicherten Barcode löschen</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -475,23 +486,23 @@ document.write(`
 <p>Löschen Sie die im Scanner gespeicherten Daten.</p>
 </div>
 </section>
-<section id="id9">
-<h3>Autosave-Modus aus<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="disable-automatic-storage-mode">
+<h3>Automatischer Speichermodus deaktivieren<a class="headerlink" href="#disable-automatic-storage-mode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/25AutoSav23Off.png"><img alt="../../media/25AutoSav23Off.png" src="../../media/25AutoSav23Off.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Autosave-Modus aus</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Automatischer Speichermodus deaktivieren</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>Autosave-Modus aktiviert<a class="footnote-reference brackets" href="#id12" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="enable-automatic-storage-mode2">
+<h3>Automatischer Speichermodus einschalten<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#enable-automatic-storage-mode2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/25AutoSav23On.png"><img alt="../../media/25AutoSav23On.png" src="../../media/25AutoSav23On.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Autosave-Modus aktiviert</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Automatischer Speichermodus aktivieren</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -499,13 +510,13 @@ document.write(`
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id6" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">1</a><span class="fn-bracket">]</span></span>
-<p>Während des Hochladens von Daten können Sie den Befehl <code class="docutils literal notranslate"><span class="pre">Daten</span> <span class="pre">hochladen</span></code> erneut scannen, um den Datenupload abzubrechen/stoppen.</p>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Beim Hochladen der Daten wird das erneute Scannen des Befehls „Data Upload“ das Hochladen der Daten abbrechen/stoppen.</p>
 </aside>
-<aside class="footnote brackets" id="id12" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">2</a><span class="fn-bracket">]</span></span>
-<p>Wenn im drahtlosen Übertragungsmodus der automatische Speichermodus aktiviert ist, wird der Barcode automatisch gespeichert, wenn die Übertragung fehlschlägt, und die gespeicherten Daten können über „Daten-Upload“ abgerufen werden.</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Im Funkübertragungsmodus, wenn der automatische Speichermodus eingeschaltet wird Der Barcode wird automatisch gespeichert, wenn die Übertragung fehlschlägt, und die gespeicherten Daten können über „Data Upload“ abgerufen werden.</p>
 </aside>
 </aside>
 
@@ -534,7 +545,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Kabelloser Modus</p>
+        <p class="prev-next-title">Drahtlos-Modus</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -554,13 +565,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Normalmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Speichermodus</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Datenupload</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Gesamtspeicher</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Gespeicherten Barcode löschen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Autosave-Modus aus</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Autosave-Modus aktiviert</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-mode">Normaler Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storage-mode">Speichermodus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload1">Daten hochladen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-storage-quantity">Gesamte Lagermenge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-stored-barcode">Gespeicherten Barcode löschen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-automatic-storage-mode">Automatischer Speichermodus deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-automatic-storage-mode2">Automatischer Speichermodus einschalten</a></li>
 </ul>
 </li>
 </ul>

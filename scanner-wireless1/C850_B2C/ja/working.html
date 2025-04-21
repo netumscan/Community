@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -232,9 +243,9 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">作業モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetoothモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">よくある質問</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -383,13 +394,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">通常モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">保管モード</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">データのアップロード</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">総ストレージ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">保存されたバーコードを消去する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">自動保存モードオフ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">自動保存モードオン</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-mode">通常モード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storage-mode">ストレージモード</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload1">データアップロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-storage-quantity">合計ストレージ量</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-stored-barcode">ストアされたバーコードをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-automatic-storage-mode">自動ストレージモードを無効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-automatic-storage-mode2">自動ストレージモードを有効にする</a></li>
 </ul>
 </li>
 </ul>
@@ -403,43 +414,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>作業モード<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>作業領域が 2.4G 受信機または Bluetooth 信号の範囲外にある場合は、以下の手順に従ってスキャナーのストレージ モードをアクティブ化できます。このモードでは、スキャンされたすべてのデータがスキャナーに直接保存されます。データをアップロードする前に、スキャナーに永続的に保存されるため、スキャナーが受信信号範囲内にあるときにデータをアップロードできます。</p>
-<section id="id2">
-<h2>通常モード<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id13">
+  <section id="working-mode">
+<h1>作業モード<a class="headerlink" href="#working-mode" title="Link to this heading">#</a></h1>
+<p>2の範囲外の作業エリアで。 G受信機またはBluetooth信号は、下記の手順に従ってスキャナのストレージモードを有効にすることができます。 このモードでは、スキャンしたすべてのデータがスキャナーに直接保存されます。 データをアップロードする前に スキャナが受信信号範囲内にいるときにデータをアップロードできるように、スキャナに恒久的に保存されます。</p>
+<section id="normal-mode">
+<h2>通常モード<a class="headerlink" href="#normal-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2523NORMD.png"><img alt="../../media/2523NORMD.png" src="../../media/2523NORMD.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">通常モード <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">標準モード <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>通常モードに設定し、コードをスキャンしてデータを即座にアップロードします。</p>
+<p>ノーマルモードに設定すると、スキャン後すぐにデータがアップロードされます。</p>
 </div>
 </section>
-<section id="id3">
-<h2>保管モード<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="storage-mode">
+<h2>ストレージモード<a class="headerlink" href="#storage-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/2523INVMD.png"><img alt="../../media/2523INVMD.png" src="../../media/2523INVMD.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">保管モード</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">ストレージモード</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>ストレージモードを設定します。コードをスキャンしてもデータはすぐにアップロードされませんが、スキャナー内に保存されます。</p>
+<p>ストレージモードを設定します。スキャンが完了すると、データはすぐにアップロードされませんが、スキャナーに保存されます。</p>
 </div>
-<section id="id5">
-<h3>データのアップロード<a class="footnote-reference brackets" href="#id6" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="data-upload1">
+<h3>データアップロード<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#data-upload1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/2523TXMEM.png"><img alt="../../media/2523TXMEM.png" src="../../media/2523TXMEM.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">データのアップロード</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">データアップロード</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -447,27 +458,27 @@ document.write(`
 <p>スキャナーに保存されているデータをアップロードします。</p>
 </div>
 </section>
-<section id="id7">
-<h3>総ストレージ<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="total-storage-quantity">
+<h3>合計ストレージ量<a class="headerlink" href="#total-storage-quantity" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25232BTCNT.png"><img alt="../../media/25232BTCNT.png" src="../../media/25232BTCNT.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">総ストレージ</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">合計ストレージ量</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>保存されているレコードの数を確認します。</p>
+<p>保存されているデータの数を確認します。</p>
 </div>
 </section>
-<section id="id8">
-<h3>保存されたバーコードを消去する<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="clear-stored-barcode">
+<h3>ストアされたバーコードをクリア<a class="headerlink" href="#clear-stored-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/25232ANEW2A.png"><img alt="../../media/25232ANEW2A.png" src="../../media/25232ANEW2A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">保存されたバーコードを消去する</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">ストアされたバーコードをクリア</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -475,23 +486,23 @@ document.write(`
 <p>スキャナーに保存されているデータを消去します。</p>
 </div>
 </section>
-<section id="id9">
-<h3>自動保存モードオフ<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="disable-automatic-storage-mode">
+<h3>自動ストレージモードを無効にする<a class="headerlink" href="#disable-automatic-storage-mode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/25AutoSav23Off.png"><img alt="../../media/25AutoSav23Off.png" src="../../media/25AutoSav23Off.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">自動保存モードオフ</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">自動ストレージモードを無効にする</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>自動保存モードオン<a class="footnote-reference brackets" href="#id12" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="enable-automatic-storage-mode2">
+<h3>自動ストレージモードを有効にする<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#enable-automatic-storage-mode2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/25AutoSav23On.png"><img alt="../../media/25AutoSav23On.png" src="../../media/25AutoSav23On.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">自動保存モードオン</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">自動ストレージモードを有効にする</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -499,13 +510,13 @@ document.write(`
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id6" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">1</a><span class="fn-bracket">]</span></span>
-<p>データのアップロード中に、「データのアップロード」コマンドを再度スキャンすると、データのアップロードがキャンセル/停止されます。</p>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>データアップロード中に、再び「データアップロード」コマンドをスキャンすると、データのアップロードがキャンセル/停止されます。</p>
 </aside>
-<aside class="footnote brackets" id="id12" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">2</a><span class="fn-bracket">]</span></span>
-<p>無線送信モードでは、自動保存モードをオンにすると、送信に失敗した場合にバーコードが自動的に保存され、「データアップロード」を通じて保存されたデータを取得できます。</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>無線伝送モードでは、自動保存モードがオンになっているとき。 バーコードは転送に失敗したときに自動的に保存され、保存されたデータは「データアップロード」で取得できます。</p>
 </aside>
 </aside>
 
@@ -554,13 +565,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">通常モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">保管モード</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">データのアップロード</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">総ストレージ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">保存されたバーコードを消去する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">自動保存モードオフ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">自動保存モードオン</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-mode">通常モード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storage-mode">ストレージモード</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload1">データアップロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-storage-quantity">合計ストレージ量</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-stored-barcode">ストアされたバーコードをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-automatic-storage-mode">自動ストレージモードを無効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-automatic-storage-mode2">自動ストレージモードを有効にする</a></li>
 </ul>
 </li>
 </ul>

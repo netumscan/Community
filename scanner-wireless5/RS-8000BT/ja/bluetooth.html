@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bluetoothモード &#8212; RS8000BT Scanner User Manual</title>
+    <title>Bluetooth モード &#8212; RS-8000BT Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="キーボード設定" href="keyboard.html" />
+    <link rel="next" title="キーボードの設定" href="keyboard.html" />
     <link rel="prev" title="作業モード" href="working.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
@@ -136,8 +136,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/RS-8000BT.png" class="logo__image only-light" alt="RS-8000BT Scanner User Manual - Home"/>
+    <script>document.write(`<img src="_static/RS-8000BT.png" class="logo__image only-dark" alt="RS-8000BT Scanner User Manual - Home"/>`);</script>
   
-    <p class="title logo__title">RS8000BT Scanner User Manual</p>
   
 </a></div>
         <div class="sidebar-primary-item"><ul class="navbar-icon-links"
@@ -208,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -225,9 +242,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bluetoothモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">よくある質問</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bluetooth モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -366,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bluetoothモード</h1>
+    <h1>Bluetooth モード</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -376,18 +393,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hid">Bluetooth HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spp">Bluetooth SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ble">Bluetooth BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ペアリング情報をクリア</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">iOS ポップアップ/キーボードの非表示</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Bluetoothキーボードの伝送速度</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">高速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">中速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">低速</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">Bluetooth HID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">Bluetooth SPP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">Bluetooth BLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">ペアリング情報をクリア</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">IOSキーボードのポップアップ/非表示</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">Bluetoothキーボード通信速度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">ハイスピード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">中速度</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">低速度</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Bluetooth名を変更する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">Bluetooth名を変更</a></li>
 </ul>
             </nav>
         </div>
@@ -399,128 +416,128 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Bluetoothモード<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<figure class="align-center" id="id8">
+  <section id="bluetooth-mode">
+<h1>Bluetooth モード<a class="headerlink" href="#bluetooth-mode" title="Link to this heading">#</a></h1>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2523IFSNO244.png"><img alt="../../media/2523IFSNO244.png" src="../../media/2523IFSNO244.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetoothモード</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bluetooth モード</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Bluetooth モードをスキャンし、ボタンを押して開始すると、Bluetooth 送信に切り替え、Bluetooth をオンにしてペアリングするデバイスを検索し、ペアリングが成功すると Bluetooth 経由でデータを送信できます。</p></li>
-<li><p>Bluetooth 名: <code class="docutils literal notranslate"><span class="pre">barcode</span> <span class="pre">scanner</span></code>または<code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
-<li><p>Bluetooth モードに切り替えると、青色のインジケーター ライトが点灯します。</p></li>
+<li><p>Bluetoothモードをスキャンし、ボタンを押して起動し、Bluetooth通信に切り替えることができます。 Bluetoothをオンにしてペアリングのためのデバイスを検索し、ペアリングが成功した後、Bluetooth経由でデータを送信できます。</p></li>
+<li><p>Bluetooth名: <code class="docutils literal notranslate"><span class="pre">バーコードスキャナー</span></code> または <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
+<li><p>Bluetooth モードに切り替えると、青色のインジケータライトが点灯します。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>青い光は意味します。   ①青色のランプが点滅し、接続されていないことを示します。   ②青色のランプが点灯し、接続されていることを示します。</p>
+<p>青い光は以下のことを意味します:<br>1青色の光は点滅し、接続されていないことを示します。<br>2青色の光は点灯しており、接続されていることを示します。</p>
 </div>
-<section id="hid">
-<h2>Bluetooth HID<a class="headerlink" href="#hid" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+<section id="bluetooth-hid">
+<h2>Bluetooth HID<a class="headerlink" href="#bluetooth-hid" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D2.png"><img alt="../../media/AT2BMODE3D2.png" src="../../media/AT2BMODE3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth HID <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bluetooth HID <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="spp">
-<h2>Bluetooth SPP<a class="headerlink" href="#spp" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="bluetooth-spp">
+<h2>Bluetooth SPP<a class="headerlink" href="#bluetooth-spp" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D1.png"><img alt="../../media/AT2BMODE3D1.png" src="../../media/AT2BMODE3D1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth SPP</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bluetooth SPP</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="ble">
-<h2>Bluetooth BLE<a class="headerlink" href="#ble" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="bluetooth-ble">
+<h2>Bluetooth BLE<a class="headerlink" href="#bluetooth-ble" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D3.png"><img alt="../../media/AT2BMODE3D3.png" src="../../media/AT2BMODE3D3.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth BLE</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bluetooth BLE</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>Bluetooth SPP と Bluetooth BLE はソフトウェア ドッキング モードです。システムのBluetoothを介して検索してペアリングする必要がある場合は、<a class="reference internal" href="#hid">Bluetooth HID</a>を使用する必要があります。</p>
+<p>Bluetooth SPPとBluetooth BLEは、ソフトウェアのドッキングに使用されるモードです。 システムの Bluetooth 経由で検索してペアリングする必要がある場合は、<a class="reference internal" href="#bluetooth-hid">Bluetooth HID</a> を使用する必要があります。</p>
 </div>
 </section>
-<section id="id2">
-<h2>ペアリング情報をクリア<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="clear-pairing-information">
+<h2>ペアリング情報をクリア<a class="headerlink" href="#clear-pairing-information" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2525ALL-CH.png"><img alt="../../media/2525ALL-CH.png" src="../../media/2525ALL-CH.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ペアリング情報をクリア</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">ペアリング情報をクリア</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>新しいデバイスと再度ペアリングするか、ペアリングに失敗した場合は、セットアップ コードをスキャンして再度ペアリングします。</p>
+<p>新しいデバイスと再ペアリングするか、ペアリングに失敗した場合は、セットアップコードをスキャンして再度ペアリングしてください。</p>
 </div>
 </section>
-<section id="ios">
-<h2>iOS ポップアップ/キーボードの非表示<a class="headerlink" href="#ios" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id13">
+<section id="ios-popup-hide-keyboard">
+<h2>IOSキーボードのポップアップ/非表示<a class="headerlink" href="#ios-popup-hide-keyboard" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/25250S.png"><img alt="../../media/25250S.png" src="../../media/25250S.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">iOS ポップアップ/キーボードの非表示</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">IOSキーボードのポップアップ/非表示</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>スキャンボタンを 2 回続けて押すと、コードをスキャンせずにキーボードをポップアップ表示したり非表示にしたりすることもできます。この機能は、iOS システムでの Bluetooth ペアリングのみをサポートします。</p>
+<p>また、スキャンボタンを2回連続で押すと、コードをスキャンせずにキーボードをポップアップ/非表示にできます。 この機能はiOSシステムでのみBluetoothペアリングをサポートしています。</p>
 </div>
 </section>
-<section id="id3">
-<h2>Bluetoothキーボードの伝送速度<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="bluetooth-keyboard-transmission-speed">
+<h2>Bluetoothキーボード通信速度<a class="headerlink" href="#bluetooth-keyboard-transmission-speed" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY.png"><img alt="../../media/AT2BHIDDLY.png" src="../../media/AT2BHIDDLY.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetoothキーボードの伝送速度を取得する</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bluetoothキーボードの通信速度を取得する</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="id4">
-<h3>高速<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="high-speed">
+<h3>ハイスピード<a class="headerlink" href="#high-speed" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D2.png"><img alt="../../media/AT2BHIDDLY3D2.png" src="../../media/AT2BHIDDLY3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">高速</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">ハイスピード</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>中速<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="medium-speed">
+<h3>中速度<a class="headerlink" href="#medium-speed" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D10.png"><img alt="../../media/AT2BHIDDLY3D10.png" src="../../media/AT2BHIDDLY3D10.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">中速</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">中速度</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>低速<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="low-speed">
+<h3>低速度<a class="headerlink" href="#low-speed" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D25.png"><img alt="../../media/AT2BHIDDLY3D25.png" src="../../media/AT2BHIDDLY3D25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">低速</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">低速度</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>Bluetooth名を変更する<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="modify-bluetooth-name">
+<h2>Bluetooth名を変更<a class="headerlink" href="#modify-bluetooth-name" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
 </section>
 </section>
@@ -550,7 +567,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">次へ</p>
-        <p class="prev-next-title">キーボード設定</p>
+        <p class="prev-next-title">キーボードの設定</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -570,18 +587,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hid">Bluetooth HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spp">Bluetooth SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ble">Bluetooth BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ペアリング情報をクリア</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">iOS ポップアップ/キーボードの非表示</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Bluetoothキーボードの伝送速度</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">高速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">中速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">低速</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">Bluetooth HID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">Bluetooth SPP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">Bluetooth BLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">ペアリング情報をクリア</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">IOSキーボードのポップアップ/非表示</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">Bluetoothキーボード通信速度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">ハイスピード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">中速度</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">低速度</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Bluetooth名を変更する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">Bluetooth名を変更</a></li>
 </ul>
   </nav></div>
 

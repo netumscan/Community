@@ -1,89 +1,89 @@
-# 系统设置
+# System Settings
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 ```{figure} ../../media/2523IFSNO24B.png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
 ```{note}
-恢复默认设置默认恢复2.4G接收器模式。
+Restore Defaults Restore 2.4G receiver mode by default.
 ```
 
-## 获取固件版本
+## Get Firmware Version
 ```{figure} ../../media/24SW23VER.png
 :align: center
 :width: 300px
 
-获取固件版本
+Get Firmware Version
 ```
 
-## 声音设置
-扫描相应设置码，可以开启/关闭扫描枪的声音提示
+## Volume Settings
+Scan the corresponding setting code to turn on/off the sound prompt of the scanner
 
 ```{figure} ../../media/24BUZZ231.png
 :align: center
 :width: 300px
 
-声音开启 `默认`
+Enable `Default`
 ```
   
 ```{figure} ../../media/24BUZZ230.png
 :align: center
 :width: 300px
 
-声音关闭
+Disable
 ```
-### 高音量
+### High Volume
 ```{figure} ../../media/24BUZZ231.png
 :align: center
 :width: 300px
 
-高音量
+High Volume
 ```
 
-### 中音量
+### Medium Volume
 ```{figure} ../../media/24BUZZ232.png
 :align: center
 :width: 300px
 
-中音量
+Medium Volume
 ```
 
-### 低音量
+### Low Volume
 ```{figure} ../../media/24BUZZ233.png
 :align: center
 :width: 300px
 
-中音量
+Low Volume
 ```
 
-### 声音案例
-```{admonition} 存储模式扫码、关机提示
+### Sound Case
+```{admonition} Storage mode scan code, shutdown prompt
 <audio controls="controls">
     <source src="../../media/storage-mode.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 ```
 
-```{admonition} 开机提示、设置指令提示、上传模式传输完成提示
+```{admonition} Power-on prompt, setting command prompt, upload mode transmission completion prompt
 <audio controls="controls">
     <source src="../../media/startup.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 ```
 
-```{admonition} 一声短音：条码扫码成功提示
+```{admonition} A short beep: barcode scan successful prompt
 <audio controls="controls">
     <source src="../../media/one-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 ```
-```{admonition} 连续30s短音：配对模式等待接收器插入，配对成功声音停止
+```{admonition} Continuous short beeps for 30 seconds: Pairing mode waiting for the receiver to be inserted, the beep stops after pairing is successful
 <audio controls="controls">
     <source src="../../media/pair2.4G.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
@@ -91,21 +91,21 @@
 ```
 
 
-```{admonition} （扫码时）电池欠压报警
+```{admonition} (During scanning) Battery low voltage alarm
 <audio controls="controls">
     <source src="../../media/two-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 ```
 
-```{admonition} 盘点模式下存储出错或超存储容量报警
+```{admonition} Storage error or over storage capacity alarm in storage mode
 <audio controls="controls">
     <source src="../../media/three-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 ```
 
-```{admonition} 电量低导致开机失败的提示音
+```{admonition} Low battery power failure prompt tone
 <audio controls="controls">
     <source src="../../media/five-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
@@ -114,78 +114,76 @@
 
 
 
-## 电量信息
+## Battery Information
 
 ```{figure} ../../media/25BAT_VOL23.png
 :align: center
 :width: 300px
 
-电量信息
+Battery Information
 ```
 
 ```{note}
-*获取电量上传数据电压代表的意思。*  
-≥4.2V满电。  
-≤3.7V 电量低，扫码响两声，提示需要充电（可以正常使用）。  
-≤3.5V 电量不足，按按键响五声，需要充电才可以使用。
+*Get the meaning of the voltage in the power upload data*<br>≥4.2V: Fully powered.<br>≤3.7V: The battery is low and the device will beep twice when you scan the code, indicating that it needs to be charged (it can still be used normally).<br>
+≤3.5V: The battery is low and the button will beep five times, indicating that the battery needs to be charged before use.
 ```
 
-## 休眠时间
+## Sleep Time
 
-通过扫描以下设置码，可设定扫描枪在没有扫码的情况下，等待相应时间后进入睡眠模式，以降低功耗。
+By scanning the following setting code, you can set the scanner to enter sleep mode after a certain period of time when no code is scanned, so as to reduce power consumption.
 
 
 
-### 立即休眠
+### Shutdown
 
 ```{figure} ../../media/24POWER23OFF.png
 :align: center
 :width: 300px
 
-立即休眠
+Shutdown
 ```
 
-### 一分钟休眠
+### Sleep after 1 minutes of idle time
 
 ```{figure} ../../media/24RF23ST02.png
 :align: center
 :width: 300px
 
-一分钟休眠
+Sleep after 1 minutes of idle time
 ```
 
-### 三分钟休眠
+### Sleep after 3 minutes of idle time
 
 ```{figure} ../../media/24RF23ST06.png
 :align: center
 :width: 300px
 
-三分钟休眠
+Sleep after 3 minutes of idle time
 ```
 
-### 十分钟休眠
+### Sleep after 10 minutes of idle time
 
 ```{figure} ../../media/24RF23ST20.png
 :align: center
 :width: 300px
 
-十分钟休眠
+Sleep after 10 minutes of idle time
 ```
 
-### 三十分钟休眠
+### Sleep after 30 minutes of idle time
 
 ```{figure} ../../media/24RF23ST60.png
 :align: center
 :width: 300px
 
-三十分钟休眠
+Sleep after 30 minutes of idle time
 ```
 
-### 不休眠
+### No sleep
 
 ```{figure} ../../media/24RF23ST00.png
 :align: center
 :width: 300px
 
-不休眠
+No sleep
 ```

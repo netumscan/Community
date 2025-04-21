@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -382,12 +393,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g">2.4G Receiver Mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">One-to-one matching</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">RF Dongle Keyboard Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">High Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Middle Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Low Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-to-one-pairing">One-to-One Pairing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiver-keyboard-transmission-speed1">Receiver Keyboard Transmission Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">High Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Medium Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Low Speed</a></li>
 </ul>
             </nav>
         </div>
@@ -399,88 +409,86 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Wireless Mode<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="g">
-<h2>2.4G Receiver Mode<a class="headerlink" href="#g" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+  <section id="wireless-mode">
+<h1>Wireless Mode<a class="headerlink" href="#wireless-mode" title="Link to this heading">#</a></h1>
+<p>This mode uses the 2.4GHz frequency band for data transmission and relies on radio frequency (RF) technology, which connects to the computer via a USB receiver and allows the scanner to move freely within a certain distance.</p>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2523IFSNO241.png"><img alt="../../media/2523IFSNO241.png" src="../../media/2523IFSNO241.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2.4G Receiver Mode <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Wireless Mode <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p>Scan the 2.4G receiver mode to switch to 2.4G receiver transmission. Plug the receiver/base into the USB port with a data cable to transmit data through the receiver.</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The receiver is divided into a small receiver and a base receiver</p>
+<p>Receivers are divided into small receivers and base receivers</p>
 </div>
-</section>
-<section id="id2">
-<h2>One-to-one matching<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="one-to-one-pairing">
+<h2>One-to-One Pairing<a class="headerlink" href="#one-to-one-pairing" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/24RF23CH02.png"><img alt="../../media/24RF23CH02.png" src="../../media/24RF23CH02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">One-to-one matching</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">One-to-One Pairing</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The following situations are OK: unplug the receiver, scan the pairing code above, and the scanner emits a continuous beeping sound. Reinsert the receiver at this time, and the beeping sound stops immediately, indicating that the pairing is successful.    ① Plug the 2.4G receiver into the USB port, scan the code and beep three times without uploading data.    ② A new receiver needs to be paired.</p>
+<p>It works in the following situations: pull out the receiver, scan the pairing code on it, and the scanner will make a continuous beeping sound. At this time, re-insert the receiver, and the sound will stop immediately, indicating that the pairing is successful.<br />
+This operation is required in the following situations:<br />
+① Plug the 2.4G receiver into the USB port. After scanning successfully, it will beep three times but will not upload data.<br />
+② Requires pairing with a new receiver.</p>
 </div>
 </section>
-<section id="id4">
-<h2>RF Dongle Keyboard Speed<a class="footnote-reference brackets" href="#id5" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id13">
+<section id="receiver-keyboard-transmission-speed1">
+<h2>Receiver Keyboard Transmission Speed<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#receiver-keyboard-transmission-speed1" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25KB23SP.png"><img alt="../../media/25KB23SP.png" src="../../media/25KB23SP.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Read RF Dongle Keyboard Speed<a class="footnote-reference brackets" href="#id7" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Get Receiver Keyboard Transmission Speed<a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h2>High Speed<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="high-speed">
+<h2>High Speed<a class="headerlink" href="#high-speed" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/24USB23KEY.png"><img alt="../../media/24USB23KEY.png" src="../../media/24USB23KEY.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">High Speed</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">High Speed</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h2>Middle Speed<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id15">
+<section id="medium-speed">
+<h2>Medium Speed<a class="headerlink" href="#medium-speed" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/24USB23KEY4.png"><img alt="../../media/24USB23KEY4.png" src="../../media/24USB23KEY4.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Middle Speed</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Medium Speed</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h2>Low Speed<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id16">
+<section id="low-speed">
+<h2>Low Speed<a class="headerlink" href="#low-speed" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24USB23KEY9.png"><img alt="../../media/24USB23KEY9.png" src="../../media/24USB23KEY9.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Low Speed</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Low Speed</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id5" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Only applicable to RF Dongle with FWVerL and above versions. Note that the speed of the scanner and the receiver must match, otherwise errors may occur when transmitting long barcodes.</p>
 </aside>
-<aside class="footnote brackets" id="id7" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
 <p>It is only valid in wireless 2.4G mode and when the receiving end is receiving normally.</p>
 </aside>
 </aside>
@@ -530,12 +538,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g">2.4G Receiver Mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">One-to-one matching</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">RF Dongle Keyboard Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">High Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Middle Speed</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Low Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-to-one-pairing">One-to-One Pairing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiver-keyboard-transmission-speed1">Receiver Keyboard Transmission Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">High Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Medium Speed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Low Speed</a></li>
 </ul>
   </nav></div>
 

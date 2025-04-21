@@ -1,335 +1,338 @@
-# 键盘设置
+# Keyboard Settings
 
-## 大小写设定
+## Case Settings
 
+### Normal
 ```{figure} ../../media/25LKLED230.png
 :align: center
 :width: 300px
 
-正常`默认`
+Normal `Default`
 ```
 
-
+### Inverted Case (A<->a)
 ```{figure} ../../media/25LKLED231.png
 :align: center
 :width: 300px
 
-大小写互换 (A<->a)
+Inverted Case (A<->a)
 ```
   
+### All Caps (a->A)
 ```{figure} ../../media/25LKLED232.png
 :align: center
 :width: 300px
 
-全部大写 (a->A)
+All Caps (a->A)
 ```
   
+### All Lowercase (A->a)
 ```{figure} ../../media/25LKLED233.png
 :align: center
 :width: 300px
 
-全部小写 (A->a)
+All Lowercase (A->a)
 ```
 
-## 键盘语言
+## Keyboard Language
 
-- 如果您使用法语键盘，扫描"法语"的命令条形码。
-- 如果您使用美式键盘，可以忽略这一步（中国地区默认使用美式键盘）。
-- 如果扫描传输的数据乱码，可能是键盘输入法语言跟扫描枪语言不对应。
+- If you are using a French keyboard, scan the [French](#france) command barcode.
+- If you use a US keyboard, you can ignore this step (the US keyboard is used by default in China).
+- If the scanned and transmitted data is garbled, it may be that the computer input method language does not correspond to the scanner language.
 
 
 
-### 获取当前键盘语言
+### Get Current Keyboard Language
 
 ```{figure} ../../media/24LAN23.png
 :align: center
 :width: 300px
 
-获取当前键盘语言
+Get Current Keyboard Language
 ```
 
-### 美国
+### America
 
 
 ```{figure} ../../media/24LAN23EN.png
 :align: center
 :width: 300px
 
-美国
+America
 ```
 
-### 法国
+### France
 
 ```{figure} ../../media/24LAN23FR.png
 :align: center
 :width: 300px
 
-法国
+France
 ```
 
-### 德国
+### Germany
 
 ```{figure} ../../media/24LAN23GE.png
 :align: center
 :width: 300px
 
-德国
+Germany
 ```
 
 
-### 意大利
+### Italy
 
 ```{figure} ../../media/24LAN23IT.png
 :align: center
 :width: 300px
 
-意大利
+Italy
 ```
   
 
-### 葡萄牙
+### Portugal
 
 ```{figure} ../../media/24LAN23PT.png
 :align: center
 :width: 300px
 
-葡萄牙
+Portugal
 ```
   
 
-### 西班牙
+### Spain
 
 ```{figure} ../../media/24LAN23ES.png
 :align: center
 :width: 300px
 
-西班牙
+Spain
 ```
   
 
-### 土耳其
+### Turkey
 
 ```{figure} ../../media/24LAN23TK.png
 :align: center
 :width: 300px
 
-土耳其 Q
+Turkey-Q
 ```
 
 ```{figure} ../../media/24LAN23TF.png
 :align: center
 :width: 300px
 
-土耳其 F
+Turkey-F
 ```
   
 
-### 英国
+### Britain
 
 ```{figure} ../../media/24LAN23UK.png
 :align: center
 :width: 300px
 
-英国
+Britain
 ```
 
-### 捷克
+### Czech
 
 ```{figure} ../../media/24LAN23CS.png
 :align: center
 :width: 300px
 
-捷克
+Czech
 ```
   
 
-### 匈牙利
+### Hungary
 
 ```{figure} ../../media/24LAN23HU.png
 :align: center
 :width: 300px
 
-匈牙利
+Hungary
 ```
   
 
-### 比利时(法语)
+### Belgium (French)
 
 ```{figure} ../../media/24LAN23FB.png
 :align: center
 :width: 300px
 
-比利时(法语)
+Belgium (French)
 ```
   
 
-### 巴西(葡萄牙语)
+### Brazil (Portuguese)
 
 ```{figure} ../../media/24LAN23PB.png
 :align: center
 :width: 300px
 
-巴西(葡萄牙语)
+Brazil (Portuguese)
 ```
   
 
-### 加拿大法语(传统)
+### Canada (French)
 
 ```{figure} ../../media/24LAN23FC.png
 :align: center
 :width: 300px
 
-加拿大法语(传统)
+Canada (French)
 ```
   
 
-### 克罗地亚
+### Croatia
 
 ```{figure} ../../media/24LAN23HR.png
 :align: center
 :width: 300px
 
-克罗地亚
+Croatia
 ```
   
 
-### 斯洛伐克
+### Slovakia
 
 ```{figure} ../../media/24LAN23SK.png
 :align: center
 :width: 300px
 
-斯洛伐克
+Slovakia
 ```
   
 
-### 丹麦
+### Denmark
 
 ```{figure} ../../media/24LAN23DA.png
 :align: center
 :width: 300px
 
-丹麦
+Denmark
 ```
   
 
-### 芬兰
+### Finland
 
 ```{figure} ../../media/24LAN23FI.png
 :align: center
 :width: 300px
 
-芬兰
+Finland
 ```
   
 
-### 拉丁美洲(西班牙语)
+### Latin America (Spanish)
 
 ```{figure} ../../media/24LAN23EL.png
 :align: center
 :width: 300px
 
-拉丁美洲(西班牙语)
+Latin America (Spanish)
 ```
 
-### 荷兰
+### Netherlands
 
 ```{figure} ../../media/24LAN23NL.png
 :align: center
 :width: 300px
 
-荷兰
+Netherlands
 ```
 
-### 挪威
+### Norway
 
 ```{figure} ../../media/24LAN23NO.png
 :align: center
 :width: 300px
 
-挪威
+Norway
 ```
 
-### 波兰
+### Poland
 
 ```{figure} ../../media/24LAN23PL.png
 :align: center
 :width: 300px
 
-波兰
+Poland
 ```
   
 
-### 塞尔维亚(拉丁文)
+### Serbia (Latin)
 ```{figure} ../../media/24LAN23SR.png
 :align: center
 :width: 300px
 
-塞尔维亚(拉丁文)
+Serbia (Latin)
 ```
   
 
-### 斯洛文尼亚
+### Slovenia
 
 ```{figure} ../../media/24LAN23SL.png
 :align: center
 :width: 300px
 
-斯洛文尼亚
+Slovenia
 ```
   
 
-### 瑞典
+### Sweden
 
 ```{figure} ../../media/24LAN23SV.png
 :align: center
 :width: 300px
 
-瑞典
+Sweden
 ```
   
 
-### 瑞士(德语)
+### Switzerland (German)
 
 ```{figure} ../../media/24LAN23DS.png
 :align: center
 :width: 300px
 
-瑞士(德语)
+Switzerland (German)
 ```
   
 
-### 日语
+### Japanese
 
 ```{figure} ../../media/24LAN23JP.png
 :align: center
 :width: 300px
 
-日语
+Japanese
 ```
   
 
-### 泰语[^1]
+### Thai[^1]
 
 ```{figure} ../../media/24LAN23TH.png
 :align: center
 :width: 300px
 
-泰语
+Thai
 ```
 
 
 [^1]: TH language setting, the scan module also need set to TH output.
 
 
-### ALT国际通用键盘[^2]
+### ALT International Universal Keyboard[^2]
 
 ```{figure} ../../media/24LAN23AG.png
 :align: center
 :width: 300px
 
-ALT国际通用键盘
+ALT International Universal Keyboard
 ```
 
-[^2]: ALT国际通用键盘仅适用于Windows系统，可以不受电脑键盘设置的影响，但是会影响传输速度.
+[^2]: The ALT international universal keyboard is only applicable to Windows systems and is not affected by the computer keyboard settings, but it will affect the transmission speed.
 

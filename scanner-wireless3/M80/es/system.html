@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Configuración del sistema &#8212; M80 Scanner User Manual</title>
+    <title>Ajustes del sistema &#8212; M80 Scanner User Manual</title>
   
   
   
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Configuración del sistema</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modo de trabajo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modo inalámbrico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Preguntas frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -372,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Configuración del sistema</h1>
+    <h1>Ajustes del sistema</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,23 +393,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurar la configuración predeterminada</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenga la versión del firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Configuración de sonido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Alto volumen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Volumen mediano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Volumen bajo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Estuche de sonido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurar ajustes por defecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtener versión de Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Ajustes de volumen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volumen alto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volumen medio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volumen bajo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-case">Caso de sonido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Información de la batería</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Hora de dormir</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Hibernar ahora</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Dormir después de 1 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Dormir después de 3 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Dormir después de 10 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Dormir después de 30 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Sin dormir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#battery-information">Información de la batería</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-time">Tiempo de sueño</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shutdown">Apagado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-1-minutes-of-idle-time">Dormir después de 1 minuto de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-3-minutes-of-idle-time">Dormir después de 3 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-10-minutes-of-idle-time">Durmiendo después de 10 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-30-minutes-of-idle-time">Durmiendo después de 30 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-sleep">Sin sueño</a></li>
 </ul>
 </li>
 </ul>
@@ -412,126 +423,126 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Configuración del sistema<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Restaurar la configuración predeterminada<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Cuando ocurre un error desconocido en el escáner, puede restablecerlo restaurando la configuración predeterminada.</p>
-<figure class="align-center" id="id17">
+  <section id="system-settings">
+<h1>Ajustes del sistema<a class="headerlink" href="#system-settings" title="Link to this heading">#</a></h1>
+<section id="restore-default-settings">
+<h2>Restaurar ajustes por defecto<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
+<p>Cuando ocurre un error desconocido en el escáner, puede reiniciar el escáner restaurando la configuración predeterminada.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2523IFSNO24B.png"><img alt="../../media/2523IFSNO24B.png" src="../../media/2523IFSNO24B.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Restaurar la configuración predeterminada</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Restaurar ajustes por defecto</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Restaurar valores predeterminados Restaura el modo de receptor 2.4G por defecto.</p>
+<p>Restaurar por defecto el modo receptor 2.4G.</p>
 </div>
 </section>
-<section id="id3">
-<h2>Obtenga la versión del firmware<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id18">
+<section id="get-firmware-version">
+<h2>Obtener versión de Firmware<a class="headerlink" href="#get-firmware-version" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/24SW23VER.png"><img alt="../../media/24SW23VER.png" src="../../media/24SW23VER.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Obtenga la versión del firmware</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Obtener versión de Firmware</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Configuración de sonido<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>Escanee el código de configuración correspondiente para activar o desactivar el aviso de sonido del escáner</p>
-<figure class="align-center" id="id19">
+<section id="volume-settings">
+<h2>Ajustes de volumen<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
+<p>Escanea el código de configuración correspondiente para activar o desactivar el indicador de sonido del escáner</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/24BUZZ231.png"><img alt="../../media/24BUZZ231.png" src="../../media/24BUZZ231.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sonido activado <code class="docutils literal notranslate"><span class="pre">Predeterminado</span></code></span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Activa <code class="docutils literal notranslate"><span class="pre">Por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/24BUZZ230.png"><img alt="../../media/24BUZZ230.png" src="../../media/24BUZZ230.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Apaga el sonido</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="id5">
-<h3>Alto volumen<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id21">
+<section id="high-volume">
+<h3>Volumen alto<a class="headerlink" href="#high-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/24BUZZ231.png"><img alt="../../media/24BUZZ231.png" src="../../media/24BUZZ231.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Alto volumen</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen alto</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Volumen mediano<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id22">
+<section id="medium-volume">
+<h3>Volumen medio<a class="headerlink" href="#medium-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/24BUZZ232.png"><img alt="../../media/24BUZZ232.png" src="../../media/24BUZZ232.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Volumen mediano</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen medio</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Volumen bajo<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id23">
+<section id="low-volume">
+<h3>Volumen bajo<a class="headerlink" href="#low-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/24BUZZ233.png"><img alt="../../media/24BUZZ233.png" src="../../media/24BUZZ233.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Volumen mediano</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen bajo</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Estuche de sonido<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<div class="admonition- admonition">
-<p class="admonition-title">Código de escaneo del modo de almacenamiento, mensaje de apagado</p>
+<section id="sound-case">
+<h3>Caso de sonido<a class="headerlink" href="#sound-case" title="Link to this heading">#</a></h3>
+<div class="admonition-storage-mode-scan-code-shutdown-prompt admonition">
+<p class="admonition-title">Modo de almacenamiento escaneo código, aviso de apagado</p>
 <audio controls="controls">
     <source src="../../media/storage-mode.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title">Indicador de encendido, indicador de configuración del comando, indicador de finalización de transferencia del modo de carga</p>
+<div class="admonition-power-on-prompt-setting-command-prompt-upload-mode-transmission-completion-prompt admonition">
+<p class="admonition-title">Indicación de encendido, ajuste de la línea de comandos, indicador de terminación de transmisión del modo de carga</p>
 <audio controls="controls">
     <source src="../../media/startup.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title">Un pitido corto: mensaje de escaneo de código de barras exitoso</p>
+<div class="admonition-a-short-beep-barcode-scan-successful-prompt admonition">
+<p class="admonition-title">Un pequeño pitido: búsqueda de código de barras exitosa</p>
 <audio controls="controls">
     <source src="../../media/one-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition-s admonition">
-<p class="admonition-title">Pitidos cortos continuos durante 30 segundos: Modo de emparejamiento esperando que se inserte el receptor, el pitido se detiene después de que el emparejamiento es exitoso</p>
+<div class="admonition-continuous-short-beeps-for-30-seconds-pairing-mode-waiting-for-the-receiver-to-be-inserted-the-beep-stops-after-pairing-is-successful admonition">
+<p class="admonition-title">Continuos y cortos pitidos por 30 segundos: Modo de emparejamiento esperando a que el receptor se inserte, el pitido se detiene después de emparejar con éxito</p>
 <audio controls="controls">
     <source src="../../media/pair2.4G.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title">(Al escanear el código) Alarma de bajo voltaje de batería</p>
+<div class="admonition-during-scanning-battery-low-voltage-alarm admonition">
+<p class="admonition-title">(Durante el escaneo) Alarma de baja tensión de la batería</p>
 <audio controls="controls">
     <source src="../../media/two-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title">Alarma de error de almacenamiento o exceso de capacidad de almacenamiento en modo inventario</p>
+<div class="admonition-storage-error-or-over-storage-capacity-alarm-in-storage-mode admonition">
+<p class="admonition-title">Error de almacenamiento o sobrealarma de capacidad de almacenamiento en modo de almacenamiento</p>
 <audio controls="controls">
     <source src="../../media/three-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
 </audio>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title">Tono de aviso de falla de batería baja</p>
+<div class="admonition-low-battery-power-failure-prompt-tone admonition">
+<p class="admonition-title">Tono del indicador de fallo de batería bajo</p>
 <audio controls="controls">
     <source src="../../media/five-beeps.m4a" type="audio/mpeg">
     Your browser does not support the <code>audio</code> element.
@@ -539,80 +550,80 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="id9">
-<h2>Información de la batería<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id24">
+<section id="battery-information">
+<h2>Información de la batería<a class="headerlink" href="#battery-information" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25BAT_VOL23.png"><img alt="../../media/25BAT_VOL23.png" src="../../media/25BAT_VOL23.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Información de la batería</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
+<p><span class="caption-text">Información de la batería</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>*Obtener el significado del voltaje al cargar los datos de energía. *   ≥4,2 V completamente cargado.   ≤3,7 V La batería está baja y emitirá un pitido dos veces al escanear el código, lo que indica que es necesario cargarla (se puede utilizar normalmente).   ≤3,5 V La batería está baja y el botón emitirá cinco pitidos, lo que indica que es necesario cargarla.</p>
+<p><em>Obtenga el significado del voltaje en los datos de carga de energía</em><br>≥4.2 V: Completamente cargado.<br>≤3.7 V: La batería está baja y el dispositivo emitirá dos pitidos cuando escanee el código, lo que indica que debe cargarse (aún se puede usar normalmente).<br>≤3.5 V: La batería está baja y el botón emitirá cinco pitidos, lo que indica que la batería debe cargarse antes de su uso.</p>
 </div>
 </section>
-<section id="id10">
-<h2>Hora de dormir<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<p>Al escanear el siguiente código de configuración, puede configurar el escáner para que ingrese al modo de suspensión después de un cierto período de tiempo cuando no se escanea ningún código, a fin de reducir el consumo de energía.</p>
-<section id="id11">
-<h3>Hibernar ahora<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id25">
+<section id="sleep-time">
+<h2>Tiempo de sueño<a class="headerlink" href="#sleep-time" title="Link to this heading">#</a></h2>
+<p>Escaneando el siguiente código de configuración, puede establecer el escáner para entrar en modo de sueño después de un cierto período de tiempo en el que no se escanea ningún código, para reducir el consumo de energía.</p>
+<section id="shutdown">
+<h3>Apagado<a class="headerlink" href="#shutdown" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Hibernar ahora</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+<p><span class="caption-text">Apagado</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id12">
-<h3>Dormir después de 1 minutos<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id26">
+<section id="sleep-after-1-minutes-of-idle-time">
+<h3>Dormir después de 1 minuto de inactividad<a class="headerlink" href="#sleep-after-1-minutes-of-idle-time" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24RF23ST02.png"><img alt="../../media/24RF23ST02.png" src="../../media/24RF23ST02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Dormir después de 1 minutos</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
+<p><span class="caption-text">Dormir después de 1 minuto de inactividad</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id13">
-<h3>Dormir después de 3 minutos<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id27">
+<section id="sleep-after-3-minutes-of-idle-time">
+<h3>Dormir después de 3 minutos de inactividad<a class="headerlink" href="#sleep-after-3-minutes-of-idle-time" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/24RF23ST06.png"><img alt="../../media/24RF23ST06.png" src="../../media/24RF23ST06.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Dormir después de 3 minutos</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
+<p><span class="caption-text">Dormir después de 3 minutos de inactividad</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id14">
-<h3>Dormir después de 10 minutos<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id28">
+<section id="sleep-after-10-minutes-of-idle-time">
+<h3>Durmiendo después de 10 minutos de inactividad<a class="headerlink" href="#sleep-after-10-minutes-of-idle-time" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/24RF23ST20.png"><img alt="../../media/24RF23ST20.png" src="../../media/24RF23ST20.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Dormir después de 10 minutos</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
+<p><span class="caption-text">Durmiendo después de 10 minutos de inactividad</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id15">
-<h3>Dormir después de 30 minutos<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id29">
+<section id="sleep-after-30-minutes-of-idle-time">
+<h3>Durmiendo después de 30 minutos de inactividad<a class="headerlink" href="#sleep-after-30-minutes-of-idle-time" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/24RF23ST60.png"><img alt="../../media/24RF23ST60.png" src="../../media/24RF23ST60.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Dormir después de 30 minutos</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
+<p><span class="caption-text">Durmiendo después de 30 minutos de inactividad</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id16">
-<h3>Sin dormir<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id30">
+<section id="no-sleep">
+<h3>Sin sueño<a class="headerlink" href="#no-sleep" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../media/24RF23ST00.png"><img alt="../../media/24RF23ST00.png" src="../../media/24RF23ST00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sin dormir</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sin sueño</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -664,23 +675,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurar la configuración predeterminada</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenga la versión del firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Configuración de sonido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Alto volumen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Volumen mediano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Volumen bajo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Estuche de sonido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurar ajustes por defecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtener versión de Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Ajustes de volumen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volumen alto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volumen medio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volumen bajo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-case">Caso de sonido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Información de la batería</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Hora de dormir</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Hibernar ahora</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Dormir después de 1 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Dormir después de 3 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Dormir después de 10 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Dormir después de 30 minutos</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Sin dormir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#battery-information">Información de la batería</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-time">Tiempo de sueño</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shutdown">Apagado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-1-minutes-of-idle-time">Dormir después de 1 minuto de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-3-minutes-of-idle-time">Dormir después de 3 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-10-minutes-of-idle-time">Durmiendo después de 10 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sleep-after-30-minutes-of-idle-time">Durmiendo después de 30 minutos de inactividad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-sleep">Sin sueño</a></li>
 </ul>
 </li>
 </ul>

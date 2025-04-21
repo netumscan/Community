@@ -313,37 +313,43 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">大小写设定</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">键盘语言</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">获取当前键盘语言</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">美国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">法国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">德国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">意大利</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">葡萄牙</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">西班牙</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">土耳其</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">英国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">捷克</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">匈牙利</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">比利时(法语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">巴西(葡萄牙语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">加拿大法语(传统)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">克罗地亚</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">斯洛伐克</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">丹麦</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">芬兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">拉丁美洲(西班牙语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">荷兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">挪威</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">波兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">塞尔维亚(拉丁文)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">斯洛文尼亚</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">瑞典</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">瑞士(德语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">日语</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">泰语</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alt2">ALT国际通用键盘</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">大小写设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">正常</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">大小写互换 (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">全部大写(a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">全部小写 (A-&gt;a)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">键盘语言</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-current-keyboard-language">获取当前键盘语言</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">美国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">法国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">德国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">意大利</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portugal">葡萄牙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">西班牙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey">土耳其</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#britain">英国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech">捷克语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hungary">匈牙利</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#belgium-french">比利时（法语）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brazil-portuguese">巴西 (葡萄牙语)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canada-french">加拿大（法语）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#croatia">克罗地亚</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovakia">斯洛伐克</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#denmark">丹麦</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finland">芬兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latin-america-spanish">拉丁美洲（西班牙）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#netherlands">荷兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norway">挪威</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poland">波兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbia-latin">塞尔维亚(拉丁语)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovenia">斯洛文尼亚</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sweden">瑞典</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#switzerland-german">瑞士 (德国)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#japanese">日语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thai1">泰语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alt-international-universal-keyboard2">ALT 国际通用键盘</a></li>
 </ul>
 </li>
 </ul>
@@ -357,340 +363,352 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>键盘设置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>大小写设定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id36">
+  <section id="keyboard-settings">
+<h1>键盘设置<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
+<section id="case-settings">
+<h2>大小写设置<a class="headerlink" href="#case-settings" title="Link to this heading">#</a></h2>
+<section id="normal">
+<h3>正常<a class="headerlink" href="#normal" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/25LKLED230.png"><img alt="../../media/25LKLED230.png" src="../../media/25LKLED230.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">正常<code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
+<p><span class="caption-text">正常 <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id37">
+</section>
+<section id="inverted-case-a-a">
+<h3>大小写互换 (A&lt;-&gt;a)<a class="headerlink" href="#inverted-case-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/25LKLED231.png"><img alt="../../media/25LKLED231.png" src="../../media/25LKLED231.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">大小写互换 (A&lt;-&gt;a)</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+<p><span class="caption-text">大小写互换 (A&lt;-&gt;a)</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id38">
+</section>
+<section id="all-caps-a-a">
+<h3>全部大写(a-&gt;A)<a class="headerlink" href="#all-caps-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25LKLED232.png"><img alt="../../media/25LKLED232.png" src="../../media/25LKLED232.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部大写 (a-&gt;A)</span><a class="headerlink" href="#id38" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部大写(a-&gt;A)</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id39">
+</section>
+<section id="all-lowercase-a-a">
+<h3>全部小写 (A-&gt;a)<a class="headerlink" href="#all-lowercase-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25LKLED233.png"><img alt="../../media/25LKLED233.png" src="../../media/25LKLED233.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部小写 (A-&gt;a)</span><a class="headerlink" href="#id39" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部小写 (A-&gt;a)</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>键盘语言<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+</section>
+<section id="keyboard-language">
+<h2>键盘语言<a class="headerlink" href="#keyboard-language" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>如果您使用法语键盘，扫描&quot;法语&quot;的命令条形码。</p></li>
-<li><p>如果您使用美式键盘，可以忽略这一步（中国地区默认使用美式键盘）。</p></li>
-<li><p>如果扫描传输的数据乱码，可能是键盘输入法语言跟扫描枪语言不对应。</p></li>
+<li><p>如果您使用的是法国键盘，扫描 <a class="reference internal" href="#france">French</a> 命令条码。</p></li>
+<li><p>如果您使用一个美国键盘，您可以忽略这个步骤(默认在中国使用美国键盘)。</p></li>
+<li><p>如果扫描传输的数据出现乱码，可能是计算机输入法语言与扫描枪语言不对应。</p></li>
 </ul>
-<section id="id4">
-<h3>获取当前键盘语言<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id40">
+<section id="get-current-keyboard-language">
+<h3>获取当前键盘语言<a class="headerlink" href="#get-current-keyboard-language" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/24LAN23.png"><img alt="../../media/24LAN23.png" src="../../media/24LAN23.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">获取当前键盘语言</span><a class="headerlink" href="#id40" title="Link to this image">#</a></p>
+<p><span class="caption-text">获取当前键盘语言</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>美国<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id41">
+<section id="america">
+<h3>美国<a class="headerlink" href="#america" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24LAN23EN.png"><img alt="../../media/24LAN23EN.png" src="../../media/24LAN23EN.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">美国</span><a class="headerlink" href="#id41" title="Link to this image">#</a></p>
+<p><span class="caption-text">美国</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>法国<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id42">
+<section id="france">
+<h3>法国<a class="headerlink" href="#france" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/24LAN23FR.png"><img alt="../../media/24LAN23FR.png" src="../../media/24LAN23FR.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">法国</span><a class="headerlink" href="#id42" title="Link to this image">#</a></p>
+<p><span class="caption-text">法国</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>德国<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id43">
+<section id="germany">
+<h3>德国<a class="headerlink" href="#germany" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/24LAN23GE.png"><img alt="../../media/24LAN23GE.png" src="../../media/24LAN23GE.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">德国</span><a class="headerlink" href="#id43" title="Link to this image">#</a></p>
+<p><span class="caption-text">德国</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>意大利<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id44">
+<section id="italy">
+<h3>意大利<a class="headerlink" href="#italy" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/24LAN23IT.png"><img alt="../../media/24LAN23IT.png" src="../../media/24LAN23IT.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">意大利</span><a class="headerlink" href="#id44" title="Link to this image">#</a></p>
+<p><span class="caption-text">意大利</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>葡萄牙<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id45">
+<section id="portugal">
+<h3>葡萄牙<a class="headerlink" href="#portugal" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../media/24LAN23PT.png"><img alt="../../media/24LAN23PT.png" src="../../media/24LAN23PT.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">葡萄牙</span><a class="headerlink" href="#id45" title="Link to this image">#</a></p>
+<p><span class="caption-text">葡萄牙</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>西班牙<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id46">
+<section id="spain">
+<h3>西班牙<a class="headerlink" href="#spain" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../media/24LAN23ES.png"><img alt="../../media/24LAN23ES.png" src="../../media/24LAN23ES.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">西班牙</span><a class="headerlink" href="#id46" title="Link to this image">#</a></p>
+<p><span class="caption-text">西班牙</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>土耳其<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id47">
+<section id="turkey">
+<h3>土耳其<a class="headerlink" href="#turkey" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../media/24LAN23TK.png"><img alt="../../media/24LAN23TK.png" src="../../media/24LAN23TK.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">土耳其 Q</span><a class="headerlink" href="#id47" title="Link to this image">#</a></p>
+<p><span class="caption-text">土耳其-Q</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id48">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../media/24LAN23TF.png"><img alt="../../media/24LAN23TF.png" src="../../media/24LAN23TF.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">土耳其 F</span><a class="headerlink" href="#id48" title="Link to this image">#</a></p>
+<p><span class="caption-text">土耳其-F</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id12">
-<h3>英国<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id49">
+<section id="britain">
+<h3>英国<a class="headerlink" href="#britain" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="../../media/24LAN23UK.png"><img alt="../../media/24LAN23UK.png" src="../../media/24LAN23UK.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">英国</span><a class="headerlink" href="#id49" title="Link to this image">#</a></p>
+<p><span class="caption-text">英国</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id13">
-<h3>捷克<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id50">
+<section id="czech">
+<h3>捷克语<a class="headerlink" href="#czech" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id19">
 <a class="reference internal image-reference" href="../../media/24LAN23CS.png"><img alt="../../media/24LAN23CS.png" src="../../media/24LAN23CS.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">捷克</span><a class="headerlink" href="#id50" title="Link to this image">#</a></p>
+<p><span class="caption-text">捷克语</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id14">
-<h3>匈牙利<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id51">
+<section id="hungary">
+<h3>匈牙利<a class="headerlink" href="#hungary" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="../../media/24LAN23HU.png"><img alt="../../media/24LAN23HU.png" src="../../media/24LAN23HU.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">匈牙利</span><a class="headerlink" href="#id51" title="Link to this image">#</a></p>
+<p><span class="caption-text">匈牙利</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id15">
-<h3>比利时(法语)<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id52">
+<section id="belgium-french">
+<h3>比利时（法语）<a class="headerlink" href="#belgium-french" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="../../media/24LAN23FB.png"><img alt="../../media/24LAN23FB.png" src="../../media/24LAN23FB.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">比利时(法语)</span><a class="headerlink" href="#id52" title="Link to this image">#</a></p>
+<p><span class="caption-text">比利时（法语）</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id16">
-<h3>巴西(葡萄牙语)<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id53">
+<section id="brazil-portuguese">
+<h3>巴西 (葡萄牙语)<a class="headerlink" href="#brazil-portuguese" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id22">
 <a class="reference internal image-reference" href="../../media/24LAN23PB.png"><img alt="../../media/24LAN23PB.png" src="../../media/24LAN23PB.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">巴西(葡萄牙语)</span><a class="headerlink" href="#id53" title="Link to this image">#</a></p>
+<p><span class="caption-text">巴西 (葡萄牙语)</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id17">
-<h3>加拿大法语(传统)<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id54">
+<section id="canada-french">
+<h3>加拿大（法语）<a class="headerlink" href="#canada-french" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id23">
 <a class="reference internal image-reference" href="../../media/24LAN23FC.png"><img alt="../../media/24LAN23FC.png" src="../../media/24LAN23FC.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">加拿大法语(传统)</span><a class="headerlink" href="#id54" title="Link to this image">#</a></p>
+<p><span class="caption-text">加拿大（法语）</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id18">
-<h3>克罗地亚<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id55">
+<section id="croatia">
+<h3>克罗地亚<a class="headerlink" href="#croatia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id24">
 <a class="reference internal image-reference" href="../../media/24LAN23HR.png"><img alt="../../media/24LAN23HR.png" src="../../media/24LAN23HR.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">克罗地亚</span><a class="headerlink" href="#id55" title="Link to this image">#</a></p>
+<p><span class="caption-text">克罗地亚</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id19">
-<h3>斯洛伐克<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id56">
+<section id="slovakia">
+<h3>斯洛伐克<a class="headerlink" href="#slovakia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id25">
 <a class="reference internal image-reference" href="../../media/24LAN23SK.png"><img alt="../../media/24LAN23SK.png" src="../../media/24LAN23SK.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">斯洛伐克</span><a class="headerlink" href="#id56" title="Link to this image">#</a></p>
+<p><span class="caption-text">斯洛伐克</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id20">
-<h3>丹麦<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id57">
+<section id="denmark">
+<h3>丹麦<a class="headerlink" href="#denmark" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id26">
 <a class="reference internal image-reference" href="../../media/24LAN23DA.png"><img alt="../../media/24LAN23DA.png" src="../../media/24LAN23DA.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">丹麦</span><a class="headerlink" href="#id57" title="Link to this image">#</a></p>
+<p><span class="caption-text">丹麦</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id21">
-<h3>芬兰<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id58">
+<section id="finland">
+<h3>芬兰<a class="headerlink" href="#finland" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id27">
 <a class="reference internal image-reference" href="../../media/24LAN23FI.png"><img alt="../../media/24LAN23FI.png" src="../../media/24LAN23FI.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">芬兰</span><a class="headerlink" href="#id58" title="Link to this image">#</a></p>
+<p><span class="caption-text">芬兰</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id22">
-<h3>拉丁美洲(西班牙语)<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id59">
+<section id="latin-america-spanish">
+<h3>拉丁美洲（西班牙）<a class="headerlink" href="#latin-america-spanish" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id28">
 <a class="reference internal image-reference" href="../../media/24LAN23EL.png"><img alt="../../media/24LAN23EL.png" src="../../media/24LAN23EL.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">拉丁美洲(西班牙语)</span><a class="headerlink" href="#id59" title="Link to this image">#</a></p>
+<p><span class="caption-text">拉丁美洲（西班牙）</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id23">
-<h3>荷兰<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id60">
+<section id="netherlands">
+<h3>荷兰<a class="headerlink" href="#netherlands" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id29">
 <a class="reference internal image-reference" href="../../media/24LAN23NL.png"><img alt="../../media/24LAN23NL.png" src="../../media/24LAN23NL.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">荷兰</span><a class="headerlink" href="#id60" title="Link to this image">#</a></p>
+<p><span class="caption-text">荷兰</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id24">
-<h3>挪威<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id61">
+<section id="norway">
+<h3>挪威<a class="headerlink" href="#norway" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id30">
 <a class="reference internal image-reference" href="../../media/24LAN23NO.png"><img alt="../../media/24LAN23NO.png" src="../../media/24LAN23NO.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">挪威</span><a class="headerlink" href="#id61" title="Link to this image">#</a></p>
+<p><span class="caption-text">挪威</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id25">
-<h3>波兰<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id62">
+<section id="poland">
+<h3>波兰<a class="headerlink" href="#poland" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id31">
 <a class="reference internal image-reference" href="../../media/24LAN23PL.png"><img alt="../../media/24LAN23PL.png" src="../../media/24LAN23PL.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">波兰</span><a class="headerlink" href="#id62" title="Link to this image">#</a></p>
+<p><span class="caption-text">波兰</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id26">
-<h3>塞尔维亚(拉丁文)<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id63">
+<section id="serbia-latin">
+<h3>塞尔维亚(拉丁语)<a class="headerlink" href="#serbia-latin" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id32">
 <a class="reference internal image-reference" href="../../media/24LAN23SR.png"><img alt="../../media/24LAN23SR.png" src="../../media/24LAN23SR.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">塞尔维亚(拉丁文)</span><a class="headerlink" href="#id63" title="Link to this image">#</a></p>
+<p><span class="caption-text">塞尔维亚(拉丁语)</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id27">
-<h3>斯洛文尼亚<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id64">
+<section id="slovenia">
+<h3>斯洛文尼亚<a class="headerlink" href="#slovenia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id33">
 <a class="reference internal image-reference" href="../../media/24LAN23SL.png"><img alt="../../media/24LAN23SL.png" src="../../media/24LAN23SL.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">斯洛文尼亚</span><a class="headerlink" href="#id64" title="Link to this image">#</a></p>
+<p><span class="caption-text">斯洛文尼亚</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id28">
-<h3>瑞典<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id65">
+<section id="sweden">
+<h3>瑞典<a class="headerlink" href="#sweden" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id34">
 <a class="reference internal image-reference" href="../../media/24LAN23SV.png"><img alt="../../media/24LAN23SV.png" src="../../media/24LAN23SV.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">瑞典</span><a class="headerlink" href="#id65" title="Link to this image">#</a></p>
+<p><span class="caption-text">瑞典</span><a class="headerlink" href="#id34" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id29">
-<h3>瑞士(德语)<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id66">
+<section id="switzerland-german">
+<h3>瑞士 (德国)<a class="headerlink" href="#switzerland-german" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id35">
 <a class="reference internal image-reference" href="../../media/24LAN23DS.png"><img alt="../../media/24LAN23DS.png" src="../../media/24LAN23DS.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">瑞士(德语)</span><a class="headerlink" href="#id66" title="Link to this image">#</a></p>
+<p><span class="caption-text">瑞士 (德国)</span><a class="headerlink" href="#id35" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id30">
-<h3>日语<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id67">
+<section id="japanese">
+<h3>日语<a class="headerlink" href="#japanese" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id36">
 <a class="reference internal image-reference" href="../../media/24LAN23JP.png"><img alt="../../media/24LAN23JP.png" src="../../media/24LAN23JP.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">日语</span><a class="headerlink" href="#id67" title="Link to this image">#</a></p>
+<p><span class="caption-text">日语</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id32">
-<h3>泰语<a class="footnote-reference brackets" href="#id33" id="id31" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id68">
+<section id="thai1">
+<h3>泰语<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#thai1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id37">
 <a class="reference internal image-reference" href="../../media/24LAN23TH.png"><img alt="../../media/24LAN23TH.png" src="../../media/24LAN23TH.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">泰语</span><a class="headerlink" href="#id68" title="Link to this image">#</a></p>
+<p><span class="caption-text">泰语</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="alt2">
-<h3>ALT国际通用键盘<a class="footnote-reference brackets" href="#id35" id="id34" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#alt2" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id69">
+<section id="alt-international-universal-keyboard2">
+<h3>ALT 国际通用键盘<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#alt-international-universal-keyboard2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id38">
 <a class="reference internal image-reference" href="../../media/24LAN23AG.png"><img alt="../../media/24LAN23AG.png" src="../../media/24LAN23AG.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ALT国际通用键盘</span><a class="headerlink" href="#id69" title="Link to this image">#</a></p>
+<p><span class="caption-text">ALT 国际通用键盘</span><a class="headerlink" href="#id38" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -698,13 +716,13 @@ document.write(`
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id33" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id31">1</a><span class="fn-bracket">]</span></span>
-<p>TH language setting, the scan module also need set to TH output.</p>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>TH 语言设置，扫描模块也需要设置为 TH 输出。</p>
 </aside>
-<aside class="footnote brackets" id="id35" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id34">2</a><span class="fn-bracket">]</span></span>
-<p>ALT国际通用键盘仅适用于Windows系统，可以不受电脑键盘设置的影响，但是会影响传输速度.</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>ALT 国际通用键盘仅适用于Windows系统，不受计算机键盘设置的影响。 但它会影响传输速度。</p>
 </aside>
 </aside>
 
@@ -753,37 +771,43 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">大小写设定</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">键盘语言</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">获取当前键盘语言</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">美国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">法国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">德国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">意大利</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">葡萄牙</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">西班牙</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">土耳其</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">英国</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">捷克</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">匈牙利</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">比利时(法语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">巴西(葡萄牙语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">加拿大法语(传统)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">克罗地亚</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">斯洛伐克</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">丹麦</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">芬兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">拉丁美洲(西班牙语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">荷兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">挪威</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">波兰</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">塞尔维亚(拉丁文)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">斯洛文尼亚</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">瑞典</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">瑞士(德语)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">日语</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">泰语</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alt2">ALT国际通用键盘</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">大小写设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">正常</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">大小写互换 (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">全部大写(a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">全部小写 (A-&gt;a)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">键盘语言</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-current-keyboard-language">获取当前键盘语言</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">美国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">法国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">德国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">意大利</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portugal">葡萄牙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">西班牙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey">土耳其</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#britain">英国</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech">捷克语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hungary">匈牙利</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#belgium-french">比利时（法语）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brazil-portuguese">巴西 (葡萄牙语)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canada-french">加拿大（法语）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#croatia">克罗地亚</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovakia">斯洛伐克</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#denmark">丹麦</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finland">芬兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latin-america-spanish">拉丁美洲（西班牙）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#netherlands">荷兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norway">挪威</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poland">波兰</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbia-latin">塞尔维亚(拉丁语)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovenia">斯洛文尼亚</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sweden">瑞典</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#switzerland-german">瑞士 (德国)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#japanese">日语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thai1">泰语</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alt-international-universal-keyboard2">ALT 国际通用键盘</a></li>
 </ul>
 </li>
 </ul>

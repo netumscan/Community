@@ -1,4 +1,4 @@
-# {{ model }} 无线扫描枪快速设置手册
+# {{ model }} Wireless Scanner Quick Setup Guide
 ```{toctree}
 :maxdepth: 2
 

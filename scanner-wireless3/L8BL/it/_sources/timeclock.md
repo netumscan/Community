@@ -1,25 +1,25 @@
-# 实时时钟
+# Real-time clock
 
-## 启用实时时钟
+## Enable
 
 ```{figure} ../../media/25RTCSTAMP231.png
 :align: center
 :width: 300px
 
-启用实时时钟
+Enable
 ```
 
 
-## 禁用实时时钟
+## Disable
 
 ```{figure} ../../media/25RTCSTAMP230.png
 :align: center
 :width: 300px
 
-禁用实时时钟 `默认`
+Disable `Default`
 ```
 
-## 设置实时时钟
+## Set Real-Time Clock
 
 
 ```{raw} html

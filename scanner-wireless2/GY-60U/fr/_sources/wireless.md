@@ -1,72 +1,71 @@
-# 无线模式
+# Wireless Mode
 
-## 2.4G 接收器模式
+This mode uses the 2.4GHz frequency band for data transmission and relies on radio frequency (RF) technology, which connects to the computer via a USB receiver and allows the scanner to move freely within a certain distance.
 
 ```{figure} ../../media/2523IFSNO241.png
 :align: center
 :width: 300px
 
-2.4G 接收器模式`默认`
+Wireless Mode `Default`
 ```
-- 扫描2.4G接收器模式，即可切换到2.4G接收器传输，接收器/底座用数据线插上USB接口就可以通过接收器传输数据。
-
 
 ```{note}
-接收器分小接收器和底座接收器
+Receivers are divided into small receivers and base receivers
 ```
 
-## 一对一配对
+## One-to-One Pairing
 ```{figure} ../../media/24RF23CH02.png
 :align: center
 :width: 300px
 
-一对一配对
+One-to-One Pairing
 ```
 
 ```{note}
-以下情况可以，拔出接收器，扫描上面的配对码，扫描枪发出连续的滴滴声，此时重新插入接收器，响声立刻停止表示配对成功。  
-① 2.4G接收器插上USB接口，扫码滴滴滴三声不上传数据。  
-② 需要配对新的接收器。
+It works in the following situations: pull out the receiver, scan the pairing code on it, and the scanner will make a continuous beeping sound. At this time, re-insert the receiver, and the sound will stop immediately, indicating that the pairing is successful.  
+This operation is required in the following situations:  
+① Plug the 2.4G receiver into the USB port. After scanning successfully, it will beep three times but will not upload data.  
+② Requires pairing with a new receiver.
 ```
 
-## 接收器键盘传输速度[^1]
+## Receiver Keyboard Transmission Speed[^1]
 
-[^1]: 仅适用于FWVerL及以上版本的RF Dongle. 注意扫描枪端与接收端的速度需要匹配，不然在传输长条码时容易出错。
+[^1]: Only applicable to RF Dongle with FWVerL and above versions. Note that the speed of the scanner and the receiver must match, otherwise errors may occur when transmitting long barcodes.
 
 ```{figure} ../../media/25KB23SP.png
 :align: center
 :width: 300px
 
-获取接收器键盘传输速度[^2]
+Get Receiver Keyboard Transmission Speed[^2]
 ```
-[^2]: 仅无线2.4G模式且接收端正常接收情况下有效。
+[^2]: It is only valid in wireless 2.4G mode and when the receiving end is receiving normally.
 
-## 高速
+## High Speed
 
 
 ```{figure} ../../media/24USB23KEY.png
 :align: center
 :width: 300px
 
-高速
+High Speed
 ```
 
 
-## 中速
+## Medium Speed
 
 ```{figure} ../../media/24USB23KEY4.png
 :align: center
 :width: 300px
 
-中速
+Medium Speed
 ```
 
-## 低速
+## Low Speed
 
 ```{figure} ../../media/24USB23KEY9.png
 :align: center
 :width: 300px
 
-低速
+Low Speed
 ```
 

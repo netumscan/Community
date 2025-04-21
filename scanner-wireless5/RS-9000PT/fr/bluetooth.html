@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Paramètres du clavier" href="keyboard.html" />
-    <link rel="prev" title="Mode de fonctionnement" href="working.html" />
+    <link rel="prev" title="Mode de travail" href="working.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de fonctionnement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Questions fréquemment posées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
 
     </div>
@@ -382,18 +393,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hid">Bluetooth HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spp">Bluetooth SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ble">Bluetooth BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Informations d’appariement claires</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">Clavier contextuel/masqué iOS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Vitesse de transmission du clavier Bluetooth</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">grande vitesse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">moyenne vitesse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Basse vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">HID Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">SPP Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">Bluetooth BLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">Effacer les informations d’appairage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">Popup/Cacher Clavier IOS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">Vitesse de transmission du clavier Bluetooth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">Haute Vitesse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Vitesse moyenne</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Faible vitesse</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Modifier le nom Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">Modifier le nom du Bluetooth</a></li>
 </ul>
             </nav>
         </div>
@@ -405,128 +416,128 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Mode Bluetooth<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<figure class="align-center" id="id8">
+  <section id="bluetooth-mode">
+<h1>Mode Bluetooth<a class="headerlink" href="#bluetooth-mode" title="Lien vers cette rubrique">#</a></h1>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2523IFSNO244.png"><img alt="../../media/2523IFSNO244.png" src="../../media/2523IFSNO244.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode Bluetooth</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode Bluetooth</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Scannez le mode Bluetooth, puis appuyez sur le bouton pour démarrer, vous pouvez passer à la transmission Bluetooth, activer Bluetooth pour rechercher des appareils à coupler, et après un couplage réussi, vous pouvez transmettre des données via Bluetooth.</p></li>
-<li><p>Nom Bluetooth :<code class="docutils literal notranslate"><span class="pre">scanner</span> <span class="pre">de</span> <span class="pre">codes-barres</span></code> ou <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
-<li><p>Passez en mode Bluetooth et le voyant bleu s’allumera.</p></li>
+<li><p>Scannez le mode Bluetooth, puis appuyez sur le bouton pour démarrer, vous pouvez passer à la transmission Bluetooth, activez le Bluetooth pour rechercher des périphériques d’appairage, et après l’appairage réussi, vous pouvez transmettre des données via Bluetooth.</p></li>
+<li><p>Nom du Bluetooth: <code class="docutils literal notranslate"><span class="pre">barcode</span> <span class="pre">scanner</span></code> ou <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
+<li><p>Basculer en mode Bluetooth et le voyant bleu s’allume.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La lumière bleue signifie.   ①Le voyant bleu clignote, indiquant qu’il n’est pas connecté.   ②Le voyant bleu est allumé, indiquant qu’il est connecté.</p>
+<p>La lumière bleue signifie :<br>1La lumière bleue clignote, indiquant qu’elle n’est pas connectée.<br>2La lumière bleue est allumée, indiquant qu’elle est connectée.</p>
 </div>
-<section id="hid">
-<h2>Bluetooth HID<a class="headerlink" href="#hid" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id9">
+<section id="bluetooth-hid">
+<h2>HID Bluetooth<a class="headerlink" href="#bluetooth-hid" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D2.png"><img alt="../../media/AT2BMODE3D2.png" src="../../media/AT2BMODE3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth HID <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code> HID Bluetooth</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="spp">
-<h2>Bluetooth SPP<a class="headerlink" href="#spp" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="bluetooth-spp">
+<h2>SPP Bluetooth<a class="headerlink" href="#bluetooth-spp" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D1.png"><img alt="../../media/AT2BMODE3D1.png" src="../../media/AT2BMODE3D1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth SPP</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">SPP Bluetooth</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="ble">
-<h2>Bluetooth BLE<a class="headerlink" href="#ble" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="bluetooth-ble">
+<h2>Bluetooth BLE<a class="headerlink" href="#bluetooth-ble" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D3.png"><img alt="../../media/AT2BMODE3D3.png" src="../../media/AT2BMODE3D3.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bluetooth BLE</span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Bluetooth BLE</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Bluetooth SPP et Bluetooth BLE sont des modes d’accueil logiciels. Si vous devez rechercher et coupler via le système Bluetooth, vous devez utiliser <a class="reference internal" href="#hid">Bluetooth HID</a></p>
+<p>Le Bluetooth SPP et le Bluetooth BLE sont des modes utilisés pour l’amarrage des logiciels. Si vous avez besoin de rechercher et d’associer via le Bluetooth du système, vous devez utiliser <a class="reference internal" href="#bluetooth-hid">Bluetooth HID</a></p>
 </div>
 </section>
-<section id="id2">
-<h2>Informations d’appariement claires<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="clear-pairing-information">
+<h2>Effacer les informations d’appairage<a class="headerlink" href="#clear-pairing-information" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2525ALL-CH.png"><img alt="../../media/2525ALL-CH.png" src="../../media/2525ALL-CH.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Informations d’appariement claires</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Effacer les informations d’appairage</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Réassociez-le avec un nouvel appareil ou, si l’association échoue, scannez le code de configuration pour réassocier.</p>
+<p>Réapparier avec un nouvel appareil, ou si l’appairage échoue, scannez le code d’installation pour l’appairer.</p>
 </div>
 </section>
-<section id="ios">
-<h2>Clavier contextuel/masqué iOS<a class="headerlink" href="#ios" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id13">
+<section id="ios-popup-hide-keyboard">
+<h2>Popup/Cacher Clavier IOS<a class="headerlink" href="#ios-popup-hide-keyboard" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/25250S.png"><img alt="../../media/25250S.png" src="../../media/25250S.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Clavier contextuel/masqué iOS</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Popup/Cacher Clavier IOS</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Vous pouvez également appuyer deux fois de suite sur le bouton de numérisation pour faire apparaître/masquer le clavier sans scanner le code. Cette fonction prend uniquement en charge le couplage Bluetooth sur le système iOS.</p>
+<p>Vous pouvez aussi appuyer deux fois sur le bouton de numérisation pour afficher ou masquer le clavier sans scanner le code. Cette fonction ne prend en charge que l’appairage Bluetooth sur le système iOS.</p>
 </div>
 </section>
-<section id="id3">
-<h2>Vitesse de transmission du clavier Bluetooth<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="bluetooth-keyboard-transmission-speed">
+<h2>Vitesse de transmission du clavier Bluetooth<a class="headerlink" href="#bluetooth-keyboard-transmission-speed" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY.png"><img alt="../../media/AT2BHIDDLY.png" src="../../media/AT2BHIDDLY.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Obtenez la vitesse de transmission du clavier Bluetooth</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Obtenir la vitesse de transmission du clavier Bluetooth</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<section id="id4">
-<h3>grande vitesse<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="high-speed">
+<h3>Haute Vitesse<a class="headerlink" href="#high-speed" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D2.png"><img alt="../../media/AT2BHIDDLY3D2.png" src="../../media/AT2BHIDDLY3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">grande vitesse</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Haute Vitesse</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>moyenne vitesse<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="medium-speed">
+<h3>Vitesse moyenne<a class="headerlink" href="#medium-speed" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D10.png"><img alt="../../media/AT2BHIDDLY3D10.png" src="../../media/AT2BHIDDLY3D10.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">moyenne vitesse</span><a class="headerlink" href="#id16" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Vitesse moyenne</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Basse vitesse<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="low-speed">
+<h3>Faible vitesse<a class="headerlink" href="#low-speed" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D25.png"><img alt="../../media/AT2BHIDDLY3D25.png" src="../../media/AT2BHIDDLY3D25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Basse vitesse</span><a class="headerlink" href="#id17" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Faible vitesse</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>Modifier le nom Bluetooth<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h2>
+<section id="modify-bluetooth-name">
+<h2>Modifier le nom du Bluetooth<a class="headerlink" href="#modify-bluetooth-name" title="Lien vers cette rubrique">#</a></h2>
     <iframe src="../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
 </section>
 </section>
@@ -548,7 +559,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Mode de fonctionnement</p>
+        <p class="prev-next-title">Mode de travail</p>
       </div>
     </a>
     <a class="right-next"
@@ -576,18 +587,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hid">Bluetooth HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spp">Bluetooth SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ble">Bluetooth BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Informations d’appariement claires</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios">Clavier contextuel/masqué iOS</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Vitesse de transmission du clavier Bluetooth</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">grande vitesse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">moyenne vitesse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Basse vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">HID Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">SPP Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">Bluetooth BLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">Effacer les informations d’appairage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">Popup/Cacher Clavier IOS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">Vitesse de transmission du clavier Bluetooth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">Haute Vitesse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Vitesse moyenne</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Faible vitesse</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Modifier le nom Bluetooth</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">Modifier le nom du Bluetooth</a></li>
 </ul>
   </nav></div>
 

@@ -1,84 +1,84 @@
-# 工作模式
-2.4G接收器或者蓝牙信号范围之外的工作区域，您可以按照下面描述的步骤激活扫描枪的存储模式。 在此模式下，所有扫描的数据将直接存储扫描枪里。在上传数据之前，将永久保存在扫描枪里，以便当扫描枪在接收信号范围内，您可以上传这些数据。 
+# Working Mode
+In the working area outside the range of the 2.4G receiver or Bluetooth signal, you can activate the storage mode of the scanner by following the steps described below. In this mode, all scanned data will be stored directly in the scanner. Before uploading the data, it will be permanently saved in the scanner so that you can upload the data when the scanner is in the receiving signal range.
 
 
-## 普通模式
+## Normal Mode
 ```{figure} ../../media/2523NORMD.png
 :align: center
 :width: 300px
 
-普通模式`默认`
+Normal Mode `Default`
 ```
 
 ```{note}
-设置普通模式，扫码会即时上传数据。
+Set to normal mode, and data will be uploaded immediately after scanning.
 ```
-## 储存模式
+## Storage Mode
 
 ```{figure} ../../media/2523INVMD.png
 :align: center
 :width: 300px
 
-储存模式
+Storage Mode
 ```
 
 ```{note}
-设置储存模式，扫码不会即时上传数据，数据会存储在扫描枪里。
+Set the storage mode. After a successful scan, the data will not be uploaded immediately, but will be stored in the scanner.
 ```
 
-### 数据上传[^1]
-[^1]: 数据上传过程中，再次扫描“数据上传”指令将取消/停止数据上传。
+### Data Upload[^1]
+[^1]: During data uploading, scanning the "Data Upload" command again will cancel/stop data uploading.
 ```{figure} ../../media/2523TXMEM.png
 :align: center
 :width: 300px
 
-数据上传
+Data Upload
 ```
 
 ```{note}
-上传储存在扫描枪里的数据。
+Upload the data stored in the scanner.
 ```
 
-### 存储总数
+### Total Storage Quantity
 
 ```{figure} ../../media/25232BTCNT.png
 :align: center
 :width: 300px
 
-存储总数
+Total Storage Quantity
 ```
 
 ```{note}
-查看储存了多少条数据。
+Check how many pieces of data are stored.
 ```
-### 清除储存条码
+### Clear Stored Barcode
 
 ```{figure} ../../media/25232ANEW2A.png
 :align: center
 :width: 300px
 
-清除储存条码
+Clear Stored Barcode
 ```
 
 ```{note}
-清除储存在扫描枪里的数据。
+Clear the data stored in the scanner.
 ```
-### 自动存储模式关闭
+### Disable Automatic Storage Mode
 
 ```{figure} ../../media/25AutoSav23Off.png
 :align: center
 :width: 300px
 
-自动存储模式关闭
+Disable Automatic Storage Mode
 ```
 
-### 自动存储模式开启[^2]
+### Enable Automatic Storage Mode[^2]
 
-[^2]: 无线传输模式下，当自动存储模式开启，传输失败时条码将自动存储起来，可通过“数据上传”获取到存储的数据。
+[^2]: In wireless transmission mode, when the automatic storage mode is turned on, the barcode will be automatically stored when the transmission fails, and the stored data can be obtained through "Data Upload".
 
 ```{figure} ../../media/25AutoSav23On.png
 :align: center
 :width: 300px
 
-自动存储模式开启
+Enable Automatic Storage Mode
 ```

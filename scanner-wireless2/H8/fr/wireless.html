@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Paramètres du clavier" href="keyboard.html" />
-    <link rel="prev" title="Mode de fonctionnement" href="working.html" />
+    <link rel="prev" title="Mode de travail" href="working.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de fonctionnement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode sans fil</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Questions fréquemment posées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
 
     </div>
@@ -382,12 +393,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g">Mode récepteur 2,4G</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correspondance individuelle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Vitesse de transmission du clavier du récepteur</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">grande vitesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">moyenne vitesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Basse vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-to-one-pairing">Appairage unique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiver-keyboard-transmission-speed1">Vitesse de transmission du clavier du destinataire</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">Haute Vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Vitesse moyenne</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Faible vitesse</a></li>
 </ul>
             </nav>
         </div>
@@ -399,89 +409,84 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Mode sans fil<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="g">
-<h2>Mode récepteur 2,4G<a class="headerlink" href="#g" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id11">
+  <section id="wireless-mode">
+<h1>Mode sans fil<a class="headerlink" href="#wireless-mode" title="Lien vers cette rubrique">#</a></h1>
+<p>Ce mode utilise le 2. Bande de fréquence GHz pour la transmission de données et repose sur la technologie de fréquence radio (RF) qui se connecte à l’ordinateur via un récepteur USB et permet au scanner de se déplacer librement à une certaine distance.</p>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2523IFSNO241.png"><img alt="../../media/2523IFSNO241.png" src="../../media/2523IFSNO241.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode récepteur 2,4G <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode sans fil <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p>Scannez le mode récepteur 2.4G pour passer à la transmission du récepteur 2.4G. Branchez le récepteur/la base sur le port USB avec un câble de données pour transmettre des données via le récepteur.</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Le récepteur est divisé en un petit récepteur et un récepteur de base</p>
+<p>Les récepteurs sont divisés en petits récepteurs et récepteurs de base</p>
 </div>
-</section>
-<section id="id2">
-<h2>Correspondance individuelle<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="one-to-one-pairing">
+<h2>Appairage unique<a class="headerlink" href="#one-to-one-pairing" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/24RF23CH02.png"><img alt="../../media/24RF23CH02.png" src="../../media/24RF23CH02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Correspondance individuelle</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Appairage unique</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les situations suivantes sont possibles : débranchez le récepteur, scannez le code d’appairage dessus et le scanner émettra un bip continu. À ce moment-là, réinsérez le récepteur et le bip sonore s’arrête immédiatement, indiquant que l’appairage est réussi.   ①Branchez le récepteur 2,4G sur le port USB, scannez le code et il émettra trois bips, mais aucune donnée ne sera téléchargée.   ② Un nouveau récepteur doit être couplé.</p>
+<p>Il fonctionne dans les situations suivantes : retirer le récepteur, scanner le code d’appairage sur lui, et le scanner fera un son bip continu. À ce moment, réinsérez le récepteur, et le son s’arrêtera immédiatement, indiquant que l’appairage est réussi. Cette opération est nécessaire dans les situations suivantes : 1 Branchez le récepteur 2.4G sur le port USB. Après la numérisation réussie, il sera bip trois fois mais ne téléversera pas de données. 2 Nécessite l’appairage avec un nouveau récepteur.</p>
 </div>
 </section>
-<section id="id4">
-<h2>Vitesse de transmission du clavier du récepteur<a class="footnote-reference brackets" href="#id5" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id13">
+<section id="receiver-keyboard-transmission-speed1">
+<h2>Vitesse de transmission du clavier du destinataire<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#receiver-keyboard-transmission-speed1" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25KB23SP.png"><img alt="../../media/25KB23SP.png" src="../../media/25KB23SP.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Obtenez la vitesse de transmission du clavier du récepteur<a class="footnote-reference brackets" href="#id7" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Obtenir la vitesse de transmission du clavier du récepteur<a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h2>grande vitesse<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="high-speed">
+<h2>Haute Vitesse<a class="headerlink" href="#high-speed" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/24USB23KEY.png"><img alt="../../media/24USB23KEY.png" src="../../media/24USB23KEY.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">grande vitesse</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Haute Vitesse</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h2>moyenne vitesse<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id15">
+<section id="medium-speed">
+<h2>Vitesse moyenne<a class="headerlink" href="#medium-speed" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/24USB23KEY4.png"><img alt="../../media/24USB23KEY4.png" src="../../media/24USB23KEY4.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">moyenne vitesse</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Vitesse moyenne</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h2>Basse vitesse<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id16">
+<section id="low-speed">
+<h2>Faible vitesse<a class="headerlink" href="#low-speed" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24USB23KEY9.png"><img alt="../../media/24USB23KEY9.png" src="../../media/24USB23KEY9.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Basse vitesse</span><a class="headerlink" href="#id16" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Faible vitesse</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id5" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
-<p>Applicable uniquement aux dongles RF avec FWVerL et versions supérieures. Notez que la vitesse du scanner et du récepteur doit correspondre, sinon des erreurs peuvent survenir lors de la transmission de codes-barres longs.</p>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Applicable uniquement à RF Dongle avec les versions FWVerL et supérieures. Notez que la vitesse du scanner et du récepteur doit correspondre, sinon des erreurs peuvent survenir lors de la transmission de codes à barres longs.</p>
 </aside>
-<aside class="footnote brackets" id="id7" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
-<p>Ceci n’est valable qu’en mode sans fil 2.4G et lorsque l’extrémité réceptrice reçoit normalement.</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Il n’est valide que dans le mode 2.4G sans fil et quand la réceptrice reçoit normalement.</p>
 </aside>
 </aside>
 
@@ -502,7 +507,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Mode de fonctionnement</p>
+        <p class="prev-next-title">Mode de travail</p>
       </div>
     </a>
     <a class="right-next"
@@ -530,12 +535,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g">Mode récepteur 2,4G</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correspondance individuelle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Vitesse de transmission du clavier du récepteur</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">grande vitesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">moyenne vitesse</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Basse vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-to-one-pairing">Appairage unique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiver-keyboard-transmission-speed1">Vitesse de transmission du clavier du destinataire</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">Haute Vitesse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">Vitesse moyenne</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">Faible vitesse</a></li>
 </ul>
   </nav></div>
 
