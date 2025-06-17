@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebHID Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .output {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .output p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WebHID Demo</h1>
+  <p>点击下方按钮连接 HID 设备，并与之通讯。</p>
+
+  <button id="connectDeviceButton">连接设备</button>
+  <button id="sendDataButton" disabled>发送数据到设备</button>
+
+  <div class="output" id="output">
+    <p>日志输出：</p>
+  </div>
+
+  <script>
+    let connectedDevice = null;
+
+    const connectDeviceButton = document.getElementById('connectDeviceButton');
+    const sendDataButton = document.getElementById('sendDataButton');
+    const output = document.getElementById('output');
+
+    // Helper function to log messages
+    function logMessage(message, isError = false) {
+      const p = document.createElement('p');
+      p.textContent = message;
+      if (isError) p.classList.add('error');
+      output.appendChild(p);
+      output.scrollTop = output.scrollHeight;
+    }
+
+    // Connect to the HID device
+    connectDeviceButton.addEventListener('click', async () => {
+      try {
+        // Request a device
+        const devices = await navigator.hid.requestDevice({
+          filters: [
+            {
+              // Optionally filter by vendorId and productId
+               vendorId: 0x28E9,
+               productId: 0x03DA
+            }
+          ]
+        });
+
+        if (devices.length === 0) {
+          logMessage('未找到设备');
+          return;
+        }
+
+        connectedDevice = devices[0];
+        await connectedDevice.open();
+
+        logMessage(`已连接设备: ${connectedDevice.productName}`);
+        sendDataButton.disabled = false;
+
+        // Listen for input reports
+        connectedDevice.addEventListener('inputreport', event => {
+          const { data, reportId } = event;
+          logMessage(`收到报告 (Report ID: ${reportId}): ${Array.from(new Uint8Array(data.buffer)).join(', ')}`);
+        });
+        navigator.hid.addEventListener('connect', (event) => 
+        {
+          console.log('设备已连接:', event.device);
+        });
+        // 监听设备断开事件
+        navigator.hid.addEventListener('disconnect', (event) => 
+        {
+          console.log('设备已断开:', event.device);
+        });
+
+
+        
+      } catch (error) {
+        logMessage(`连接设备失败: ${error.message}`, true);
+      }
+    });
+
+    // Send data to the HID device
+    sendDataButton.addEventListener('click', async () => {
+      if (!connectedDevice) {
+        logMessage('未连接任何设备', true);
+        return;
+      }
+
+      try {
+        const reportId = 0xBA; // Replace with your device's Report ID
+        const data = new Uint8Array([0x0a,0xf0,0x07,0x24,0x53,0x57,0x23,0x56,0x45,0x52]); // Replace with the data you want to send
+        await connectedDevice.sendReport(reportId, data);
+        logMessage(`已发送数据到设备: ${Array.from(data).join(', ')}`);
+      } catch (error) {
+        logMessage(`发送数据失败: ${error.message}`, true);
+      }
+    });
+  </script>
+
+</body>
+</html>

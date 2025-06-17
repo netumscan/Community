@@ -12,7 +12,7 @@
             justify-content: center; /* 水平居中 */
             align-items: center; /* 垂直居中 */
             height: 100vh; /* 使容器占满全屏高度 */
-            margin: 0; /* 去掉默认的边距 */
+            margin: 20px; /* 设置边距 */
             flex-direction: column; /* 垂直排列 */
         }
         .input-group {
@@ -83,7 +83,7 @@
             var text6 = $("#inputText6").val();
 
             $("#qrcode").empty(); // 清空旧的二维码
-            if (!text1 || !text3 || !text4 || !text5 || !text6) {
+            if (!text1 || !text3 || !text6) {
                 return; // 不生成二维码
             }
             var cmd = "AT+URL=2,"+text3+","+text4+","+text5+","+text6+";AT+RAP="+text1;

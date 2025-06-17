@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Chars Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black; /* Changed to black */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        th:hover {
+            background-color: #45a049;
+        }
+        .hex {
+            background-color: #FFFF00; /* Yellow background for HEX column */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>ASCII Chars Table</h2>
+<table>
+    <thead>
+        <tr>
+            <th>HEX</th>
+            <th>ASCII</th>
+            <th>HEX</th>
+            <th>ASCII</th>
+            <th>HEX</th>
+            <th>ASCII</th>
+            <th>HEX</th>
+            <th>Fun Key</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td class="hex">20H</td><td>Space</td><td class="hex">40H</td><td>@</td><td class="hex">60H</td><td>`</td><td class="hex">80H</td><td>F1</td></tr>
+        <tr><td class="hex">21H</td><td>!</td><td class="hex">41H</td><td>A</td><td class="hex">61H</td><td>a</td><td class="hex">81H</td><td>F2</td></tr>
+        <tr><td class="hex">22H</td><td>"</td><td class="hex">42H</td><td>B</td><td class="hex">62H</td><td>b</td><td class="hex">82H</td><td>F3</td></tr>
+        <tr><td class="hex">23H</td><td>#</td><td class="hex">43H</td><td>C</td><td class="hex">63H</td><td>c</td><td class="hex">83H</td><td>F4</td></tr>
+        <tr><td class="hex">24H</td><td>$</td><td class="hex">44H</td><td>D</td><td class="hex">64H</td><td>d</td><td class="hex">84H</td><td>F5</td></tr>
+        <tr><td class="hex">25H</td><td>%</td><td class="hex">45H</td><td>E</td><td class="hex">65H</td><td>e</td><td class="hex">85H</td><td>F6</td></tr>
+        <tr><td class="hex">26H</td><td>&</td><td class="hex">46H</td><td>F</td><td class="hex">66H</td><td>f</td><td class="hex">86H</td><td>F7</td></tr>
+        <tr><td class="hex">27H</td><td>'</td><td class="hex">47H</td><td>G</td><td class="hex">67H</td><td>g</td><td class="hex">87H</td><td>F8</td></tr>
+        <tr><td class="hex">28H</td><td>(</td><td class="hex">48H</td><td>H</td><td class="hex">68H</td><td>h</td><td class="hex">88H</td><td>F9</td></tr>
+        <tr><td class="hex">29H</td><td>)</td><td class="hex">49H</td><td>I</td><td class="hex">69H</td><td>i</td><td class="hex">89H</td><td>F10</td></tr>
+        <tr><td class="hex">2AH</td><td>*</td><td class="hex">4AH</td><td>J</td><td class="hex">6AH</td><td>j</td><td class="hex">8AH</td><td>F11</td></tr>
+        <tr><td class="hex">2BH</td><td>+</td><td class="hex">4BH</td><td>K</td><td class="hex">6BH</td><td>k</td><td class="hex">8BH</td><td>F12</td></tr>
+        <tr><td class="hex">2CH</td><td>,</td><td class="hex">4CH</td><td>L</td><td class="hex">6CH</td><td>l</td><td class="hex">8CH</td><td>Insert</td></tr>
+        <tr><td class="hex">2DH</td><td>-</td><td class="hex">4DH</td><td>M</td><td class="hex">6DH</td><td>m</td><td class="hex">8DH</td><td>Home</td></tr>
+        <tr><td class="hex">2EH</td><td>.</td><td class="hex">4EH</td><td>N</td><td class="hex">6EH</td><td>n</td><td class="hex">8EH</td><td>Page Up</td></tr>
+        <tr><td class="hex">2FH</td><td>/</td><td class="hex">4FH</td><td>O</td><td class="hex">6FH</td><td>o</td><td class="hex">8FH</td><td>Delete</td></tr>
+        <tr><td class="hex">30H</td><td>0</td><td class="hex">50H</td><td>P</td><td class="hex">70H</td><td>p</td><td class="hex">90H</td><td>End</td></tr>
+        <tr><td class="hex">31H</td><td>1</td><td class="hex">51H</td><td>Q</td><td class="hex">71H</td><td>q</td><td class="hex">91H</td><td>Page Down</td></tr>
+        <tr><td class="hex">32H</td><td>2</td><td class="hex">52H</td><td>R</td><td class="hex">72H</td><td>r</td><td class="hex">92H</td><td>Right Arrow</td></tr>
+        <tr><td class="hex">33H</td><td>3</td><td class="hex">53H</td><td>S</td><td class="hex">73H</td><td>s</td><td class="hex">93H</td><td>Left Arrow</td></tr>
+        <tr><td class="hex">34H</td><td>4</td><td class="hex">54H</td><td>T</td><td class="hex">74H</td><td>t</td><td class="hex">94H</td><td>Down Arrow</td></tr>
+        <tr><td class="hex">35H</td><td>5</td><td class="hex">55H</td><td>U</td><td class="hex">75H</td><td>u</td><td class="hex">95H</td><td>Up Arrow</td></tr>
+        <tr><td class="hex">36H</td><td>6</td><td class="hex">56H</td><td>V</td><td class="hex">76H</td><td>v</td><td class="hex">96H</td><td>Print Screen</td></tr>
+        <tr><td class="hex">37H</td><td>7</td><td class="hex">57H</td><td>W</td><td class="hex">77H</td><td>w</td><td class="hex">97H</td><td>*Ctrl</td></tr>
+        <tr><td class="hex">38H</td><td>8</td><td class="hex">58H</td><td>X</td><td class="hex">78H</td><td>x</td><td class="hex">98H</td><td>*Shift</td></tr>
+        <tr><td class="hex">39H</td><td>9</td><td class="hex">59H</td><td>Y</td><td class="hex">79H</td><td>y</td><td class="hex">99H</td><td>*Left Alt</td></tr>
+        <tr><td class="hex">3AH</td><td>:</td><td class="hex">5AH</td><td>Z</td><td class="hex">7AH</td><td>z</td><td class="hex">9AH</td><td>*Right Alt</td></tr>
+        <tr><td class="hex">3BH</td><td>;</td><td class="hex">5BH</td><td>[</td><td class="hex">7BH</td><td>{</td><td class="hex">9BH</td><td>1s Delay</td></tr>
+        <tr><td class="hex">3CH</td><td>&lt;</td><td class="hex">5CH</td><td>\</td><td class="hex">7CH</td><td>|</td><td class="hex">9CH</td><td>*Win-GUI</td></tr>
+        <tr><td class="hex">3DH</td><td>=</td><td class="hex">5DH</td><td>]</td><td class="hex">7DH</td><td>}</td><td></td><td></td></tr>
+        <tr><td class="hex">3EH</td><td>&gt;</td><td class="hex">5EH</td><td>^</td><td class="hex">7EH</td><td>~</td><td></td><td></td></tr>
+        <tr><td class="hex">3FH</td><td>?</td><td class="hex">5FH</td><td>_</td><td class="hex">7FH</td><td>DEL</td><td></td><td></td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>

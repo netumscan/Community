@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>データ編集 &#8212; F18W Scanner User Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ca8ee3f5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=24c535b1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=4755f45a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\process.21282c6a-7ea8-4667-902f-650dd21ebcec.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="Symbologies" href="barcode.html" />
+    <link rel="prev" title="キーボードの設定" href="keyboard.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/F18W.png" class="logo__image only-light" alt="F18W Scanner User Manual - Home"/>
+    <script>document.write(`<img src="_static/F18W.png" class="logo__image only-dark" alt="F18W Scanner User Manual - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../en" title="English" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/us.png" class="icon-link-image" alt="English"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../de" title="German" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/de.png" class="icon-link-image" alt="German"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../fr" title="French" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/fr.png" class="icon-link-image" alt="French"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../it" title="Italian" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/it.png" class="icon-link-image" alt="Italian"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../es" title="Spanish" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/es.png" class="icon-link-image" alt="Spanish"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/ja.png" class="icon-link-image" alt="Japanese"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">検索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">データ編集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">文字</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="このページをダウンロード">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/process.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="ソースファイルをダウンロード"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="PDFに印刷"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>データ編集</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目次 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-format">出力形式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-output-format">デフォルトの出力フォーマット</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-suffix-output">サフィックス出力を有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-prefix-output">プレフィックス出力を有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-start-char">バーコード開始文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-middle-char">バーコード中の文字を非表示にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-end-char">バーコード終了文字を非表示にする</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prefix">プレフィックス</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-prefix">プレフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-prefix">すべてのプレフィックスをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation-steps">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suffix">Suffix</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-suffix">サフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-suffix">すべてのサフィックスをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-set">セットを非表示</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-chars">バーコード開始文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-char-start">バーコード中継開始を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-chars">バーコード中の文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-chars">バーコード終了文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-setup">クイックセットアップ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">プレフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">サフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-content">バーコード開始の内容を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-content">中間バーコードを隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-content">バーコード終了コンテンツを隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-barcode-content">バーコードの内容を置き換え</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">付録</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric-bar-codes">数字バーコード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-function-key-table">ASCII関数キーテーブル</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-chars-table">ASCII文字表</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="data-editing">
+<h1>データ編集<a class="headerlink" href="#data-editing" title="Link to this heading">#</a></h1>
+<section id="output-format">
+<h2>出力形式<a class="headerlink" href="#output-format" title="Link to this heading">#</a></h2>
+<p>スキャンデータ送信フォーマットを変更するには、目的のフォーマットに対応する8つのバーコードのいずれかをスキャンします。</p>
+<section id="default-output-format">
+<h3>デフォルトの出力フォーマット<a class="headerlink" href="#default-output-format" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="default-output-format-figure">
+<a class="reference internal image-reference" href="../../media/24DATA230.png"><img alt="../../media/24DATA230.png" src="../../media/24DATA230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> デフォルトの出力フォーマット</span><a class="headerlink" href="#default-output-format-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-suffix-output">
+<h3>サフィックス出力を有効にする<a class="headerlink" href="#enable-suffix-output" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-suffix-output-figure">
+<a class="reference internal image-reference" href="../../media/24DATA231.png"><img alt="../../media/24DATA231.png" src="../../media/24DATA231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">サフィックス出力を有効にする</span><a class="headerlink" href="#enable-suffix-output-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-prefix-output">
+<h3>プレフィックス出力を有効にする<a class="headerlink" href="#enable-prefix-output" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-prefix-output-figure">
+<a class="reference internal image-reference" href="../../media/24DATA232.png"><img alt="../../media/24DATA232.png" src="../../media/24DATA232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">プレフィックス出力を有効にする</span><a class="headerlink" href="#enable-prefix-output-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-start-char">
+<h3>バーコード開始文字を隠す<a class="headerlink" href="#enable-hide-barcode-start-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-start-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA235.png"><img alt="../../media/24DATA235.png" src="../../media/24DATA235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード開始文字を隠す</span><a class="headerlink" href="#enable-hide-barcode-start-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-middle-char">
+<h3>バーコード中の文字を非表示にする<a class="headerlink" href="#enable-hide-barcode-middle-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-middle-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA234.png"><img alt="../../media/24DATA234.png" src="../../media/24DATA234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード中の文字を非表示にする</span><a class="headerlink" href="#enable-hide-barcode-middle-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-end-char">
+<h3>バーコード終了文字を非表示にする<a class="headerlink" href="#enable-hide-barcode-end-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-end-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA233.png"><img alt="../../media/24DATA233.png" src="../../media/24DATA233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード終了文字を非表示にする</span><a class="headerlink" href="#enable-hide-barcode-end-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="prefix">
+<h2>プレフィックス<a class="headerlink" href="#prefix" title="Link to this heading">#</a></h2>
+<section id="add-prefix">
+<h3>プレフィックスを追加<a class="headerlink" href="#add-prefix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="add-prefix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN232.png"><img alt="../../media/24SCAN232.png" src="../../media/24SCAN232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">プレフィックスを追加</span><a class="headerlink" href="#add-prefix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="clear-all-prefix">
+<h3>すべてのプレフィックスをクリア<a class="headerlink" href="#clear-all-prefix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="clear-all-prefix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN234.png"><img alt="../../media/24SCAN234.png" src="../../media/24SCAN234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">すべてのプレフィックスをクリア</span><a class="headerlink" href="#clear-all-prefix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="operation-steps">
+<h3>操作手順<a class="headerlink" href="#operation-steps" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>ステップ 1. プレフィックス出力が有効になっていない場合は、<a class="reference internal" href="#enable-prefix-output-figure">出力形式</a>を設定することで有効にできます。</p></li>
+<li><p>ステップ2. プレフィックスを前に設定した場合、新しいプレフィックスは以前に追加したプレフィックスの後になります。 以前のコンテンツを破棄してもう一度設定したい場合。 先に &quot;<a class="reference internal" href="#clear-all-prefix-figure">Clear Prefix</a>&quot; をスキャンしてから、次の追加アクションを実行してください。</p></li>
+<li><p>ステップ 3. スキャン to <a class="reference internal" href="#add-prefix-figure">add prefix</a></p></li>
+<li><p>設定 4. 追加するプレフィックスの2桁の16進数の値を指定します。<a class="reference internal" href="#ascii-chars-table">ASCII Chars Table</a> を参照してください。</p></li>
+<li><p>setp 5. <a class="reference internal" href="#numeric-bar-codes">digital setting code</a>: 16進数の高い値をスキャンし、低い値をスキャンします。</p></li>
+<li><p>setp 6. ステップ4と5を繰り返し、次の文字を追加します。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<ul class="simple">
+<li><p>例えば、「Ctrl+A」をプレフィックスとして追加したい場合は、「<a class="reference internal" href="#add-prefix-figure">プレフィックスを追加</a>」、「<a class="reference internal" href="#numeric-bar-codes-9">9</a>」、「<a class="reference internal" href="#numeric-bar-codes-7">7</a>」、「<a class="reference internal" href="#numeric-bar-codes-4">4</a>」、「<a class="reference internal" href="#numeric-bar-codes-1">1</a>」をスキャンします。</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="suffix">
+<h2>Suffix<a class="headerlink" href="#suffix" title="Link to this heading">#</a></h2>
+<section id="add-suffix">
+<h3>サフィックスを追加<a class="headerlink" href="#add-suffix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="add-suffix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN231.png"><img alt="../../media/24SCAN231.png" src="../../media/24SCAN231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">サフィックスを追加</span><a class="headerlink" href="#add-suffix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="clear-all-suffix">
+<h3>すべてのサフィックスをクリア<a class="headerlink" href="#clear-all-suffix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="clear-all-suffix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN233.png"><img alt="../../media/24SCAN233.png" src="../../media/24SCAN233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">すべてのサフィックスをクリア</span><a class="headerlink" href="#clear-all-suffix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h3>操作手順<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>ステップ1. サフィックス出力が有効になっていない場合は、<a class="reference internal" href="#enable-suffix-output-figure">出力形式</a>を設定して有効にできます。</p></li>
+<li><p>ステップ2. サフィックスを前に設定した場合、新しいサフィックスは以前に追加したサフィックスの後に配置されます。 以前のコンテンツを破棄して再度設定する必要がある場合。 先に &quot;<a class="reference internal" href="#clear-all-suffix-figure">Clear suffix</a>&quot; をスキャンしてから、次の追加操作を行ってください。</p></li>
+<li><p>Step 3. Scan to <a class="reference internal" href="#add-suffix-figure">add suffix</a>;</p></li>
+<li><p>設定 4. 追加するサフィックス文字の 2 桁の 16 進数の値を指定します。<a class="reference internal" href="#ascii-chars-table">ASCII 文字テーブル</a> を参照してください。</p></li>
+<li><p>setp 5. <a class="reference internal" href="#numeric-bar-codes">digital setting code</a>: 16進数の高い値をスキャンし、低い値をスキャンします。</p></li>
+<li><p>setp 6. ステップ4と5を繰り返し、次の文字を追加します。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<ul class="simple">
+<li><p>例えば、&quot;Ctrl+Alt+A&quot;をサフィックスとして追加したい場合は、「<a class="reference internal" href="#add-suffix-figure">add suffix</a>', '<a class="reference internal" href="#numeric-bar-codes-9">9</a>', '<a class="reference internal" href="#numeric-bar-codes-7">7</a>', '<a class="reference internal" href="#numeric-bar-codes-9">9</a>', '<a class="reference internal" href="#numeric-bar-codes-9">9</a>', '<a class="reference internal" href="#numeric-bar-codes-4">4</a>', '<a class="reference internal" href="#numeric-bar-codes-1">1</a>'をスキャンします。</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="hide-set">
+<h2>セットを非表示<a class="headerlink" href="#hide-set" title="Link to this heading">#</a></h2>
+<section id="hide-barcode-start-chars">
+<h3>バーコード開始文字を隠す<a class="headerlink" href="#hide-barcode-start-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-start-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN235.png"><img alt="../../media/24SCAN235.png" src="../../media/24SCAN235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード開始文字を隠す</span><a class="headerlink" href="#hide-barcode-start-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-middle-char-start">
+<h3>バーコード中継開始を隠す<a class="headerlink" href="#hide-barcode-middle-char-start" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-middle-char-start-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN236.png"><img alt="../../media/24SCAN236.png" src="../../media/24SCAN236.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード中継開始を隠す</span><a class="headerlink" href="#hide-barcode-middle-char-start-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-middle-chars">
+<h3>バーコード中の文字を隠す<a class="headerlink" href="#hide-barcode-middle-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-middle-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN237.png"><img alt="../../media/24SCAN237.png" src="../../media/24SCAN237.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード中の文字を隠す</span><a class="headerlink" href="#hide-barcode-middle-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-end-chars">
+<h3>バーコード終了文字を隠す<a class="headerlink" href="#hide-barcode-end-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-end-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN238.png"><img alt="../../media/24SCAN238.png" src="../../media/24SCAN238.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">バーコード終了文字を隠す</span><a class="headerlink" href="#hide-barcode-end-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id2">
+<h3>操作手順<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>ステップ 1. 非表示バーコードの <a class="reference internal" href="#hide-barcode-start-chars-figure">開始</a> / <a class="reference internal" href="#hide-barcode-middle-char-start-figure">中間開始</a> / <a class="reference internal" href="#hide-barcode-middle-chars-figure">中間の長さ</a> / <a class="reference internal" href="#hide-barcode-end-chars-figure">終了</a> 文字シンボルをスキャンします。</p></li>
+<li><p>ステップ 2. 入力したい長さの16進数を指定します (4 文字を非表示にします。 <a class="reference internal" href="#numeric-bar-codes-0">0</a>,<a class="reference internal" href="#numeric-bar-codes-4">4</a>; 12文字を非表示にします。 <a class="reference internal" href="#numeric-bar-codes-0">0</a>,<a class="reference internal" href="#numeric-bar-codes-c">C</a>をスキャンします。</p></li>
+<li><p>ステップ3. プログラミングチャートから2桁の16進数の値をスキャンします。</p></li>
+<li><p>ステップ 4. 出力形式 <a class="reference internal" href="#enable-hide-barcode-start-char-figure">Start</a>/<a class="reference internal" href="#enable-hide-barcode-middle-char-figure">Middle</a>/<a class="reference internal" href="#enable-hide-barcode-end-char-figure">End</a> をスキャンして、<a class="reference internal" href="#default-output-format-figure">cancel hide char</a> 機能を有効化または無効化します。</p></li>
+</ul>
+</section>
+</section>
+<section id="quick-setup">
+<h2>クイックセットアップ<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>プレフィックスを追加<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
+<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+</div>
+</section>
+<section id="id4">
+<h3>サフィックスを追加<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
+<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+</div>
+</section>
+<section id="hide-barcode-start-content">
+<h3>バーコード開始の内容を隠す<a class="headerlink" href="#hide-barcode-start-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hidestart.html" style="height:500px; width:100%; border:none;"></iframe></section>
+<section id="hide-barcode-middle-content">
+<h3>中間バーコードを隠す<a class="headerlink" href="#hide-barcode-middle-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hidemiddle.html" style="height:600px; width:100%; border:none;"></iframe></section>
+<section id="hide-barcode-end-content">
+<h3>バーコード終了コンテンツを隠す<a class="headerlink" href="#hide-barcode-end-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe></section>
+<section id="replace-barcode-content">
+<h3>バーコードの内容を置き換え<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe><ul class="simple">
+<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
+</ul>
+<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+</div>
+</section>
+</section>
+<section id="appendix">
+<h2>付録<a class="headerlink" href="#appendix" title="Link to this heading">#</a></h2>
+<section id="numeric-bar-codes">
+<h3>数字バーコード<a class="headerlink" href="#numeric-bar-codes" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="numeric-bar-codes-0">
+<a class="reference internal image-reference" href="../../media/24NO230.png"><img alt="../../media/24NO230.png" src="../../media/24NO230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">0</span><a class="headerlink" href="#numeric-bar-codes-0" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-1">
+<a class="reference internal image-reference" href="../../media/24NO231.png"><img alt="../../media/24NO231.png" src="../../media/24NO231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">1</span><a class="headerlink" href="#numeric-bar-codes-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-2">
+<a class="reference internal image-reference" href="../../media/24NO232.png"><img alt="../../media/24NO232.png" src="../../media/24NO232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">2</span><a class="headerlink" href="#numeric-bar-codes-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-3">
+<a class="reference internal image-reference" href="../../media/24NO233.png"><img alt="../../media/24NO233.png" src="../../media/24NO233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">3</span><a class="headerlink" href="#numeric-bar-codes-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-4">
+<a class="reference internal image-reference" href="../../media/24NO234.png"><img alt="../../media/24NO234.png" src="../../media/24NO234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">4</span><a class="headerlink" href="#numeric-bar-codes-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-5">
+<a class="reference internal image-reference" href="../../media/24NO235.png"><img alt="../../media/24NO235.png" src="../../media/24NO235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">5</span><a class="headerlink" href="#numeric-bar-codes-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-6">
+<a class="reference internal image-reference" href="../../media/24NO236.png"><img alt="../../media/24NO236.png" src="../../media/24NO236.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">6</span><a class="headerlink" href="#numeric-bar-codes-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-7">
+<a class="reference internal image-reference" href="../../media/24NO237.png"><img alt="../../media/24NO237.png" src="../../media/24NO237.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">7</span><a class="headerlink" href="#numeric-bar-codes-7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-8">
+<a class="reference internal image-reference" href="../../media/24NO238.png"><img alt="../../media/24NO238.png" src="../../media/24NO238.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">8</span><a class="headerlink" href="#numeric-bar-codes-8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-9">
+<a class="reference internal image-reference" href="../../media/24NO239.png"><img alt="../../media/24NO239.png" src="../../media/24NO239.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">9</span><a class="headerlink" href="#numeric-bar-codes-9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-a">
+<a class="reference internal image-reference" href="../../media/24NO23A.png"><img alt="../../media/24NO23A.png" src="../../media/24NO23A.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">A</span><a class="headerlink" href="#numeric-bar-codes-a" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-b">
+<a class="reference internal image-reference" href="../../media/24NO23B.png"><img alt="../../media/24NO23B.png" src="../../media/24NO23B.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">B</span><a class="headerlink" href="#numeric-bar-codes-b" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-c">
+<a class="reference internal image-reference" href="../../media/24NO23C.png"><img alt="../../media/24NO23C.png" src="../../media/24NO23C.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">C</span><a class="headerlink" href="#numeric-bar-codes-c" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-d">
+<a class="reference internal image-reference" href="../../media/24NO23D.png"><img alt="../../media/24NO23D.png" src="../../media/24NO23D.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">D</span><a class="headerlink" href="#numeric-bar-codes-d" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-e">
+<a class="reference internal image-reference" href="../../media/24NO23E.png"><img alt="../../media/24NO23E.png" src="../../media/24NO23E.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">E</span><a class="headerlink" href="#numeric-bar-codes-e" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-f">
+<a class="reference internal image-reference" href="../../media/24NO23F.png"><img alt="../../media/24NO23F.png" src="../../media/24NO23F.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">F</span><a class="headerlink" href="#numeric-bar-codes-f" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ascii-function-key-table">
+<h3>ASCII関数キーテーブル<a class="headerlink" href="#ascii-function-key-table" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-asciikeys.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="ascii-chars-table">
+<h3>ASCII文字表<a class="headerlink" href="#ascii-chars-table" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-asciichars.html" style="height:800px; width:100%; border:none;"></iframe></section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="keyboard.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">キーボードの設定</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="barcode.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">Symbologies</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目次
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-format">出力形式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-output-format">デフォルトの出力フォーマット</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-suffix-output">サフィックス出力を有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-prefix-output">プレフィックス出力を有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-start-char">バーコード開始文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-middle-char">バーコード中の文字を非表示にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-end-char">バーコード終了文字を非表示にする</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prefix">プレフィックス</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-prefix">プレフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-prefix">すべてのプレフィックスをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation-steps">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suffix">Suffix</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-suffix">サフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-suffix">すべてのサフィックスをクリア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-set">セットを非表示</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-chars">バーコード開始文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-char-start">バーコード中継開始を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-chars">バーコード中の文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-chars">バーコード終了文字を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">操作手順</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-setup">クイックセットアップ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">プレフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">サフィックスを追加</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-content">バーコード開始の内容を隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-content">中間バーコードを隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-content">バーコード終了コンテンツを隠す</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-barcode-content">バーコードの内容を置き換え</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">付録</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric-bar-codes">数字バーコード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-function-key-table">ASCII関数キーテーブル</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-chars-table">ASCII文字表</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+著者 NETUM
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, NETUM.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
