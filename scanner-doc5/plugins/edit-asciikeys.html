@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Function Key Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black; /* Changed to black */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50; /* Dark green */
+            color: white; /* White text */
+            text-align: center; /* Centered text */
+        }
+        th:hover {
+            background-color: #45a049; /* Lighter green on hover */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>ASCII Function Key Table</h2>
+<table>
+    <thead>
+        <tr>
+            <th>HEX</th>
+            <th>CODE</th>
+            <th>Ctrl OFF Config1</th>
+            <th>Ctrl OFF Config2</th>
+            <th>Ctrl ON Keyboard Windows</th>
+            <th>ALT-Keyboard Windows</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>00H</td><td>NUL</td><td>NUL</td><td>NUL</td><td>Ctrl+@</td><td>ALT+000</td></tr>
+        <tr><td>01H</td><td>SOH</td><td>NUL</td><td>NUL</td><td>Ctrl+A</td><td>ALT+001</td></tr>
+        <tr><td>02H</td><td>STX</td><td>NUL</td><td>NUL</td><td>Ctrl+B</td><td>ALT+002</td></tr>
+        <tr><td>03H</td><td>ETX</td><td>NUL</td><td>NUL</td><td>Ctrl+C</td><td>ALT+003</td></tr>
+        <tr><td>04H</td><td>EOT</td><td>NUL</td><td>NUL</td><td>Ctrl+D</td><td>ALT+004</td></tr>
+        <tr><td>05H</td><td>ENQ</td><td>NUL</td><td>NUL</td><td>Ctrl+E</td><td>ALT+005</td></tr>
+        <tr><td>06H</td><td>ACK</td><td>NUL</td><td>NUL</td><td>Ctrl+F</td><td>ALT+006</td></tr>
+        <tr><td>07H</td><td>BEL</td><td>NUL</td><td>NUL</td><td>Ctrl+G</td><td>ALT+007</td></tr>
+        <tr><td>08H</td><td>BS</td><td>Backspace</td><td>Backspace</td><td>Ctrl+H</td><td>ALT+008</td></tr>
+        <tr><td>09H</td><td>HT</td><td>TAB</td><td>TAB</td><td>TAB</td><td>ALT+009</td></tr>
+        <tr><td>0AH</td><td>LF</td><td>NUL</td><td>Enter</td><td>Ctrl+J</td><td>ALT+010</td></tr>
+        <tr><td>0BH</td><td>VT</td><td>TAB</td><td>TAB</td><td>Ctrl+K</td><td>ALT+011</td></tr>
+        <tr><td>0CH</td><td>FF</td><td>NUL</td><td>NUL</td><td>Ctrl+L</td><td>ALT+012</td></tr>
+        <tr><td>0DH</td><td>CR</td><td>Enter</td><td>Enter</td><td>Enter</td><td>Enter</td></tr>
+        <tr><td>0EH</td><td>SO</td><td>NUL</td><td>NUL</td><td>Ctrl+N</td><td>ALT+014</td></tr>
+        <tr><td>0FH</td><td>SI</td><td>NUL</td><td>NUL</td><td>Ctrl+O</td><td>ALT+015</td></tr>
+        <tr><td>10H</td><td>DLE</td><td>NUL</td><td>NUL</td><td>Ctrl+P</td><td>ALT+016</td></tr>
+        <tr><td>11H</td><td>DC1</td><td>NUL</td><td>NUL</td><td>Ctrl+Q</td><td>ALT+017</td></tr>
+        <tr><td>12H</td><td>DC2</td><td>NUL</td><td>NUL</td><td>Ctrl+R</td><td>ALT+018</td></tr>
+        <tr><td>13H</td><td>DC3</td><td>NUL</td><td>NUL</td><td>Ctrl+S</td><td>ALT+019</td></tr>
+        <tr><td>14H</td><td>DC4</td><td>NUL</td><td>NUL</td><td>Ctrl+T</td><td>ALT+020</td></tr>
+        <tr><td>15H</td><td>NAK</td><td>NUL</td><td>NUL</td><td>Ctrl+U</td><td>ALT+021</td></tr>
+        <tr><td>16H</td><td>SYN</td><td>NUL</td><td>NUL</td><td>Ctrl+V</td><td>ALT+022</td></tr>
+        <tr><td>17H</td><td>ETB</td><td>NUL</td><td>NUL</td><td>Ctrl+W</td><td>ALT+023</td></tr>
+        <tr><td>18H</td><td>CAN</td><td>NUL</td><td>NUL</td><td>Ctrl+X</td><td>ALT+024</td></tr>
+        <tr><td>19H</td><td>EM</td><td>NUL</td><td>NUL</td><td>Ctrl+Y</td><td>ALT+025</td></tr>
+        <tr><td>1AH</td><td>SUB</td><td>NUL</td><td>NUL</td><td>Ctrl+Z</td><td>ALT+026</td></tr>
+        <tr><td>1BH</td><td>ESC</td><td>ESC</td><td>ESC</td><td>Ctrl+[</td><td>ALT+027</td></tr>
+        <tr><td>1CH</td><td>FS</td><td>NUL</td><td>NUL</td><td>Ctrl+\</td><td>ALT+028</td></tr>
+        <tr><td>1DH</td><td>GS</td><td>NUL</td><td>NUL</td><td>Ctrl+]</td><td>ALT+029</td></tr>
+        <tr><td>1EH</td><td>RS</td><td>NUL</td><td>NUL</td><td>Ctrl+^</td><td>ALT+030</td></tr>
+        <tr><td>1FH</td><td>US</td><td>NUL</td><td>NUL</td><td>Ctrl+-</td><td>ALT+031</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>

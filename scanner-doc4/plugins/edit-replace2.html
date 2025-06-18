@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Character(HEX)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 使容器占满全屏高度 */
+            margin: 20px; /* 设置边距 */
+            flex-direction: column; /* 垂直排列 */
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column; /* 垂直排列标签和输入框 */
+            align-items: flex-start; /* 左对齐 */
+            margin-bottom: 20px; /* 输入框间距 */
+        }
+        #qrcode {
+            margin: 20px;
+            padding: 0px; /* 添加白边 */
+            background-color: white; /* 白边背景 */
+            display: inline-block; /* 使容器适应内容大小 */
+            border-radius: 10px; /* 可选：使边角圆润 */
+        }
+        input {
+            padding: 10px;
+            width: 300px;
+            margin-top: 5px; /* 标签与输入框之间的间距 */
+        }
+        label {
+            max-width: 300px; /* 设置标签最大宽度 */
+            word-wrap: break-word; /* 自动换行 */
+            margin-bottom: 5px; /* 标签与输入框之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <label for="inputText1">Old Content</label>
+        <input type="text" id="inputText1" placeholder="Enter hex (0-9, a-f, A-F)" value="1D">
+        <label for="inputText2">New Content</label>
+        <input type="text" id="inputText2" placeholder="Enter hex (0-9, a-f, A-F)" value="4D">
+    </div>
+    
+    <div id="qrcode"></div>
+    
+    <script>
+        function generateCodes() {
+            var text1 = $("#inputText1").val();
+            var text2 = $("#inputText2").val();
+
+            $("#qrcode").empty(); // 清空旧的二维码
+            if (!text1 || !text2) {
+                return; // 不生成二维码
+            }
+            if(text1 == text2){
+                return; // 不生成二维码
+            }
+			const quantity1=Math.round(text1.length/2);
+			const quantity2=Math.round(text2.length/2);            
+            if(quantity1+quantity2>6)
+            {
+                return;
+            }
+			const length1 = quantity1.toString(16).padStart(2, '0');
+			const length2 = quantity2.toString(16).padStart(2, '0');
+            let content1="";
+            for (let i = 0; i < Math.round(text1.length/2); i++) {
+                const start=i*2;
+                let end=i*2+2;
+                if(end>text1.length)
+                {
+                    end=text1.length
+                }
+                content1=content1+"\\x"+text1.slice(start,end).padStart(2, '0');
+            }
+            let content2="";
+            for (let i = 0; i < Math.round(text2.length/2); i++) {
+                const start=i*2;
+                let end=i*2+2;
+                if(end>text2.length)
+                {
+                    end=text2.length
+                }
+                content2=content2+"\\x"+text2.slice(start,end).padStart(2, '0');
+            }
+            var cmd = "$DATA#70" +length1+content1+length2+content2+"#";
+            // 生成二维码
+            $("#qrcode").qrcode({
+                text: cmd,
+                width: 256,
+                height: 256
+            });
+        }
+
+        $(document).ready(function() {
+            // 默认生成
+            generateCodes();
+
+            // 监听输入框的变化
+            $("input").on("input", function() {
+                // 移除非16进制字符
+                generateCodes();
+            });
+            const hexInput1 = document.getElementById('inputText1');
+            hexInput1.addEventListener('input', (event) => {
+                // 移除非16进制字符
+                hexInput1.value = hexInput1.value.replace(/[^0-9a-fA-F]/g, '');
+            });
+            const hexInput2 = document.getElementById('inputText2');
+            hexInput2.addEventListener('input', (event) => {
+                // 移除非16进制字符
+                hexInput2.value = hexInput2.value.replace(/[^0-9a-fA-F]/g, '');
+            });
+
+        });
+    </script>
+</body>
+</html>
