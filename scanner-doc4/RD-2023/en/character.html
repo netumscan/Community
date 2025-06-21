@@ -17,7 +17,7 @@
         gtag('config', 'G-K4FLCEP0X8');
     </script>
     
-    <title>End Character Settings &#8212; RD-2023 Scanner User Manual</title>
+    <title>Terminator &#8212; RD-2023 Scanner User Manual</title>
   
   
   
@@ -55,7 +55,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\character.0bd56f41-44b7-4b0b-af5d-83cecece912c.js"></script>
+    <script defer="defer" src="_static/tippy\character.594d7b2f-a78a-448f-8a9b-4ed5f128d4df.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -253,12 +253,13 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Wired Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Wireless Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Data Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">End Character Settings</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -399,7 +400,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>End Character Settings</h1>
+    <h1>Terminator</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -410,11 +411,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Start Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">New Line(LF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End Character Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">New Line(LF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">End Setup</a></li>
 </ul>
             </nav>
@@ -427,9 +431,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>End Character Settings<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
-<p>The end character is added after the decoded data in the format of decoded data + end character.</p>
+  <section id="terminator">
+<h1>Terminator<a class="headerlink" href="#terminator" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>Start Setup<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
@@ -444,8 +447,11 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+<section id="end-character-settings">
+<h2>End Character Settings<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
+<p>The end character is added after the decoded data in the format of decoded data + end character.</p>
 <section id="no-end-character">
-<h2>No End Character<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>No End Character<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/40CANCEL_STOPTEXT.png"><img alt="../../media/40CANCEL_STOPTEXT.png" src="../../media/40CANCEL_STOPTEXT.png" style="width: 300px;" />
 </a>
@@ -455,7 +461,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/40ADDENTER.png"><img alt="../../media/40ADDENTER.png" src="../../media/40ADDENTER.png" style="width: 300px;" />
 </a>
@@ -465,7 +471,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/40ADD_ENTER_NEWLINE.png"><img alt="../../media/40ADD_ENTER_NEWLINE.png" src="../../media/40ADD_ENTER_NEWLINE.png" style="width: 300px;" />
 </a>
@@ -475,7 +481,7 @@ document.write(`
 </figure>
 </section>
 <section id="new-line-lf">
-<h2>New Line(LF)<a class="headerlink" href="#new-line-lf" title="Link to this heading">#</a></h2>
+<h3>New Line(LF)<a class="headerlink" href="#new-line-lf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/40ADD_NEWLINE.png"><img alt="../../media/40ADD_NEWLINE.png" src="../../media/40ADD_NEWLINE.png" style="width: 300px;" />
 </a>
@@ -485,7 +491,7 @@ document.write(`
 </figure>
 </section>
 <section id="tab-tab">
-<h2>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h2>
+<h3>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/40ADD_TAB1.png"><img alt="../../media/40ADD_TAB1.png" src="../../media/40ADD_TAB1.png" style="width: 300px;" />
 </a>
@@ -493,6 +499,7 @@ document.write(`
 <p><span class="caption-text">Tab(TAB)</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 <section id="end-setup">
 <h2>End Setup<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
@@ -556,11 +563,14 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Start Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">New Line(LF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End Character Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">New Line(LF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">End Setup</a></li>
 </ul>
   </nav></div>

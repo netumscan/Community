@@ -6,14 +6,6 @@
 
 Bluetooth Mode
 ```
-```{warning}
-C Pro series scanners do not support scanning this setting code to switch
-```
-
-- Scan the Bluetooth mode, then press the button to start, you can switch to Bluetooth transmission, turn on Bluetooth to search for devices for pairing, and after successful pairing, you can transmit data via Bluetooth.
-- Bluetooth name: `barcode scanner` or `NETUM Bluetooth`
-- Switch to Bluetooth mode and the blue indicator light will light up.
-
 
 ```{note}
 The blue light means:<br>①The blue light flashes, indicating that it is not connected.<br>②The blue light is on, indicating it is connected.
@@ -21,6 +13,9 @@ The blue light means:<br>①The blue light flashes, indicating that it is not co
 
 
 ## Bluetooth HID
+- NO software installation needed
+- Connects to most devices
+- Scanner interacts with host device like a keyboard
 
 ```{figure} ../../media/AT2BMODE3D2.png
 :align: center

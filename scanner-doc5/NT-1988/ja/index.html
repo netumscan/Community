@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.868c9480-fa3e-4f0d-a689-a581c4026382.js"></script>
+    <script defer="defer" src="_static/tippy\index.94e8e5f9-9955-4433-a270-baa35dbd374d.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -255,12 +255,13 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">データ編集</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -430,6 +431,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">ストレージモード</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">伝送モード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">有線/ワイヤレス伝送の自動選択</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">USBキーボード速度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">USB HIDマルチキー送信セット</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#one-to-one-pairing">一対一のペア</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#receiver-keyboard-transmission-speed1">受信キーボード送信速度</a></li>
@@ -469,11 +477,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#block-barcodes-with-urls">URL付きバーコードをブロック</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#add-enter-cr">Enterを追加 (CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#cancel-enter-cr">Enterをキャンセル (CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#add-enter-new-line-crlf">Enter+New Lineの追加 (CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#cancel-enter-new-line-crlf">Enter+New Line(CRLF)をキャンセル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">終了文字設定</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a><ul>
@@ -495,9 +500,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<ul class="simple">
-<li><p>アスタリスク ( * ) はデフォルト値を示します。</p></li>
-</ul>
+<p>バーコードスキャナは、最も一般的な端末および通信設定用に出荷時にプログラムされています。 これらの設定を変更する必要がある場合は、このガイドのバーコードをスキャンしてプログラミングを行います。 オプションの横にあるアスタリスク (*) はデフォルトの設定を示します。</p>
 </div>
 </section>
 

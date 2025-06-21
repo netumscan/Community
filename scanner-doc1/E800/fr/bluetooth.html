@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=e6b791cb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\bluetooth.075b7e5d-91e0-4ad4-a504-0d7f40f70275.js"></script>
+    <script defer="defer" src="_static/tippy\bluetooth.90dd6db6-fae4-4b2a-9960-33709be34adf.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -255,12 +255,13 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timeclock.html">Horloge en temps réel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Mode filaire</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Mode sans fil</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Édition de données</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Caractère</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
@@ -443,21 +444,17 @@ document.write(`
 <p><span class="caption-text">Mode Bluetooth</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<div class="admonition warning">
-<p class="admonition-title">Avertissement</p>
-<p>Les scanners de la série C Pro ne prennent pas en charge la numérisation de ce code de réglage pour basculer</p>
-</div>
-<ul class="simple">
-<li><p>Scannez le mode Bluetooth, puis appuyez sur le bouton pour démarrer, vous pouvez passer à la transmission Bluetooth, activez le Bluetooth pour rechercher des périphériques d’appairage, et après l’appairage réussi, vous pouvez transmettre des données via Bluetooth.</p></li>
-<li><p>Nom du Bluetooth: <code class="docutils literal notranslate"><span class="pre">barcode</span> <span class="pre">scanner</span></code> ou <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
-<li><p>Basculer en mode Bluetooth et le voyant bleu s’allume.</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>La lumière bleue signifie :<br>1La lumière bleue clignote, indiquant qu’elle n’est pas connectée.<br>2La lumière bleue est allumée, indiquant qu’elle est connectée.</p>
 </div>
 <section id="bluetooth-hid">
 <h2>HID Bluetooth<a class="headerlink" href="#bluetooth-hid" title="Lien vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li><p>Aucune installation de logiciel requise</p></li>
+<li><p>Se connecte à la plupart des appareils</p></li>
+<li><p>Le scanner interagit avec le périphérique hôte comme un clavier</p></li>
+</ul>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D2.png"><img alt="../../media/AT2BMODE3D2.png" src="../../media/AT2BMODE3D2.png" style="width: 300px;" />
 </a>

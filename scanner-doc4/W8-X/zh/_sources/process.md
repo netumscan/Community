@@ -172,30 +172,30 @@ Hide Barcode End Chars
 ## Quick Setup
 
 ### Add Prefix
-- For normal text, please use the following tools to quickly set
+
 ```{raw} html
 <iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe>
 ```
-- For special character text, please use the following tools to quickly set
-```{raw} html
-<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe>
-```
+
 ```{tip}
-Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters
+- Special characters need to be processed in hexadecimal format, and `\x` is added in front of the hexadecimal content to indicate the hexadecimal format.
+- Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters.
+- Example: To add a 0x03 to the content, the input content should be: \x03
 ```
 
 
 ### Add Suffix
-- For normal text, please use the following tools to quickly set
+
 ```{raw} html
-<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe>
 ```
-- For special character text, please use the following tools to quickly set
-```{raw} html
-<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe>
-```
+
+
+
 ```{tip}
-Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters
+- Special characters need to be processed in hexadecimal format, and `\x` is added in front of the hexadecimal content to indicate the hexadecimal format.
+- Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters.
+- Example: To add a 0x03 to the content, the input content should be: \x03
 ```
 
 ### Hide Barcode Start Content
@@ -217,17 +217,14 @@ Please refer to the [ASCII character table](#ascii-chars-table) for specific cha
 ```
 
 ### Replace Barcode Content
+```{raw} html
+<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe>
+```
 
-- For normal text, please use the following tools to quickly set
-```{raw} html
-<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe>
-```
-- For special character text, please use the following tools to quickly set
-```{raw} html
-<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe>
-```
 ```{tip}
-Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters
+- Special characters need to be processed in hexadecimal format, and `\x` is added in front of the hexadecimal content to indicate the hexadecimal format.
+- Please refer to the [ASCII character table](#ascii-chars-table) for specific characters converted into hexadecimal characters.
+- Example: To add a 0x03 to the content, the input content should be: \x03
 ```
 
 

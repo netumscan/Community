@@ -17,7 +17,7 @@
         gtag('config', 'G-K4FLCEP0X8');
     </script>
     
-    <title>End-Charakter-Einstellungen &#8212; W8-X Scanner User Manual</title>
+    <title>Terminator &#8212; W8-X Scanner User Manual</title>
   
   
   
@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=9bf55d28"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\character.18e46133-99df-4002-91cd-d22f8d3631ce.js"></script>
+    <script defer="defer" src="_static/tippy\character.b4fa562c-fcdd-46be-b3ca-5b9bc62bea99.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
@@ -254,12 +254,13 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Arbeitsmodus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Kabelmodus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Drahtlos-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Datenbearbeitung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologien</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">End-Charakter-Einstellungen</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -400,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>End-Charakter-Einstellungen</h1>
+    <h1>Terminator</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -411,9 +412,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End-Charakter-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
             </nav>
@@ -426,9 +430,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>End-Charakter-Einstellungen<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
-<p>Das End-Zeichen wird nach den dekodierten Daten im Format der dekodierten Daten + End-Zeichen hinzugefügt.</p>
+  <section id="terminator">
+<h1>Terminator<a class="headerlink" href="#terminator" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>Setup starten<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
@@ -443,8 +446,11 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+<section id="end-character-settings">
+<h2>End-Charakter-Einstellungen<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
+<p>Das End-Zeichen wird nach den dekodierten Daten im Format der dekodierten Daten + End-Zeichen hinzugefügt.</p>
 <section id="no-end-character">
-<h2>Kein End-Zeichen<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>Kein End-Zeichen<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
@@ -454,7 +460,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Eingabetaste+neue Zeile (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Eingabetaste+neue Zeile (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
@@ -464,7 +470,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Eingabetaste (CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Eingabetaste (CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
@@ -472,6 +478,7 @@ document.write(`
 <p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 <section id="end-setup">
 <h2>Ende-Einrichtung<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
@@ -535,9 +542,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End-Charakter-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
   </nav></div>

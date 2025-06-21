@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.ad8c0cdc-2bc6-4b7c-81eb-272856567ff9.js"></script>
+    <script defer="defer" src="_static/tippy\index.0c51b94f-cfa7-4d0a-88ae-ad79e148b369.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -256,11 +256,12 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">データ編集</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -438,6 +439,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#low-speed">低速度</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">伝送モード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">有線/ワイヤレス伝送の自動選択</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">USBキーボード速度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">USB HIDマルチキー送信セット</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bluetooth.html#bluetooth-hid">Bluetooth HID</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bluetooth.html#bluetooth-spp">Bluetooth SPP</a></li>
@@ -471,11 +479,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#end-setup">セットアップを終了</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#start-setup">セットアップを開始</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">終了文字なし</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Enter(CR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">終了文字設定</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-setup">セットアップを終了</a></li>
 </ul>
 </li>
@@ -499,9 +505,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<ul class="simple">
-<li><p>アスタリスク ( * ) はデフォルト値を示します。</p></li>
-</ul>
+<p>バーコードスキャナは、最も一般的な端末および通信設定用に出荷時にプログラムされています。 これらの設定を変更する必要がある場合は、このガイドのバーコードをスキャンしてプログラミングを行います。 オプションの横にあるアスタリスク (*) はデフォルトの設定を示します。</p>
 </div>
 </section>
 

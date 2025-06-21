@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=beaddf03"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\process.6c3c9563-bacf-41e6-884f-06f114a1ebf1.js"></script>
+    <script defer="defer" src="_static/tippy\process.b3d6e61b-78ac-40cb-a973-eccfeab48839.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -174,6 +174,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有线模式</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">无线模式</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">蓝牙模式</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
@@ -587,28 +588,24 @@ document.write(`
 <h2>快速设置<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
 <section id="id3">
 <h3>添加前缀<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>对于普通文本，请使用以下工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>对于特殊字符文本，请使用下列工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="id4">
 <h3>添加后缀<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>对于普通文本，请使用以下工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>对于特殊字符文本，请使用下列工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="hide-barcode-start-content">
@@ -622,15 +619,13 @@ document.write(`
 <iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe></section>
 <section id="replace-barcode-content">
 <h3>替换条码内容<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>对于普通文本，请使用以下工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>对于特殊字符文本，请使用下列工具快速设置</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
 </div>
 </section>
 </section>

@@ -5,6 +5,7 @@
 system.md
 working.md
 timeclock.md
+wired.md
 wireless.md
 bluetooth.md
 keyboard.md
@@ -17,5 +18,5 @@ faq.md
 ```
 
 ```{note}
-- asterisks ( * ) indicate default values.
+Barcode scanners are factory programmed for the most common terminal and communications settings. If you need to change these settings, programming is accomplished by scanning the bar codes in this guide. An asterisk (*) next to an option indicates the default setting.
 ```

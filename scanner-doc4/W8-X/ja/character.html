@@ -17,7 +17,7 @@
         gtag('config', 'G-K4FLCEP0X8');
     </script>
     
-    <title>終了文字設定 &#8212; W8-X Scanner User Manual</title>
+    <title>ターミネーター &#8212; W8-X Scanner User Manual</title>
   
   
   
@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\character.1fd9fdab-82fe-488d-aa60-85934950c34b.js"></script>
+    <script defer="defer" src="_static/tippy\character.ba5301f0-3e80-46d9-b0e7-451bcdb4712b.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -254,12 +254,13 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">データ編集</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">終了文字設定</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ターミネーター</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -400,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>終了文字設定</h1>
+    <h1>ターミネーター</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -411,9 +412,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">セットアップを開始</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">終了文字設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">セットアップを終了</a></li>
 </ul>
             </nav>
@@ -426,9 +430,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>終了文字設定<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
-<p>デコードされたデータ+エンド・キャラクターのフォーマットでデコードされたデータの後に、エンド・キャラクターが追加されます。</p>
+  <section id="terminator">
+<h1>ターミネーター<a class="headerlink" href="#terminator" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>セットアップを開始<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
@@ -443,8 +446,11 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+<section id="end-character-settings">
+<h2>終了文字設定<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
+<p>デコードされたデータ+エンド・キャラクターのフォーマットでデコードされたデータの後に、エンド・キャラクターが追加されます。</p>
 <section id="no-end-character">
-<h2>終了文字なし<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>終了文字なし<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
@@ -454,7 +460,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
@@ -464,7 +470,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
@@ -472,6 +478,7 @@ document.write(`
 <p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 <section id="end-setup">
 <h2>セットアップを終了<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
@@ -535,9 +542,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">セットアップを開始</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">終了文字設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">セットアップを終了</a></li>
 </ul>
   </nav></div>

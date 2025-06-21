@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=45930005"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.2a61b5f6-c1f2-4f5f-af35-322102f64fb5.js"></script>
+    <script defer="defer" src="_static/tippy\index.0e3e31af-6a81-4449-86e0-cae5625cb79a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -255,12 +255,13 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modalità Di Lavoro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modalità Cablata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modalità Wireless</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modalità Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Modifica Dati</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Carattere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminatore</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -430,6 +431,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">Modalità Di Archiviazione</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modalità Cablata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Modalità Di Trasmissione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Selezione Automatica Di Trasmissione Wired/Wireless</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">Velocità Tastiera Usb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">Set Di Invio Multi-Chiave Usb Hid</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modalità Wireless</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#one-to-one-pairing">Abbinamento Uno-Unico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#receiver-keyboard-transmission-speed1">Velocità Di Trasmissione Tastiera Ricevitore</a></li>
@@ -484,7 +492,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#plessey-telepen">Plessey/Telepen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Carattere</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminatore</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Impostazioni Dei Caratteri Finali</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Trasmetti Carattere ID Codice</a></li>
 </ul>
@@ -508,9 +516,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>asterischi ( * ) indicano i valori predefiniti.</p></li>
-</ul>
+<p>Gli scanner di codici a barre sono programmati in fabbrica per il terminale e le impostazioni di comunicazione più comuni. Se è necessario modificare queste impostazioni, la programmazione viene eseguita scansionando i codici a barre in questa guida. Un asterisco (*) accanto a un’opzione indica l’impostazione predefinita.</p>
 </div>
 </section>
 

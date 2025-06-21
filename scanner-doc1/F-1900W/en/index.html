@@ -55,7 +55,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.5c80504f-03b9-48fc-b35d-c67c6c9e9356.js"></script>
+    <script defer="defer" src="_static/tippy\index.2f0d23fe-dca9-47c1-bdfe-95abdfc15d17.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -254,11 +254,12 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Wired Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Wireless Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Data Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Character</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -428,6 +429,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">Storage Mode</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Wired Mode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Transmission Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Automatic Selection Of Wired/Wireless Transmission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">USB Keyboard Speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">USB HID Multi-Key Send Set</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Wireless Mode</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#one-to-one-pairing">One-to-One Pairing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#receiver-keyboard-transmission-speed1">Receiver Keyboard Transmission Speed</a></li>
@@ -488,7 +496,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">Digital Barcode</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Character</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">End Character Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Transmit Code ID Character</a></li>
 </ul>
@@ -512,9 +520,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>asterisks ( * ) indicate default values.</p></li>
-</ul>
+<p>Barcode scanners are factory programmed for the most common terminal and communications settings. If you need to change these settings, programming is accomplished by scanning the bar codes in this guide. An asterisk (*) next to an option indicates the default setting.</p>
 </div>
 </section>
 

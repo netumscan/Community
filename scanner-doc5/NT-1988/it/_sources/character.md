@@ -1,8 +1,10 @@
-# End Character Settings
+# Terminator
+
+## End Character Settings
 The end character is added after the decoded data in the format of decoded data + end character.
 
 
-## Add Enter(CR)
+### Add Enter(CR)
 
 ```{figure} ../../media/890000..png
 :align: center
@@ -11,7 +13,7 @@ The end character is added after the decoded data in the format of decoded data 
 Add Enter(CR)
 ```
 
-## Cancel Enter(CR)
+### Cancel Enter(CR)
 
 ```{figure} ../../media/888003..png
 :align: center
@@ -21,7 +23,7 @@ Cancel Enter(CR)
 ```
 
 
-## Add Enter+New Line(CRLF)
+### Add Enter+New Line(CRLF)
 
 ```{figure} ../../media/890001..png
 :align: center
@@ -32,7 +34,7 @@ Add Enter+New Line(CRLF)
 
 
 
-## Cancel Enter+New Line(CRLF)
+### Cancel Enter+New Line(CRLF)
 
 ```{figure} ../../media/888003..png
 :align: center

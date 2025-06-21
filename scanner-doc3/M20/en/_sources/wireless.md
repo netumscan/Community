@@ -8,9 +8,7 @@ This mode uses the 2.4GHz frequency band for data transmission and relies on rad
 
 `*` Wireless Mode
 ```
-```{warning}
-C Pro series scanners do not support scanning this setting code to switch
-```
+
 
 ```{note}
 - Receivers are divided into small receivers and base receivers

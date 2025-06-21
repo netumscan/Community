@@ -1,5 +1,4 @@
-# End Character Settings
-The end character is added after the decoded data in the format of decoded data + end character.
+# Terminator
 
 ## Start Setup
 ```{note}
@@ -12,8 +11,11 @@ Only after scanning [Start Setup](#start-setup) can you scan other function setu
 
 Start Setup
 ```
+## End Character Settings
+The end character is added after the decoded data in the format of decoded data + end character.
 
-## No End Character
+
+### No End Character
 
 ```{figure} ../../media/40CANCEL_STOPTEXT.png
 :align: center
@@ -23,7 +25,7 @@ No End Character
 ```
 
 
-## Enter(CR)
+### Enter(CR)
 
 ```{figure} ../../media/40ADDENTER.png
 :align: center
@@ -33,7 +35,7 @@ No End Character
 ```
 
 
-## Enter+New Line(CRLF)
+### Enter+New Line(CRLF)
 
 ```{figure} ../../media/40ADD_ENTER_NEWLINE.png
 :align: center
@@ -42,7 +44,7 @@ No End Character
 Enter+New Line(CRLF)
 ```
 
-## New Line(LF)
+### New Line(LF)
 
 ```{figure} ../../media/40ADD_NEWLINE.png
 :align: center
@@ -52,7 +54,7 @@ New Line(LF)
 ```
 
 
-## Tab(TAB)
+### Tab(TAB)
 
 ```{figure} ../../media/40ADD_TAB1.png
 :align: center

@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\process.21282c6a-7ea8-4667-902f-650dd21ebcec.js"></script>
+    <script defer="defer" src="_static/tippy\process.b33200c9-a125-42f5-963f-dd92cee93156.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -254,11 +254,12 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">データ編集</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">文字</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -666,28 +667,24 @@ document.write(`
 <h2>クイックセットアップ<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
 <section id="id3">
 <h3>プレフィックスを追加<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+<ul class="simple">
+<li><p>特殊文字は16進数形式で処理する必要があり、16進数形式を示すために <code class="docutils literal notranslate"><span class="pre">\x</span></code> が16進数の前に追加されます。</p></li>
+<li><p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p></li>
+<li><p>例: コンテンツに 0x03 を追加するには、入力コンテンツは次のようにする必要があります: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="id4">
 <h3>サフィックスを追加<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+<ul class="simple">
+<li><p>特殊文字は16進数形式で処理する必要があり、16進数形式を示すために <code class="docutils literal notranslate"><span class="pre">\x</span></code> が16進数の前に追加されます。</p></li>
+<li><p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p></li>
+<li><p>例: コンテンツに 0x03 を追加するには、入力コンテンツは次のようにする必要があります: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="hide-barcode-start-content">
@@ -701,15 +698,13 @@ document.write(`
 <iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe></section>
 <section id="replace-barcode-content">
 <h3>バーコードの内容を置き換え<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>通常のテキストの場合は、以下のツールを使用して迅速に設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>特殊文字テキストの場合は、以下のツールを使用して素早く設定してください</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p>
+<ul class="simple">
+<li><p>特殊文字は16進数形式で処理する必要があり、16進数形式を示すために <code class="docutils literal notranslate"><span class="pre">\x</span></code> が16進数の前に追加されます。</p></li>
+<li><p>16進数文字に変換される特定の文字については、<a class="reference internal" href="#ascii-chars-table">ASCII文字テーブル</a>を参照してください。</p></li>
+<li><p>例: コンテンツに 0x03 を追加するには、入力コンテンツは次のようにする必要があります: \x03</p></li>
+</ul>
 </div>
 </section>
 </section>

@@ -1,4 +1,4 @@
-# Character
+# Terminator
 
 ## End Character Settings
 The end character is added after the decoded data in the format of decoded data + end character.

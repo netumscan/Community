@@ -1,10 +1,10 @@
 # Product Introduction
 
-## Front Display
+## Front view of the product
 ```{figure} ../../media/cs-a.png
 :align: center
 
-Front Display
+Front view of the product
 ```
 ### ① Bluetooth Indicator Light (Blue LED)
 
@@ -28,11 +28,11 @@ Front Display
 ### ④ Trigger Button
 - Made of soft silicone material
 
-## Back Display
+## Rear view of the product
 ```{figure} ../../media/cs-b.png
 :align: center
 
-Back Display
+Rear view of the product
 ```
 
 ### ① Scanning Window

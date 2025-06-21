@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=f85f4cfb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.3ac0d416-68fa-4e05-8ec1-4e23c1080567.js"></script>
+    <script defer="defer" src="_static/tippy\index.3c265eac-53ed-402c-9049-830c57aec742.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -255,11 +255,12 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modo de trabajo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modo de cable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modo inalámbrico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Editando datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Carácter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -429,6 +430,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">Modo de almacenamiento</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modo de cable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Modo de transmisión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Selección automática de transmisión por cable/inalámbrico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">Velocidad del teclado USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">Conjunto de envío de llaves múltiples HID USB</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modo inalámbrico</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#one-to-one-pairing">Emparejamiento One-to-One</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#receiver-keyboard-transmission-speed1">Velocidad de transmisión del Teclado de Receptor </a></li>
@@ -489,7 +497,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">Código de barras digital</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Carácter</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Configuración de End Caracter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Trassmit Código ID Carácter</a></li>
 </ul>
@@ -513,9 +521,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>asterisks ( * ) indican los valores por defecto.</p></li>
-</ul>
+<p>Los escáneres de código de barras están programados por fábrica para los ajustes de terminal y comunicaciones más comunes. Si necesita cambiar estos ajustes, la programación se logra escaneando los códigos de barras de esta guía. Un asterisco (*) junto a una opción indica la configuración por defecto.</p>
 </div>
 </section>
 

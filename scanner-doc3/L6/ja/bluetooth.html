@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\bluetooth.f0328b4b-0484-43fa-94d9-acd6618fc222.js"></script>
+    <script defer="defer" src="_static/tippy\bluetooth.dd74a2c7-56cb-450e-b571-f957ee21ed46.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -254,11 +254,12 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有線モード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">ワイヤレスモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">データ編集</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">文字</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">ターミネーター</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -441,21 +442,17 @@ document.write(`
 <p><span class="caption-text">Bluetooth モード</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="admonition warning">
-<p class="admonition-title">警告</p>
-<p>C Pro シリーズスキャナーは、この設定コードのスキャンをサポートしていません。</p>
-</div>
-<ul class="simple">
-<li><p>Bluetoothモードをスキャンし、ボタンを押して起動し、Bluetooth通信に切り替えることができます。 Bluetoothをオンにしてペアリングのためのデバイスを検索し、ペアリングが成功した後、Bluetooth経由でデータを送信できます。</p></li>
-<li><p>Bluetooth名: <code class="docutils literal notranslate"><span class="pre">バーコードスキャナー</span></code> または <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
-<li><p>Bluetooth モードに切り替えると、青色のインジケータライトが点灯します。</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>青い光は以下のことを意味します:<br>1青色の光は点滅し、接続されていないことを示します。<br>2青色の光は点灯しており、接続されていることを示します。</p>
 </div>
 <section id="bluetooth-hid">
 <h2>Bluetooth HID<a class="headerlink" href="#bluetooth-hid" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>ソフトウェアをインストールする必要はありません</p></li>
+<li><p>ほとんどのデバイスに接続します</p></li>
+<li><p>スキャナーはキーボードのようにホストデバイスと相互作用します</p></li>
+</ul>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D2.png"><img alt="../../media/AT2BMODE3D2.png" src="../../media/AT2BMODE3D2.png" style="width: 300px;" />
 </a>

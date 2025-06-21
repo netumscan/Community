@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=9bf55d28"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\process.029c7a51-e248-4fc0-88d5-52ae1aad6e3b.js"></script>
+    <script defer="defer" src="_static/tippy\process.38718708-d2de-45c7-86d1-fa8a66600c1b.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
@@ -254,12 +254,13 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Arbeitsmodus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Kabelmodus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Drahtlos-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Datenbearbeitung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologien</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Charakter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -667,28 +668,24 @@ document.write(`
 <h2>Schnelleinstellung<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
 <section id="id3">
 <h3>Präfix hinzufügen<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Für normalen Text verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>Für Sonderzeichentext verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tipp</p>
-<p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Zeichentabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt werden</p>
+<ul class="simple">
+<li><p>Sonderzeichen müssen im Hexadezimalformat verarbeitet werden, und <code class="docutils literal notranslate"><span class="pre">\x</span></code> wird vor dem Hexadezimalinhalt hinzugefügt, um das Hexadezimalformat anzuzeigen.</p></li>
+<li><p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Tabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt wurden.</p></li>
+<li><p>Beispiel: Um eine 0x03 zum Inhalt hinzuzufügen, sollte der Eingabeinhalt sein: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="id4">
 <h3>Suffix hinzufügen<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Für normalen Text verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>Für Sonderzeichentext verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tipp</p>
-<p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Zeichentabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt werden</p>
+<ul class="simple">
+<li><p>Sonderzeichen müssen im Hexadezimalformat verarbeitet werden, und <code class="docutils literal notranslate"><span class="pre">\x</span></code> wird vor dem Hexadezimalinhalt hinzugefügt, um das Hexadezimalformat anzuzeigen.</p></li>
+<li><p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Tabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt wurden.</p></li>
+<li><p>Beispiel: Um eine 0x03 zum Inhalt hinzuzufügen, sollte der Eingabeinhalt sein: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="hide-barcode-start-content">
@@ -702,15 +699,13 @@ document.write(`
 <iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe></section>
 <section id="replace-barcode-content">
 <h3>Barcode-Inhalt ersetzen<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Für normalen Text verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>Für Sonderzeichentext verwenden Sie bitte die folgenden Tools um schnell zu setzen</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tipp</p>
-<p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Zeichentabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt werden</p>
+<ul class="simple">
+<li><p>Sonderzeichen müssen im Hexadezimalformat verarbeitet werden, und <code class="docutils literal notranslate"><span class="pre">\x</span></code> wird vor dem Hexadezimalinhalt hinzugefügt, um das Hexadezimalformat anzuzeigen.</p></li>
+<li><p>Bitte beachten Sie die <a class="reference internal" href="#ascii-chars-table">ASCII-Tabelle</a> für bestimmte Zeichen, die in Hexadezimalzeichen umgewandelt wurden.</p></li>
+<li><p>Beispiel: Um eine 0x03 zum Inhalt hinzuzufügen, sollte der Eingabeinhalt sein: \x03</p></li>
+</ul>
 </div>
 </section>
 </section>

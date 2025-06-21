@@ -55,7 +55,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\process.d6223c48-0572-470e-a9ac-fd5da72d3b36.js"></script>
+    <script defer="defer" src="_static/tippy\process.ead7bcfa-54d0-445d-8b3b-0f8df2157f57.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -253,11 +253,12 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Wired Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Wireless Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Editing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Character</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -665,28 +666,24 @@ document.write(`
 <h2>Quick Setup<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
 <section id="id3">
 <h3>Add Prefix<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>For normal text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>For special character text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-addprefix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters</p>
+<ul class="simple">
+<li><p>Special characters need to be processed in hexadecimal format, and <code class="docutils literal notranslate"><span class="pre">\x</span></code> is added in front of the hexadecimal content to indicate the hexadecimal format.</p></li>
+<li><p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters.</p></li>
+<li><p>Example: To add a 0x03 to the content, the input content should be: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="id4">
 <h3>Add Suffix<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>For normal text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix1.html" style="height:500px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>For special character text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-addsuffix2.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters</p>
+<ul class="simple">
+<li><p>Special characters need to be processed in hexadecimal format, and <code class="docutils literal notranslate"><span class="pre">\x</span></code> is added in front of the hexadecimal content to indicate the hexadecimal format.</p></li>
+<li><p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters.</p></li>
+<li><p>Example: To add a 0x03 to the content, the input content should be: \x03</p></li>
+</ul>
 </div>
 </section>
 <section id="hide-barcode-start-content">
@@ -700,15 +697,13 @@ document.write(`
 <iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe></section>
 <section id="replace-barcode-content">
 <h3>Replace Barcode Content<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>For normal text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace1.html" style="height:600px; width:100%; border:none;"></iframe><ul class="simple">
-<li><p>For special character text, please use the following tools to quickly set</p></li>
-</ul>
-<iframe src="../../plugins/edit-replace2.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
+<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters</p>
+<ul class="simple">
+<li><p>Special characters need to be processed in hexadecimal format, and <code class="docutils literal notranslate"><span class="pre">\x</span></code> is added in front of the hexadecimal content to indicate the hexadecimal format.</p></li>
+<li><p>Please refer to the <a class="reference internal" href="#ascii-chars-table">ASCII character table</a> for specific characters converted into hexadecimal characters.</p></li>
+<li><p>Example: To add a 0x03 to the content, the input content should be: \x03</p></li>
+</ul>
 </div>
 </section>
 </section>

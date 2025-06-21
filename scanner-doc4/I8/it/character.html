@@ -17,7 +17,7 @@
         gtag('config', 'G-K4FLCEP0X8');
     </script>
     
-    <title>Impostazioni Dei Caratteri Finali &#8212; I8 Scanner User Manual</title>
+    <title>Terminatore &#8212; I8 Scanner User Manual</title>
   
   
   
@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=45930005"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\character.aaef2ca6-f4db-4ea8-aa74-20ba2f08166c.js"></script>
+    <script defer="defer" src="_static/tippy\character.c85c4053-ee23-4043-b104-ed436f05d4f6.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -255,11 +255,12 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modalità Di Lavoro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Modalità Wireless</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modalità Cablata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modalità Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Modifica Dati</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Terminatore</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -400,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Impostazioni Dei Caratteri Finali</h1>
+    <h1>Terminatore</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -411,9 +412,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Avvia Configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Impostazioni Dei Caratteri Finali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Termina L’Impostazione</a></li>
 </ul>
             </nav>
@@ -426,9 +430,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>Impostazioni Dei Caratteri Finali<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
-<p>Il carattere finale viene aggiunto dopo i dati decodificati nel formato dei dati decodificati + carattere finale.</p>
+  <section id="terminator">
+<h1>Terminatore<a class="headerlink" href="#terminator" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>Avvia Configurazione<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
@@ -443,8 +446,11 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+<section id="end-character-settings">
+<h2>Impostazioni Dei Caratteri Finali<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
+<p>Il carattere finale viene aggiunto dopo i dati decodificati nel formato dei dati decodificati + carattere finale.</p>
 <section id="no-end-character">
-<h2>Nessun Carattere Finale<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>Nessun Carattere Finale<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
@@ -454,7 +460,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Enter+New Line (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Enter+New Line (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
@@ -464,7 +470,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
@@ -472,6 +478,7 @@ document.write(`
 <p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 <section id="end-setup">
 <h2>Termina L’Impostazione<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
@@ -535,9 +542,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Avvia Configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Impostazioni Dei Caratteri Finali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Termina L’Impostazione</a></li>
 </ul>
   </nav></div>

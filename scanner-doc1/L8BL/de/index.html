@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=9bf55d28"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.08a3d30e-a073-42fb-8610-7ecceb05cb0a.js"></script>
+    <script defer="defer" src="_static/tippy\index.7c325035-15af-422a-b564-8fbae135c435.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
@@ -255,12 +255,13 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Arbeitsmodus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Kabelmodus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Drahtlos-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Datenbearbeitung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologien</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Charakter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
@@ -430,6 +431,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">Speichermodus</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Kabelmodus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Übertragungsmodus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Automatische Auswahl der drahtlos/drahtlosen Übertragung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">USB-Tastaturgeschwindigkeit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">USB HID Multi-Key Sendeset</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Drahtlos-Modus</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#one-to-one-pairing">One-to-One Paarung</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#receiver-keyboard-transmission-speed1">Empfangs-Tastaturübertragungsgeschwindigkeit</a></li>
@@ -500,7 +508,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">Digitaler Barcode</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Charakter</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminator</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Übertrage Code ID Zeichen</a></li>
 </ul>
@@ -524,9 +532,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<ul class="simple">
-<li><p>Stern ( * ) geben die Standardwerte an.</p></li>
-</ul>
+<p>Barcode-Scanner sind Werksprogrammierung für die gängigsten Terminal- und Kommunikationseinstellungen. Wenn Sie diese Einstellungen ändern müssen, wird die Programmierung durch das Scannen der Strichcodes in dieser Anleitung durchgeführt. Ein Stern (*) neben einer Option zeigt die Standardeinstellung an.</p>
 </div>
 </section>
 

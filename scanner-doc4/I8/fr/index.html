@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=e6b791cb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.5b2156ac-9a71-4056-9fcc-9649753da19f.js"></script>
+    <script defer="defer" src="_static/tippy\index.96ed0cfb-d7b6-49b1-a47b-c1fbb8ba03b7.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -256,11 +256,12 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Mode sans fil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Mode filaire</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Édition de données</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
@@ -438,6 +439,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="wireless.html#low-speed">Faible vitesse</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Mode filaire</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Mode de transmission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Sélection automatique de la transmission filaire/sans fil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">Vitesse du clavier USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">Ensemble d’envoi de clés multiples HID USB</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bluetooth.html#bluetooth-hid">HID Bluetooth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bluetooth.html#bluetooth-spp">SPP Bluetooth</a></li>
@@ -471,11 +479,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#start-setup">Démarrer la configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Aucun caractère de fin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Entrée(CR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Paramètres de caractère de fin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
@@ -499,9 +505,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>astérisques ( * ) indiquent les valeurs par défaut.</p></li>
-</ul>
+<p>Les scanners de codes à barres sont programmés en usine pour les paramètres de terminal et de communication les plus courants. Si vous avez besoin de modifier ces paramètres, la programmation est effectuée en scannant les codes à barres dans ce guide. Un astérisque (*) à côté d’une option indique le paramètre par défaut.</p>
 </div>
 </section>
 
