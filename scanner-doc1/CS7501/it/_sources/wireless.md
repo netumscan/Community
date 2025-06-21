@@ -2,6 +2,7 @@
 
 This mode uses the 2.4GHz frequency band for data transmission and relies on radio frequency (RF) technology, which connects to the computer via a USB receiver and allows the scanner to move freely within a certain distance.
 
+
 ```{note}
 - Receivers are divided into small receivers and base receivers
 ```

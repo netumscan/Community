@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=e6b791cb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.5b53920b-c847-4495-a95c-4ebd78192c83.js"></script>
+    <script defer="defer" src="_static/tippy\index.23a1a56f-63fe-4a09-9c45-361d926b34e7.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -254,14 +254,16 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="cs.html">Introduction du produit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Voie de connexion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Mode filaire</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Mode sans fil</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Édition de données</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Caractère</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
@@ -419,8 +421,14 @@ document.write(`
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cs.html">Introduction du produit</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cs.html#front-display">Affichage frontal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cs.html#back-display">Affichage de retour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cs.html#front-view-of-the-product">Vue avant du produit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cs.html#rear-view-of-the-product">Vue arrière du produit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Voie de connexion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#working-via-usb-cable">Fonctionnement via câble USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#working-via-usb-dongle-wireless-mode">Travailler via USB Dongle (mode sans fil)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#working-via-bluetooth">Travailler via Bluetooth</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a><ul>
@@ -434,6 +442,13 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="working.html#normal-mode">Mode Normal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="working.html#storage-mode">Mode de stockage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Mode filaire</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#transmission-mode">Mode de transmission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#automatic-selection-of-wired-wireless-transmission">Sélection automatique de la transmission filaire/sans fil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-keyboard-speed">Vitesse du clavier USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wired.html#usb-hid-multi-key-send-set">Ensemble d’envoi de clés multiples HID USB</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="wireless.html">Mode sans fil</a><ul>
@@ -506,7 +521,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">Code-barres numérique</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Caractère</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Paramètres de caractère de fin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Transmettre le code ID du personnage</a></li>
 </ul>
@@ -530,9 +545,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>astérisques ( * ) indiquent les valeurs par défaut.</p></li>
-</ul>
+<p>Les scanners de codes à barres sont programmés en usine pour les paramètres de terminal et de communication les plus courants. Si vous avez besoin de modifier ces paramètres, la programmation est effectuée en scannant les codes à barres dans ce guide. Un astérisque (*) à côté d’une option indique le paramètre par défaut.</p>
 </div>
 </section>
 
