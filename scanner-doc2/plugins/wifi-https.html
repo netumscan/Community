@@ -68,8 +68,15 @@
             if (!text1 || !text3) {
                 return; // 不生成二维码
             }
+			var parsedUrl;
+			try{
+				parsedUrl= new URL(text3);
+			}catch (e)
+			{
+				return;
+			}
             var mode = text3.startsWith("https") ? 1 : 0;
-            var cmd = "AT+URL="+mode+","+text3+";AT+RAP="+text1;
+            var cmd = "AT+URL="+mode+","+parsedUrl.hostname+","+parsedUrl.pathname+";AT+RAP="+text1;
             if (text2) {
                 cmd += "," + text2;
             }

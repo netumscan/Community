@@ -74,7 +74,7 @@
             var text4 = $("#inputText4").val();
 
             $("#qrcode").empty(); // 清空旧的二维码
-            if (!text1 || !text2 || !text3 || !text4 ) {
+            if (!text1 || !text2 || !text3 ) {
                 return; // 不生成二维码
             }
             var cmd = "AT+URL=2,"+text1+","+text2+","+text3+","+text4;
