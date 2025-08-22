@@ -1,11 +1,16 @@
 # Bluetooth Mode
 
-```{figure} ../../media/2523IFSNO244.png
+:::{only} scan
+
+
+:::{figure} ../../media/2523IFSNO244.png
 :align: center
 :width: 300px
 
 Bluetooth Mode
-```
+:::
+
+:::
 
 ```{note}
 The blue light means:<br>①The blue light flashes, indicating that it is not connected.<br>②The blue light is on, indicating it is connected.

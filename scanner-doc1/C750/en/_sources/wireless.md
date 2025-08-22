@@ -2,6 +2,8 @@
 
 This mode uses the 2.4GHz frequency band for data transmission and relies on radio frequency (RF) technology, which connects to the computer via a USB receiver and allows the scanner to move freely within a certain distance.
 
+:::{only} scan
+
 ```{figure} ../../media/2523IFSNO241.png
 :align: center
 :width: 300px
@@ -9,6 +11,7 @@ This mode uses the 2.4GHz frequency band for data transmission and relies on rad
 `*` Wireless Mode
 ```
 
+:::
 
 ```{note}
 - Receivers are divided into small receivers and base receivers
@@ -28,6 +31,7 @@ This operation is required in the following situations:
 ① Plug the 2.4G receiver into the USB port. After scanning successfully, it will beep three times but will not upload data.  
 ② Requires pairing with a new receiver.
 ```
+
 
 ## Receiver Keyboard Transmission Speed[^1]
 

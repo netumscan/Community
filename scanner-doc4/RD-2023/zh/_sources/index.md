@@ -2,6 +2,8 @@
 ```{toctree}
 :maxdepth: 2
 
+cs.md
+intro.md
 system.md
 working.md
 wired.md

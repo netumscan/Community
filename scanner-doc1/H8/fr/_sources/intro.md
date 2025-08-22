@@ -2,12 +2,16 @@
 
 Scanner can be connected to your device via bluetooth, USB receiver or USB cable, you can choose one of the connection way to connect scanner with your device. 
 
+```{important}
+- Scanning a setting code to switch modes is not supported. You must use the physical switch on the bottom of the scanner to change connection modes.
+```
+
 ## Working Via USB Cable
 Connect scanner with your device via USB cable. If you use US keyboard, it's plug and play. If you use other type of keyboard , please refer to "[keyboard language](keyboard.md#keyboard-language)" to configure the keyboard language before you use it.
 
 ## Working Via USB Dongle (Wireless Mode)
 
-```{figure} media/cs-rf.png
+```{figure} ../../media/cs-rf.png
 :align: center
 
 ```
@@ -18,7 +22,7 @@ Connect scanner with your device via USB cable. If you use US keyboard, it's plu
 
 ## Working Via Bluetooth
 
-```{figure} media/cs-bt.png
+```{figure} ../../media/cs-bt.png
 :align: center
 
 ```
