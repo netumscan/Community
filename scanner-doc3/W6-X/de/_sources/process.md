@@ -174,7 +174,7 @@ Hide Barcode End Chars
 ### Add Prefix
 
 ```{raw} html
-<iframe src="../../plugins/edit-addprefix1.html" style="height:500px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-addprefix.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 ```{tip}
@@ -187,7 +187,7 @@ Hide Barcode End Chars
 ### Add Suffix
 
 ```{raw} html
-<iframe src="../../plugins/edit-addsuffix.html" style="height:500px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-addsuffix.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 
@@ -201,24 +201,24 @@ Hide Barcode End Chars
 ### Hide Barcode Start Content
 
 ```{raw} html
-<iframe src="../../plugins/edit-hidestart.html" style="height:500px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-hidestart.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 ### Hide Barcode Middle Content
 
 ```{raw} html
-<iframe src="../../plugins/edit-hidemiddle.html" style="height:600px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-hidemiddle.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 ### Hide Barcode End Content
 
 ```{raw} html
-<iframe src="../../plugins/edit-hideend.html" style="height:500px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-hideend.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 ### Replace Barcode Content
 ```{raw} html
-<iframe src="../../plugins/edit-replace.html" style="height:600px; width:100%; border:none;"></iframe>
+<iframe src="../../plugins/edit-replace.html" style="height:650px; width:100%; border:none;"></iframe>
 ```
 
 ```{tip}

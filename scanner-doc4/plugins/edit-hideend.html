@@ -6,6 +6,7 @@
     <title>Hide the end character of the barcode</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
     <style>
         body {
             display: flex;
@@ -28,6 +29,9 @@
             display: inline-block; /* 使容器适应内容大小 */
             border-radius: 10px; /* 可选：使边角圆润 */
         }
+        #barcode {
+            margin: 10px; /* 条形码与其他元素的间距 */
+        }
         input {
             padding: 10px;
             width: 300px;
@@ -47,12 +51,14 @@
     </div>
     
     <div id="qrcode"></div>
+    <svg id="barcode"></svg>
     
     <script>
         function generateCodes() {
             var text1 = $("#inputText1").val();
 
             $("#qrcode").empty(); // 清空旧的二维码
+            $("#barcode").empty(); // 清空旧的条形码
             if (!text1 ) {
                 return; // 不生成二维码
             }
@@ -66,6 +72,16 @@
                 text: cmd,
                 width: 256,
                 height: 256
+            });
+
+            // 生成条形码
+            JsBarcode("#barcode", cmd, {
+                format: "CODE128", // 使用 Code128 格式
+                lineColor: "#000", // 条形码颜色
+                width: 2, // 条形码线条宽度
+                height: 100, // 条形码高度
+                displayValue: true, // 显示条形码下方的文字
+                fontSize: 16 // 文字字体大小
             });
         }
 

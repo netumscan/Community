@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>数据编辑 &#8212; CS9000 Scanner User Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ca8ee3f5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=c893ba89"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=beaddf03"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\process.07167530-cf91-4916-8b8c-90d360c7f25d.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="条码设置" href="barcode.html" />
+    <link rel="prev" title="键盘设置" href="keyboard.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/CS9000.png" class="logo__image only-light" alt="CS9000 Scanner User Manual - Home"/>
+    <script>document.write(`<img src="_static/CS9000.png" class="logo__image only-dark" alt="CS9000 Scanner User Manual - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">搜索</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cs.html">产品介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">连接方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">有线模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireless.html">无线模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">蓝牙模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">数据编辑</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">字符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常见问题</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="下载此页面">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/process.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="下载源文件"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="列印成 PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全屏模式"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>数据编辑</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-format">输出格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-output-format">默认输出格式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-suffix-output">启用后缀输出</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-prefix-output">启用前缀输出</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-start-char">启用隐藏条码起始字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-middle-char">启用隐藏条码中间字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-end-char">启用隐藏条码结束字符</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prefix">前缀</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-prefix">添加前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-prefix">清除所有前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation-steps">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suffix">后缀</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-suffix">添加后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-suffix">清除所有后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-set">隐藏设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-chars">隐藏条码开始字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-char-start">隐藏条码中间字符开始</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-chars">隐藏条码中间字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-chars">隐藏条码结束字符数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-setup">快速设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">添加前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">添加后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-content">隐藏条码开始内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-content">隐藏条码中间内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-content">隐藏条码结束内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-barcode-content">替换条码内容</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">附录</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric-bar-codes">数字条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-function-key-table">ASCII 功能键表</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-chars-table">ASCII 字符表</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="data-editing">
+<h1>数据编辑<a class="headerlink" href="#data-editing" title="Link to this heading">#</a></h1>
+<section id="output-format">
+<h2>输出格式<a class="headerlink" href="#output-format" title="Link to this heading">#</a></h2>
+<p>要更改扫描数据传输格式，请扫描与所需格式对应的八个条形码之一。</p>
+<section id="default-output-format">
+<h3>默认输出格式<a class="headerlink" href="#default-output-format" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="default-output-format-figure">
+<a class="reference internal image-reference" href="../../media/24DATA230.png"><img alt="../../media/24DATA230.png" src="../../media/24DATA230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> 默认输出格式</span><a class="headerlink" href="#default-output-format-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-suffix-output">
+<h3>启用后缀输出<a class="headerlink" href="#enable-suffix-output" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-suffix-output-figure">
+<a class="reference internal image-reference" href="../../media/24DATA231.png"><img alt="../../media/24DATA231.png" src="../../media/24DATA231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用后缀输出</span><a class="headerlink" href="#enable-suffix-output-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-prefix-output">
+<h3>启用前缀输出<a class="headerlink" href="#enable-prefix-output" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-prefix-output-figure">
+<a class="reference internal image-reference" href="../../media/24DATA232.png"><img alt="../../media/24DATA232.png" src="../../media/24DATA232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用前缀输出</span><a class="headerlink" href="#enable-prefix-output-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-start-char">
+<h3>启用隐藏条码起始字符<a class="headerlink" href="#enable-hide-barcode-start-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-start-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA235.png"><img alt="../../media/24DATA235.png" src="../../media/24DATA235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用隐藏条码起始字符</span><a class="headerlink" href="#enable-hide-barcode-start-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-middle-char">
+<h3>启用隐藏条码中间字符<a class="headerlink" href="#enable-hide-barcode-middle-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-middle-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA234.png"><img alt="../../media/24DATA234.png" src="../../media/24DATA234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用隐藏条码中间字符</span><a class="headerlink" href="#enable-hide-barcode-middle-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="enable-hide-barcode-end-char">
+<h3>启用隐藏条码结束字符<a class="headerlink" href="#enable-hide-barcode-end-char" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="enable-hide-barcode-end-char-figure">
+<a class="reference internal image-reference" href="../../media/24DATA233.png"><img alt="../../media/24DATA233.png" src="../../media/24DATA233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用隐藏条码结束字符</span><a class="headerlink" href="#enable-hide-barcode-end-char-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="prefix">
+<h2>前缀<a class="headerlink" href="#prefix" title="Link to this heading">#</a></h2>
+<section id="add-prefix">
+<h3>添加前缀<a class="headerlink" href="#add-prefix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="add-prefix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN232.png"><img alt="../../media/24SCAN232.png" src="../../media/24SCAN232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">添加前缀</span><a class="headerlink" href="#add-prefix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="clear-all-prefix">
+<h3>清除所有前缀<a class="headerlink" href="#clear-all-prefix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="clear-all-prefix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN234.png"><img alt="../../media/24SCAN234.png" src="../../media/24SCAN234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">清除所有前缀</span><a class="headerlink" href="#clear-all-prefix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="operation-steps">
+<h3>操作步骤<a class="headerlink" href="#operation-steps" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>步骤1. 如果前缀输出未启用，您可以通过设置 [输出格式] (#enable-prefix-output-figure ) 来启用前缀输出；</p></li>
+<li><p>步骤2. 如果您先前设置了一个前缀，新的前缀将在之前添加的前缀之后。 如果您想要放弃以前的内容并再次设置它。 请先扫描&quot;<a class="reference internal" href="#clear-all-prefix-figure">清除前缀</a>&quot;，然后执行以下添加动作。</p></li>
+<li><p>步骤3. 扫描到<a class="reference internal" href="#add-prefix-figure">添加前缀</a></p></li>
+<li><p>步骤4.  确定要添加的前缀字符的两位十六进制值；参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a></p></li>
+<li><p>步骤5. 扫描<a class="reference internal" href="#numeric-bar-codes">数字设置码</a>：先扫描十六进制高位值，再扫描低位值;</p></li>
+<li><p>步骤6. 重复步骤 4 和 5 添加下一个字符。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<ul class="simple">
+<li><p>例如，想要添加“Ctrl+A”作为前缀，请扫描'<a class="reference internal" href="#add-prefix-figure">add prefix</a>'、'<a class="reference internal" href="#numeric-bar-codes-9">9</a>'、'<a class="reference internal" href="#numeric-bar-codes-7">7</a>'、'<a class="reference internal" href="#numeric-bar-codes-4">4</a>'、'<a class="reference internal" href="#numeric-bar-codes-1">1</a>'。</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="suffix">
+<h2>后缀<a class="headerlink" href="#suffix" title="Link to this heading">#</a></h2>
+<section id="add-suffix">
+<h3>添加后缀<a class="headerlink" href="#add-suffix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="add-suffix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN231.png"><img alt="../../media/24SCAN231.png" src="../../media/24SCAN231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">添加后缀</span><a class="headerlink" href="#add-suffix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="clear-all-suffix">
+<h3>清除所有后缀<a class="headerlink" href="#clear-all-suffix" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="clear-all-suffix-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN233.png"><img alt="../../media/24SCAN233.png" src="../../media/24SCAN233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">清除所有后缀</span><a class="headerlink" href="#clear-all-suffix-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h3>操作步骤<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>步骤1. 如果未启用后缀输出，可以通过设置<a class="reference internal" href="#enable-suffix-output-figure">输出格式</a>来启用后缀输出；</p></li>
+<li><p>步骤2. 如果您之前设置过后缀，新的后缀会放置在之前添加的后缀之后。如需丢弃之前的内容重新设置，请先扫描“<a class="reference internal" href="#clear-all-suffix-figure">清除后缀</a>”，然后进行以下添加操作；</p></li>
+<li><p>步骤3. 扫描至<a class="reference internal" href="#add-suffix-figure">添加后缀</a>;</p></li>
+<li><p>步骤4. 确定需要添加的后缀字符的两位十六进制值；参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>；</p></li>
+<li><p>步骤5. 扫描<a class="reference internal" href="#numeric-bar-codes">数字设置码</a>：先扫描十六进制高位值，再扫描低位值;</p></li>
+<li><p>步骤6. 重复步骤 4 和 5 添加下一个字符。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<ul class="simple">
+<li><p>例如，想要添加“Ctrl+Alt+A”作为后缀，请扫描 '<a class="reference internal" href="#add-suffix-figure">add suffix</a>'、'<a class="reference internal" href="#numeric-bar-codes-9">9</a>'、'<a class="reference internal" href="#numeric-bar-codes-7">7</a>'、'<a class="reference internal" href="#numeric-bar-codes-9">9</a>'、'<a class="reference internal" href="#numeric-bar-codes-9">9</a>'、'<a class="reference internal" href="#numeric-bar-codes-4">4</a>'、'<a class="reference internal" href="#numeric-bar-codes-1">1</a>'。</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="hide-set">
+<h2>隐藏设置<a class="headerlink" href="#hide-set" title="Link to this heading">#</a></h2>
+<section id="hide-barcode-start-chars">
+<h3>隐藏条码开始字符<a class="headerlink" href="#hide-barcode-start-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-start-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN235.png"><img alt="../../media/24SCAN235.png" src="../../media/24SCAN235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">隐藏条码开始字符</span><a class="headerlink" href="#hide-barcode-start-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-middle-char-start">
+<h3>隐藏条码中间字符开始<a class="headerlink" href="#hide-barcode-middle-char-start" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-middle-char-start-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN236.png"><img alt="../../media/24SCAN236.png" src="../../media/24SCAN236.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">隐藏条码中间字符开始</span><a class="headerlink" href="#hide-barcode-middle-char-start-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-middle-chars">
+<h3>隐藏条码中间字符<a class="headerlink" href="#hide-barcode-middle-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-middle-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN237.png"><img alt="../../media/24SCAN237.png" src="../../media/24SCAN237.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">隐藏条码中间字符</span><a class="headerlink" href="#hide-barcode-middle-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hide-barcode-end-chars">
+<h3>隐藏条码结束字符数<a class="headerlink" href="#hide-barcode-end-chars" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="hide-barcode-end-chars-figure">
+<a class="reference internal image-reference" href="../../media/24SCAN238.png"><img alt="../../media/24SCAN238.png" src="../../media/24SCAN238.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">隐藏条码结束字符数</span><a class="headerlink" href="#hide-barcode-end-chars-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id2">
+<h3>操作步骤<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>步骤 1. 扫描隐藏条形码 <a class="reference internal" href="#hide-barcode-start-chars-figure">起始</a> / <a class="reference internal" href="#hide-barcode-middle-char-start-figure">中间起始</a> / <a class="reference internal" href="#hide-barcode-middle-chars-figure">中间长度</a> / <a class="reference internal" href="#hide-barcode-end-chars-figure">结束</a> 字符符号。</p></li>
+<li><p>步骤2.确定您想要输入的长度的十六进制值（隐藏 4 个字符，扫描 <a class="reference internal" href="#numeric-bar-codes-0">0</a>,<a class="reference internal" href="#numeric-bar-codes-4">4</a>；隐藏 12 个字符，扫描 <a class="reference internal" href="#numeric-bar-codes-0">0</a>,<a class="reference internal" href="#numeric-bar-codes-c">C</a>）。</p></li>
+<li><p>步骤 3. 从编程图表中扫描 2 位十六进制值。</p></li>
+<li><p>步骤4. 扫描输出格式<a class="reference internal" href="#enable-hide-barcode-start-char-figure">开始</a>/<a class="reference internal" href="#enable-hide-barcode-middle-char-figure">中间</a>/<a class="reference internal" href="#enable-hide-barcode-end-char-figure">结束</a>以启用或<a class="reference internal" href="#default-output-format-figure">取消隐藏字符</a>功能。</p></li>
+</ul>
+</section>
+</section>
+<section id="quick-setup">
+<h2>快速设置<a class="headerlink" href="#quick-setup" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>添加前缀<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-addprefix.html" style="height:650px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
+</div>
+</section>
+<section id="id4">
+<h3>添加后缀<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-addsuffix.html" style="height:650px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
+</div>
+</section>
+<section id="hide-barcode-start-content">
+<h3>隐藏条码开始内容<a class="headerlink" href="#hide-barcode-start-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hidestart.html" style="height:650px; width:100%; border:none;"></iframe></section>
+<section id="hide-barcode-middle-content">
+<h3>隐藏条码中间内容<a class="headerlink" href="#hide-barcode-middle-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hidemiddle.html" style="height:650px; width:100%; border:none;"></iframe></section>
+<section id="hide-barcode-end-content">
+<h3>隐藏条码结束内容<a class="headerlink" href="#hide-barcode-end-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-hideend.html" style="height:650px; width:100%; border:none;"></iframe></section>
+<section id="replace-barcode-content">
+<h3>替换条码内容<a class="headerlink" href="#replace-barcode-content" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-replace.html" style="height:650px; width:100%; border:none;"></iframe><div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<ul class="simple">
+<li><p>特殊字符需要按照十六进制格式处理，并在十六进制内容前面添加<code class="docutils literal notranslate"><span class="pre">\x</span></code>表示十六进制格式。</p></li>
+<li><p>请参考<a class="reference internal" href="#ascii-chars-table">ASCII 字符表</a>将特定字符转换为十六进制字符.</p></li>
+<li><p>示例：要将0x03添加到内容，输入内容应该为： \x03</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="appendix">
+<h2>附录<a class="headerlink" href="#appendix" title="Link to this heading">#</a></h2>
+<section id="numeric-bar-codes">
+<h3>数字条码<a class="headerlink" href="#numeric-bar-codes" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="numeric-bar-codes-0">
+<a class="reference internal image-reference" href="../../media/24NO230.png"><img alt="../../media/24NO230.png" src="../../media/24NO230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">0</span><a class="headerlink" href="#numeric-bar-codes-0" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-1">
+<a class="reference internal image-reference" href="../../media/24NO231.png"><img alt="../../media/24NO231.png" src="../../media/24NO231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">1</span><a class="headerlink" href="#numeric-bar-codes-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-2">
+<a class="reference internal image-reference" href="../../media/24NO232.png"><img alt="../../media/24NO232.png" src="../../media/24NO232.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">2</span><a class="headerlink" href="#numeric-bar-codes-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-3">
+<a class="reference internal image-reference" href="../../media/24NO233.png"><img alt="../../media/24NO233.png" src="../../media/24NO233.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">3</span><a class="headerlink" href="#numeric-bar-codes-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-4">
+<a class="reference internal image-reference" href="../../media/24NO234.png"><img alt="../../media/24NO234.png" src="../../media/24NO234.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">4</span><a class="headerlink" href="#numeric-bar-codes-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-5">
+<a class="reference internal image-reference" href="../../media/24NO235.png"><img alt="../../media/24NO235.png" src="../../media/24NO235.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">5</span><a class="headerlink" href="#numeric-bar-codes-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-6">
+<a class="reference internal image-reference" href="../../media/24NO236.png"><img alt="../../media/24NO236.png" src="../../media/24NO236.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">6</span><a class="headerlink" href="#numeric-bar-codes-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-7">
+<a class="reference internal image-reference" href="../../media/24NO237.png"><img alt="../../media/24NO237.png" src="../../media/24NO237.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">7</span><a class="headerlink" href="#numeric-bar-codes-7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-8">
+<a class="reference internal image-reference" href="../../media/24NO238.png"><img alt="../../media/24NO238.png" src="../../media/24NO238.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">8</span><a class="headerlink" href="#numeric-bar-codes-8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-9">
+<a class="reference internal image-reference" href="../../media/24NO239.png"><img alt="../../media/24NO239.png" src="../../media/24NO239.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">9</span><a class="headerlink" href="#numeric-bar-codes-9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-a">
+<a class="reference internal image-reference" href="../../media/24NO23A.png"><img alt="../../media/24NO23A.png" src="../../media/24NO23A.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">A</span><a class="headerlink" href="#numeric-bar-codes-a" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-b">
+<a class="reference internal image-reference" href="../../media/24NO23B.png"><img alt="../../media/24NO23B.png" src="../../media/24NO23B.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">B</span><a class="headerlink" href="#numeric-bar-codes-b" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-c">
+<a class="reference internal image-reference" href="../../media/24NO23C.png"><img alt="../../media/24NO23C.png" src="../../media/24NO23C.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">C</span><a class="headerlink" href="#numeric-bar-codes-c" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-d">
+<a class="reference internal image-reference" href="../../media/24NO23D.png"><img alt="../../media/24NO23D.png" src="../../media/24NO23D.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">D</span><a class="headerlink" href="#numeric-bar-codes-d" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-e">
+<a class="reference internal image-reference" href="../../media/24NO23E.png"><img alt="../../media/24NO23E.png" src="../../media/24NO23E.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">E</span><a class="headerlink" href="#numeric-bar-codes-e" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="numeric-bar-codes-f">
+<a class="reference internal image-reference" href="../../media/24NO23F.png"><img alt="../../media/24NO23F.png" src="../../media/24NO23F.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">F</span><a class="headerlink" href="#numeric-bar-codes-f" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ascii-function-key-table">
+<h3>ASCII 功能键表<a class="headerlink" href="#ascii-function-key-table" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-asciikeys.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="ascii-chars-table">
+<h3>ASCII 字符表<a class="headerlink" href="#ascii-chars-table" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/edit-asciichars.html" style="height:800px; width:100%; border:none;"></iframe></section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="keyboard.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">键盘设置</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="barcode.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">条码设置</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-format">输出格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-output-format">默认输出格式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-suffix-output">启用后缀输出</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-prefix-output">启用前缀输出</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-start-char">启用隐藏条码起始字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-middle-char">启用隐藏条码中间字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-hide-barcode-end-char">启用隐藏条码结束字符</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prefix">前缀</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-prefix">添加前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-prefix">清除所有前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation-steps">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suffix">后缀</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-suffix">添加后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-suffix">清除所有后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-set">隐藏设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-chars">隐藏条码开始字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-char-start">隐藏条码中间字符开始</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-chars">隐藏条码中间字符</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-chars">隐藏条码结束字符数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">操作步骤</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-setup">快速设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">添加前缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">添加后缀</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-start-content">隐藏条码开始内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-middle-content">隐藏条码中间内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hide-barcode-end-content">隐藏条码结束内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-barcode-content">替换条码内容</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">附录</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeric-bar-codes">数字条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-function-key-table">ASCII 功能键表</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ascii-chars-table">ASCII 字符表</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+作者： NETUM
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, NETUM.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

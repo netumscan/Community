@@ -1,0 +1,1890 @@
+
+<!DOCTYPE html>
+
+
+<html lang="pt" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Simbologias &#8212; M6BT Scanner User Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ca8ee3f5" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=37c40417"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=beaedd51"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.db16d0c3-a2c5-4b0d-acfd-61b5d1db05c0.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" />
+    <link rel="next" title="Exterminador" href="character.html" />
+    <link rel="prev" title="Edição de dados" href="process.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="pt"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/M6BT.png" class="logo__image only-light" alt="M6BT Scanner User Manual - Home"/>
+    <script>document.write(`<img src="_static/M6BT.png" class="logo__image only-dark" alt="M6BT Scanner User Manual - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../en" title="English" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/us.png" class="icon-link-image" alt="English"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../de" title="German" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/de.png" class="icon-link-image" alt="German"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../fr" title="French" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/fr.png" class="icon-link-image" alt="French"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../it" title="Italian" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/it.png" class="icon-link-image" alt="Italian"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../es" title="Spanish" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/es.png" class="icon-link-image" alt="Spanish"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/ja.png" class="icon-link-image" alt="Japanese"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../ar" title="Arabic" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/ar.png" class="icon-link-image" alt="Arabic"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../pt" title="Portuguese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/pt.png" class="icon-link-image" alt="Portuguese"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="../ru" title="Russian" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../media/ru.png" class="icon-link-image" alt="Russian"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Pesquisar</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="system.html">Configurações do Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Modo de trabalho</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wired.html">Modo de Cabo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wireless.html">Modo sem fio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modo Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configurações de teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process.html">Edição de dados</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Simbologias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Exterminador</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de Escaneo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Perguntas Frequentes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Baixe esta página">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/barcode.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Baixar arquivo fonte"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir em PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo tela cheia"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Simbologias</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Conteúdo </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-symbologies">Simbologias Reversas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-8">EAN-8</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-disable">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-check-character">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-system-characters">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-on-code">Código da extensão</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13">EAN-13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-ean-multiple-verification">Verificação Múltipla UPC/EAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-ean-security-level">Nível de segurança UPC/EAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13-to-isbn">EAN-13 Para ISBN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13-to-issn">EAN-13 Para ISSN</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-a">UPC-A</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-a-to-ean-13">UPC-A Para EAN-13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-e">ATUALIZAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-e-to-upc-a">UPC-E Para o UPC-A</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codabar">Codabar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-and-stop-characters">Iniciar e Parar Caracteres</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-11">Código 11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-39">Código 39</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mod43-check">MOD43 Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-verification">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Iniciar e Parar Caracteres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#full-ascii-support">Suporte Completo ASCII</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-32-setting">Configurações do código 32</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code32-prefix-a">Prefixo do Code32 A</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length">Definir tamanho mínimo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-93">Código 93</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Verificação Multipla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-128">Código 128</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brazilian-bank-code">Código bancário brasileiro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-limited-rss-limited">GS1 DataBar Limitado(RSS Limitado)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-omnidirectional-rss-omnidirectional">GS1 DataBar Omnidirectional(RSS Omnidirectional)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-expanded-rss-expanded">GS1 DataBar expandido (RSS expandido)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interleaved-2-of-5">Intercalou 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-4">Definir tamanho mínimo para 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Código bancário brasileiro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#industrial-2-of-5">Industrial 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-3">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-2-of-5">Matriz 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-2">Definir tamanho mínimo para 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#china-post">Poste Chinês</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#msi">SEM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plessey-telepen">Plessey/Telepen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="symbologies">
+<h1>Simbologias<a class="headerlink" href="#symbologies" title="Link to this heading">#</a></h1>
+<section id="reverse-symbologies">
+<h2>Simbologias Reversas<a class="headerlink" href="#reverse-symbologies" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id36">
+<a class="reference internal image-reference" href="../../media/00161.png"><img alt="../../media/00161.png" src="../../media/00161.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id37">
+<a class="reference internal image-reference" href="../../media/00160.png"><img alt="../../media/00160.png" src="../../media/00160.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ean-8">
+<h2>EAN-8<a class="headerlink" href="#ean-8" title="Link to this heading">#</a></h2>
+<section id="enable-disable">
+<h3>Ativar/Desativar<a class="headerlink" href="#enable-disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id38">
+<a class="reference internal image-reference" href="../../media/00370.png"><img alt="../../media/00370.png" src="../../media/00370.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id38" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id39">
+<a class="reference internal image-reference" href="../../media/00371.png"><img alt="../../media/00371.png" src="../../media/00371.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id39" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="transmit-check-character">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#transmit-check-character" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id40">
+<a class="reference internal image-reference" href="../../media/00570.png"><img alt="../../media/00570.png" src="../../media/00570.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id40" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id41">
+<a class="reference internal image-reference" href="../../media/00571.png"><img alt="../../media/00571.png" src="../../media/00571.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id41" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="transmit-system-characters">
+<h3>Transmitir Caracteres do Sistema<a class="headerlink" href="#transmit-system-characters" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id42">
+<a class="reference internal image-reference" href="../../media/00560.png"><img alt="../../media/00560.png" src="../../media/00560.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id42" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id43">
+<a class="reference internal image-reference" href="../../media/00561.png"><img alt="../../media/00561.png" src="../../media/00561.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id43" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="add-on-code">
+<h3>Código da extensão<a class="headerlink" href="#add-on-code" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id44">
+<a class="reference internal image-reference" href="../../media/00550.png"><img alt="../../media/00550.png" src="../../media/00550.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id44" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id45">
+<a class="reference internal image-reference" href="../../media/00551.png"><img alt="../../media/00551.png" src="../../media/00551.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar código de complemento de 2 dígitos</span><a class="headerlink" href="#id45" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id46">
+<a class="reference internal image-reference" href="../../media/00552.png"><img alt="../../media/00552.png" src="../../media/00552.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar o código de 5 dígitos da extensão</span><a class="headerlink" href="#id46" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id47">
+<a class="reference internal image-reference" href="../../media/00553.png"><img alt="../../media/00553.png" src="../../media/00553.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar códigos adicionais de 2 dígitos e 5 dígitos</span><a class="headerlink" href="#id47" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id48">
+<a class="reference internal image-reference" href="../../media/02611.png"><img alt="../../media/02611.png" src="../../media/02611.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Forçar Habilitar</span><a class="headerlink" href="#id48" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Desabilitar</span></code>: Quando o scanner escanea um código de barras com um código adicional, ele decodifica o código de barras e ignora o código adicional. O scanner também pode decodificar códigos de barras sem o código adicional.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forçar</span> <span class="pre">ativação</span></code>: Digitalizador decodifica códigos de barras mistos com códigos adicionais.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="ean-13">
+<h2>EAN-13<a class="headerlink" href="#ean-13" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Ativar/Desativar<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id49">
+<a class="reference internal image-reference" href="../../media/00360.png"><img alt="../../media/00360.png" src="../../media/00360.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id49" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id50">
+<a class="reference internal image-reference" href="../../media/00361.png"><img alt="../../media/00361.png" src="../../media/00361.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id50" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="upc-ean-multiple-verification">
+<h3>Verificação Múltipla UPC/EAN<a class="headerlink" href="#upc-ean-multiple-verification" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id51">
+<a class="reference internal image-reference" href="../../media/00540.png"><img alt="../../media/00540.png" src="../../media/00540.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id51" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id52">
+<a class="reference internal image-reference" href="../../media/00541.png"><img alt="../../media/00541.png" src="../../media/00541.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id52" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="upc-ean-security-level">
+<h3>Nível de segurança UPC/EAN<a class="headerlink" href="#upc-ean-security-level" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id53">
+<a class="reference internal image-reference" href="../../media/00510.png"><img alt="../../media/00510.png" src="../../media/00510.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> 0</span><a class="headerlink" href="#id53" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id54">
+<a class="reference internal image-reference" href="../../media/00511.png"><img alt="../../media/00511.png" src="../../media/00511.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">1</span><a class="headerlink" href="#id54" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id2">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id55">
+<a class="reference internal image-reference" href="../../media/00460.png"><img alt="../../media/00460.png" src="../../media/00460.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id55" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id56">
+<a class="reference internal image-reference" href="../../media/00461.png"><img alt="../../media/00461.png" src="../../media/00461.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id56" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id3">
+<h3>Transmitir Caracteres do Sistema<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id57">
+<a class="reference internal image-reference" href="../../media/00440.png"><img alt="../../media/00440.png" src="../../media/00440.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id57" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id58">
+<a class="reference internal image-reference" href="../../media/00441.png"><img alt="../../media/00441.png" src="../../media/00441.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id58" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id4">
+<h3>Código da extensão<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id59">
+<a class="reference internal image-reference" href="../../media/00550.png"><img alt="../../media/00550.png" src="../../media/00550.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id59" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id60">
+<a class="reference internal image-reference" href="../../media/00551.png"><img alt="../../media/00551.png" src="../../media/00551.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar código de complemento de 2 dígitos</span><a class="headerlink" href="#id60" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id61">
+<a class="reference internal image-reference" href="../../media/00552.png"><img alt="../../media/00552.png" src="../../media/00552.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar o código de 5 dígitos da extensão</span><a class="headerlink" href="#id61" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id62">
+<a class="reference internal image-reference" href="../../media/00553.png"><img alt="../../media/00553.png" src="../../media/00553.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar códigos adicionais de 2 dígitos e 5 dígitos</span><a class="headerlink" href="#id62" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id63">
+<a class="reference internal image-reference" href="../../media/02611.png"><img alt="../../media/02611.png" src="../../media/02611.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Forçar Habilitar</span><a class="headerlink" href="#id63" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Desabilitar</span></code>: Quando o scanner escanea um código de barras com um código adicional, ele decodifica o código de barras e ignora o código adicional. O scanner também pode decodificar códigos de barras sem o código adicional.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forçar</span> <span class="pre">ativação</span></code>: Digitalizador decodifica códigos de barras mistos com códigos adicionais.</p></li>
+</ul>
+</div>
+</section>
+<section id="ean-13-to-isbn">
+<h3>EAN-13 Para ISBN<a class="headerlink" href="#ean-13-to-isbn" title="Link to this heading">#</a></h3>
+<p>ISBN é um código de livros, que normalmente produz 13 dígitos. Quando a conversão EAN-13 para ISBN está ativada, a saída é um código ISBN de 10 dígitos.</p>
+<figure class="align-center" id="id64">
+<a class="reference internal image-reference" href="../../media/00480.png"><img alt="../../media/00480.png" src="../../media/00480.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id64" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id65">
+<a class="reference internal image-reference" href="../../media/00481.png"><img alt="../../media/00481.png" src="../../media/00481.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id65" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ean-13-to-issn">
+<h3>EAN-13 Para ISSN<a class="headerlink" href="#ean-13-to-issn" title="Link to this heading">#</a></h3>
+<p>ISSN é um código de revista, que normalmente produz 13 dígitos. Quando a conversão EAN-13 para ISBN está ativada, a saída é um código ISSN de 10 dígitos.</p>
+<figure class="align-center" id="id66">
+<a class="reference internal image-reference" href="../../media/01500.png"><img alt="../../media/01500.png" src="../../media/01500.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id66" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id67">
+<a class="reference internal image-reference" href="../../media/01501.png"><img alt="../../media/01501.png" src="../../media/01501.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id67" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="upc-a">
+<h2>UPC-A<a class="headerlink" href="#upc-a" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Ativar/Desativar<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id68">
+<a class="reference internal image-reference" href="../../media/00340.png"><img alt="../../media/00340.png" src="../../media/00340.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id68" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id69">
+<a class="reference internal image-reference" href="../../media/00341.png"><img alt="../../media/00341.png" src="../../media/00341.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id69" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id6">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id70">
+<a class="reference internal image-reference" href="../../media/00420.png"><img alt="../../media/00420.png" src="../../media/00420.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id70" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id71">
+<a class="reference internal image-reference" href="../../media/00421.png"><img alt="../../media/00421.png" src="../../media/00421.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id71" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id7">
+<h3>Transmitir Caracteres do Sistema<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id72">
+<a class="reference internal image-reference" href="../../media/00400.png"><img alt="../../media/00400.png" src="../../media/00400.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id72" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id73">
+<a class="reference internal image-reference" href="../../media/00401.png"><img alt="../../media/00401.png" src="../../media/00401.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id73" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id8">
+<h3>Código da extensão<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id74">
+<a class="reference internal image-reference" href="../../media/00550.png"><img alt="../../media/00550.png" src="../../media/00550.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id74" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id75">
+<a class="reference internal image-reference" href="../../media/00551.png"><img alt="../../media/00551.png" src="../../media/00551.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar código de complemento de 2 dígitos</span><a class="headerlink" href="#id75" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id76">
+<a class="reference internal image-reference" href="../../media/00552.png"><img alt="../../media/00552.png" src="../../media/00552.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar o código de 5 dígitos da extensão</span><a class="headerlink" href="#id76" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id77">
+<a class="reference internal image-reference" href="../../media/00553.png"><img alt="../../media/00553.png" src="../../media/00553.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar códigos adicionais de 2 dígitos e 5 dígitos</span><a class="headerlink" href="#id77" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id78">
+<a class="reference internal image-reference" href="../../media/02611.png"><img alt="../../media/02611.png" src="../../media/02611.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Forçar Habilitar</span><a class="headerlink" href="#id78" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Desabilitar</span></code>: Quando o scanner escanea um código de barras com um código adicional, ele decodifica o código de barras e ignora o código adicional. O scanner também pode decodificar códigos de barras sem o código adicional.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forçar</span> <span class="pre">ativação</span></code>: Digitalizador decodifica códigos de barras mistos com códigos adicionais.</p></li>
+</ul>
+</div>
+</section>
+<section id="upc-a-to-ean-13">
+<h3>UPC-A Para EAN-13<a class="headerlink" href="#upc-a-to-ean-13" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id79">
+<a class="reference internal image-reference" href="../../media/00390.png"><img alt="../../media/00390.png" src="../../media/00390.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id79" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id80">
+<a class="reference internal image-reference" href="../../media/00391.png"><img alt="../../media/00391.png" src="../../media/00391.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id80" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="upc-e">
+<h2>ATUALIZAR<a class="headerlink" href="#upc-e" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h3>Ativar/Desativar<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id81">
+<a class="reference internal image-reference" href="../../media/00350.png"><img alt="../../media/00350.png" src="../../media/00350.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id81" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id82">
+<a class="reference internal image-reference" href="../../media/00351.png"><img alt="../../media/00351.png" src="../../media/00351.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id82" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id10">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id83">
+<a class="reference internal image-reference" href="../../media/00430.png"><img alt="../../media/00430.png" src="../../media/00430.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id83" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id84">
+<a class="reference internal image-reference" href="../../media/00431.png"><img alt="../../media/00431.png" src="../../media/00431.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id84" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id11">
+<h3>Código da extensão<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id85">
+<a class="reference internal image-reference" href="../../media/00550.png"><img alt="../../media/00550.png" src="../../media/00550.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id85" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id86">
+<a class="reference internal image-reference" href="../../media/00551.png"><img alt="../../media/00551.png" src="../../media/00551.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar código de complemento de 2 dígitos</span><a class="headerlink" href="#id86" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id87">
+<a class="reference internal image-reference" href="../../media/00552.png"><img alt="../../media/00552.png" src="../../media/00552.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar o código de 5 dígitos da extensão</span><a class="headerlink" href="#id87" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id88">
+<a class="reference internal image-reference" href="../../media/00553.png"><img alt="../../media/00553.png" src="../../media/00553.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ativar códigos adicionais de 2 dígitos e 5 dígitos</span><a class="headerlink" href="#id88" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id89">
+<a class="reference internal image-reference" href="../../media/02611.png"><img alt="../../media/02611.png" src="../../media/02611.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Forçar Habilitar</span><a class="headerlink" href="#id89" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Desabilitar</span></code>: Quando o scanner escanea um código de barras com um código adicional, ele decodifica o código de barras e ignora o código adicional. O scanner também pode decodificar códigos de barras sem o código adicional.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forçar</span> <span class="pre">ativação</span></code>: Digitalizador decodifica códigos de barras mistos com códigos adicionais.</p></li>
+</ul>
+</div>
+</section>
+<section id="upc-e-to-upc-a">
+<h3>UPC-E Para o UPC-A<a class="headerlink" href="#upc-e-to-upc-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id90">
+<a class="reference internal image-reference" href="../../media/00380.png"><img alt="../../media/00380.png" src="../../media/00380.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id90" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id91">
+<a class="reference internal image-reference" href="../../media/00381.png"><img alt="../../media/00381.png" src="../../media/00381.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id91" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="codabar">
+<h2>Codabar<a class="headerlink" href="#codabar" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>Ativar/Desativar<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id92">
+<a class="reference internal image-reference" href="../../media/00850.png"><img alt="../../media/00850.png" src="../../media/00850.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id92" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id93">
+<a class="reference internal image-reference" href="../../media/00851.png"><img alt="../../media/00851.png" src="../../media/00851.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id93" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="start-and-stop-characters">
+<h3>Iniciar e Parar Caracteres<a class="headerlink" href="#start-and-stop-characters" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id94">
+<a class="reference internal image-reference" href="../../media/00860.png"><img alt="../../media/00860.png" src="../../media/00860.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id94" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id95">
+<a class="reference internal image-reference" href="../../media/00861.png"><img alt="../../media/00861.png" src="../../media/00861.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id95" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="code-11">
+<h2>Código 11<a class="headerlink" href="#code-11" title="Link to this heading">#</a></h2>
+<section id="id13">
+<h3>Ativar/Desativar<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id96">
+<a class="reference internal image-reference" href="../../media/01260.png"><img alt="../../media/01260.png" src="../../media/01260.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id96" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id97">
+<a class="reference internal image-reference" href="../../media/01261.png"><img alt="../../media/01261.png" src="../../media/01261.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id97" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="code-39">
+<h2>Código 39<a class="headerlink" href="#code-39" title="Link to this heading">#</a></h2>
+<section id="id14">
+<h3>Ativar/Desativar<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id98">
+<a class="reference internal image-reference" href="../../media/00220.png"><img alt="../../media/00220.png" src="../../media/00220.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id98" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id99">
+<a class="reference internal image-reference" href="../../media/00221.png"><img alt="../../media/00221.png" src="../../media/00221.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id99" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id15">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id100">
+<a class="reference internal image-reference" href="../../media/00250.png"><img alt="../../media/00250.png" src="../../media/00250.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id100" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id101">
+<a class="reference internal image-reference" href="../../media/00251.png"><img alt="../../media/00251.png" src="../../media/00251.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id101" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mod43-check">
+<h3>MOD43 Check<a class="headerlink" href="#mod43-check" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id102">
+<a class="reference internal image-reference" href="../../media/00240.png"><img alt="../../media/00240.png" src="../../media/00240.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id102" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id103">
+<a class="reference internal image-reference" href="../../media/00241.png"><img alt="../../media/00241.png" src="../../media/00241.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id103" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="multiple-verification">
+<h3>Verificação Multipla<a class="headerlink" href="#multiple-verification" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id104">
+<a class="reference internal image-reference" href="../../media/00330.png"><img alt="../../media/00330.png" src="../../media/00330.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id104" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id105">
+<a class="reference internal image-reference" href="../../media/00331.png"><img alt="../../media/00331.png" src="../../media/00331.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id105" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id16">
+<h3>Iniciar e Parar Caracteres<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<p>Os dados do código de barras são precedidos e seguidos por um caractere «*» como início e fim. Você pode definir se deseja transmitir os caracteres de início e parada juntamente com os dados do código de barras após o código de barras ser lido com sucesso.</p>
+<figure class="align-center" id="id106">
+<a class="reference internal image-reference" href="../../media/00280.png"><img alt="../../media/00280.png" src="../../media/00280.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id106" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id107">
+<a class="reference internal image-reference" href="../../media/00281.png"><img alt="../../media/00281.png" src="../../media/00281.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id107" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="full-ascii-support">
+<h3>Suporte Completo ASCII<a class="headerlink" href="#full-ascii-support" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id108">
+<a class="reference internal image-reference" href="../../media/00230.png"><img alt="../../media/00230.png" src="../../media/00230.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id108" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id109">
+<a class="reference internal image-reference" href="../../media/00231.png"><img alt="../../media/00231.png" src="../../media/00231.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id109" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="code-32-setting">
+<h3>Configurações do código 32<a class="headerlink" href="#code-32-setting" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id110">
+<a class="reference internal image-reference" href="../../media/01950.png"><img alt="../../media/01950.png" src="../../media/01950.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id110" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id111">
+<a class="reference internal image-reference" href="../../media/01951.png"><img alt="../../media/01951.png" src="../../media/01951.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id111" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="code32-prefix-a">
+<h4>Prefixo do Code32 A<a class="headerlink" href="#code32-prefix-a" title="Link to this heading">#</a></h4>
+<figure class="align-center" id="id112">
+<a class="reference internal image-reference" href="../../media/01960.png"><img alt="../../media/01960.png" src="../../media/01960.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id112" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id113">
+<a class="reference internal image-reference" href="../../media/01961.png"><img alt="../../media/01961.png" src="../../media/01961.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id113" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="set-minimum-length">
+<h3>Definir tamanho mínimo<a class="headerlink" href="#set-minimum-length" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id114">
+<a class="reference internal image-reference" href="../../media/003201.png"><img alt="../../media/003201.png" src="../../media/003201.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 1</span><a class="headerlink" href="#id114" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id115">
+<a class="reference internal image-reference" href="../../media/003202.png"><img alt="../../media/003202.png" src="../../media/003202.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Definir tamanho mínimo para 2</span><a class="headerlink" href="#id115" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="code-93">
+<h2>Código 93<a class="headerlink" href="#code-93" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h3>Ativar/Desativar<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id116">
+<a class="reference internal image-reference" href="../../media/00620.png"><img alt="../../media/00620.png" src="../../media/00620.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id116" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id117">
+<a class="reference internal image-reference" href="../../media/00621.png"><img alt="../../media/00621.png" src="../../media/00621.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id117" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id18">
+<h3>Verificação Multipla<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id118">
+<a class="reference internal image-reference" href="../../media/00680.png"><img alt="../../media/00680.png" src="../../media/00680.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id118" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id119">
+<a class="reference internal image-reference" href="../../media/00681.png"><img alt="../../media/00681.png" src="../../media/00681.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id119" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="code-128">
+<h2>Código 128<a class="headerlink" href="#code-128" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h3>Ativar/Desativar<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id120">
+<a class="reference internal image-reference" href="../../media/00690.png"><img alt="../../media/00690.png" src="../../media/00690.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id120" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id121">
+<a class="reference internal image-reference" href="../../media/00691.png"><img alt="../../media/00691.png" src="../../media/00691.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id121" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id20">
+<h3>Verificação Multipla<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id122">
+<a class="reference internal image-reference" href="../../media/00840.png"><img alt="../../media/00840.png" src="../../media/00840.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id122" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id123">
+<a class="reference internal image-reference" href="../../media/00841.png"><img alt="../../media/00841.png" src="../../media/00841.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id123" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="brazilian-bank-code">
+<h3>Código bancário brasileiro<a class="headerlink" href="#brazilian-bank-code" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id124">
+<a class="reference internal image-reference" href="../../media/08000.png"><img alt="../../media/08000.png" src="../../media/08000.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id124" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id125">
+<a class="reference internal image-reference" href="../../media/08001.png"><img alt="../../media/08001.png" src="../../media/08001.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id125" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="gs1-databar-limited-rss-limited">
+<h2>GS1 DataBar Limitado(RSS Limitado)<a class="headerlink" href="#gs1-databar-limited-rss-limited" title="Link to this heading">#</a></h2>
+<section id="id21">
+<h3>Ativar/Desativar<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id126">
+<a class="reference internal image-reference" href="../../media/01770.png"><img alt="../../media/01770.png" src="../../media/01770.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id126" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id127">
+<a class="reference internal image-reference" href="../../media/01771.png"><img alt="../../media/01771.png" src="../../media/01771.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id127" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="gs1-databar-omnidirectional-rss-omnidirectional">
+<h2>GS1 DataBar Omnidirectional(RSS Omnidirectional)<a class="headerlink" href="#gs1-databar-omnidirectional-rss-omnidirectional" title="Link to this heading">#</a></h2>
+<section id="id22">
+<h3>Ativar/Desativar<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id128">
+<a class="reference internal image-reference" href="../../media/01670.png"><img alt="../../media/01670.png" src="../../media/01670.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id128" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id129">
+<a class="reference internal image-reference" href="../../media/01671.png"><img alt="../../media/01671.png" src="../../media/01671.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id129" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="gs1-databar-expanded-rss-expanded">
+<h2>GS1 DataBar expandido (RSS expandido)<a class="headerlink" href="#gs1-databar-expanded-rss-expanded" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h3>Ativar/Desativar<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id130">
+<a class="reference internal image-reference" href="../../media/01870.png"><img alt="../../media/01870.png" src="../../media/01870.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id130" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id131">
+<a class="reference internal image-reference" href="../../media/01871.png"><img alt="../../media/01871.png" src="../../media/01871.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id131" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="interleaved-2-of-5">
+<h2>Intercalou 2 de 5<a class="headerlink" href="#interleaved-2-of-5" title="Link to this heading">#</a></h2>
+<section id="id24">
+<h3>Ativar/Desativar<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id132">
+<a class="reference internal image-reference" href="../../media/00960.png"><img alt="../../media/00960.png" src="../../media/00960.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id132" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id133">
+<a class="reference internal image-reference" href="../../media/00961.png"><img alt="../../media/00961.png" src="../../media/00961.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id133" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id25">
+<h3>Verificação Multipla<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id134">
+<a class="reference internal image-reference" href="../../media/01050.png"><img alt="../../media/01050.png" src="../../media/01050.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id134" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id135">
+<a class="reference internal image-reference" href="../../media/01051.png"><img alt="../../media/01051.png" src="../../media/01051.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id135" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="set-minimum-length-to-4">
+<h3>Definir tamanho mínimo para 4<a class="headerlink" href="#set-minimum-length-to-4" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id136">
+<a class="reference internal image-reference" href="../../media/009704.png"><img alt="../../media/009704.png" src="../../media/009704.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 4</span><a class="headerlink" href="#id136" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id26">
+<h3>Código bancário brasileiro<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id137">
+<a class="reference internal image-reference" href="../../media/01000.png"><img alt="../../media/01000.png" src="../../media/01000.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id137" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id138">
+<a class="reference internal image-reference" href="../../media/01001.png"><img alt="../../media/01001.png" src="../../media/01001.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id138" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="industrial-2-of-5">
+<h2>Industrial 2 de 5<a class="headerlink" href="#industrial-2-of-5" title="Link to this heading">#</a></h2>
+<section id="id27">
+<h3>Ativar/Desativar<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id139">
+<a class="reference internal image-reference" href="../../media/01060.png"><img alt="../../media/01060.png" src="../../media/01060.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desligado</span><a class="headerlink" href="#id139" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id140">
+<a class="reference internal image-reference" href="../../media/01061.png"><img alt="../../media/01061.png" src="../../media/01061.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Habilitar</span><a class="headerlink" href="#id140" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="set-minimum-length-to-3">
+<h3>Definir tamanho mínimo para 3<a class="headerlink" href="#set-minimum-length-to-3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id141">
+<a class="reference internal image-reference" href="../../media/010703.png"><img alt="../../media/010703.png" src="../../media/010703.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 3</span><a class="headerlink" href="#id141" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="matrix-2-of-5">
+<h2>Matriz 2 de 5<a class="headerlink" href="#matrix-2-of-5" title="Link to this heading">#</a></h2>
+<section id="id28">
+<h3>Ativar/Desativar<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id142">
+<a class="reference internal image-reference" href="../../media/01460.png"><img alt="../../media/01460.png" src="../../media/01460.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id142" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id143">
+<a class="reference internal image-reference" href="../../media/01461.png"><img alt="../../media/01461.png" src="../../media/01461.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id143" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="set-minimum-length-to-2">
+<h3>Definir tamanho mínimo para 2<a class="headerlink" href="#set-minimum-length-to-2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id144">
+<a class="reference internal image-reference" href="../../media/010703.png"><img alt="../../media/010703.png" src="../../media/010703.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 2</span><a class="headerlink" href="#id144" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="china-post">
+<h2>Poste Chinês<a class="headerlink" href="#china-post" title="Link to this heading">#</a></h2>
+<section id="id29">
+<h3>Ativar/Desativar<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id145">
+<a class="reference internal image-reference" href="../../media/01570.png"><img alt="../../media/01570.png" src="../../media/01570.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id145" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id146">
+<a class="reference internal image-reference" href="../../media/01571.png"><img alt="../../media/01571.png" src="../../media/01571.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id146" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="msi">
+<h2>SEM<a class="headerlink" href="#msi" title="Link to this heading">#</a></h2>
+<section id="id30">
+<h3>Ativar/Desativar<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id147">
+<a class="reference internal image-reference" href="../../media/01150.png"><img alt="../../media/01150.png" src="../../media/01150.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id147" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id148">
+<a class="reference internal image-reference" href="../../media/01151.png"><img alt="../../media/01151.png" src="../../media/01151.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id148" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id31">
+<h3>Transmitir verificação de personagem<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id149">
+<a class="reference internal image-reference" href="../../media/01350.png"><img alt="../../media/01350.png" src="../../media/01350.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id149" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id150">
+<a class="reference internal image-reference" href="../../media/01351.png"><img alt="../../media/01351.png" src="../../media/01351.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id150" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id32">
+<h3>Verificação Multipla<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id151">
+<a class="reference internal image-reference" href="../../media/01250.png"><img alt="../../media/01250.png" src="../../media/01250.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id151" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id152">
+<a class="reference internal image-reference" href="../../media/01251.png"><img alt="../../media/01251.png" src="../../media/01251.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id152" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id33">
+<h3>Definir tamanho mínimo para 3<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id153">
+<a class="reference internal image-reference" href="../../media/011903.png"><img alt="../../media/011903.png" src="../../media/011903.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 3</span><a class="headerlink" href="#id153" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="plessey-telepen">
+<h2>Plessey/Telepen<a class="headerlink" href="#plessey-telepen" title="Link to this heading">#</a></h2>
+<section id="id34">
+<h3>Ativar/Desativar<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id154">
+<a class="reference internal image-reference" href="../../media/01160.png"><img alt="../../media/01160.png" src="../../media/01160.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Desativar</span><a class="headerlink" href="#id154" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id155">
+<a class="reference internal image-reference" href="../../media/01161.png"><img alt="../../media/01161.png" src="../../media/01161.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Habilitado</span><a class="headerlink" href="#id155" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id35">
+<h3>Definir tamanho mínimo para 3<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id156">
+<a class="reference internal image-reference" href="../../media/011903.png"><img alt="../../media/011903.png" src="../../media/011903.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Definir tamanho mínimo para 3</span><a class="headerlink" href="#id156" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="process.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Edição de dados</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="character.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">próximo</p>
+        <p class="prev-next-title">Exterminador</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Conteúdo
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-symbologies">Simbologias Reversas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-8">EAN-8</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-disable">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-check-character">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-system-characters">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-on-code">Código da extensão</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13">EAN-13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-ean-multiple-verification">Verificação Múltipla UPC/EAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-ean-security-level">Nível de segurança UPC/EAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13-to-isbn">EAN-13 Para ISBN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ean-13-to-issn">EAN-13 Para ISSN</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-a">UPC-A</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Transmitir Caracteres do Sistema</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-a-to-ean-13">UPC-A Para EAN-13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-e">ATUALIZAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Código da extensão</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upc-e-to-upc-a">UPC-E Para o UPC-A</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codabar">Codabar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-and-stop-characters">Iniciar e Parar Caracteres</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-11">Código 11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-39">Código 39</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mod43-check">MOD43 Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-verification">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Iniciar e Parar Caracteres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#full-ascii-support">Suporte Completo ASCII</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-32-setting">Configurações do código 32</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code32-prefix-a">Prefixo do Code32 A</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length">Definir tamanho mínimo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-93">Código 93</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Verificação Multipla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-128">Código 128</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brazilian-bank-code">Código bancário brasileiro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-limited-rss-limited">GS1 DataBar Limitado(RSS Limitado)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-omnidirectional-rss-omnidirectional">GS1 DataBar Omnidirectional(RSS Omnidirectional)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gs1-databar-expanded-rss-expanded">GS1 DataBar expandido (RSS expandido)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interleaved-2-of-5">Intercalou 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-4">Definir tamanho mínimo para 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Código bancário brasileiro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#industrial-2-of-5">Industrial 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-3">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-2-of-5">Matriz 2 de 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-minimum-length-to-2">Definir tamanho mínimo para 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#china-post">Poste Chinês</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Ativar/Desativar</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#msi">SEM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Transmitir verificação de personagem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Verificação Multipla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plessey-telepen">Plessey/Telepen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Ativar/Desativar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Definir tamanho mínimo para 3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+De NETUM
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, NETUM.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

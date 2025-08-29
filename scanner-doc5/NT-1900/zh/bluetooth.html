@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=beaddf03"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\bluetooth.001806ad-7509-4881-b8db-94d7e55f32cf.js"></script>
+    <script defer="defer" src="_static/tippy\bluetooth.36a0d663-0068-4a79-8c2e-fae90b7d6b0a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -308,9 +308,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -326,25 +324,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> 目录 </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">蓝牙 HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">蓝牙 SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">蓝牙 BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">清除配对信息</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">IOS 弹出/隐藏键盘</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">蓝牙键盘传输速度</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">高速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">中速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">低速</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">修改蓝牙名称</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -363,12 +342,12 @@ document.write(`
 <p><span class="caption-text">蓝牙模式</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="docutils">
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>蓝灯代表的意思是。<br>①蓝灯闪烁，代表未连接。<br>②蓝灯常亮，代表已连接。</p>
 </div>
-<section id="bluetooth-hid">
-<h2>蓝牙 HID<a class="headerlink" href="#bluetooth-hid" title="Link to this heading">#</a></h2>
+<p class="rubric" id="bluetooth-hid">蓝牙 HID</p>
 <ul class="simple">
 <li><p>不需要安装软件</p></li>
 <li><p>可连接大多数设备</p></li>
@@ -381,9 +360,7 @@ document.write(`
 <p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> 蓝牙 HID</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="bluetooth-spp">
-<h2>蓝牙 SPP<a class="headerlink" href="#bluetooth-spp" title="Link to this heading">#</a></h2>
+<p class="rubric" id="bluetooth-spp">蓝牙 SPP</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D1.png"><img alt="../../media/AT2BMODE3D1.png" src="../../media/AT2BMODE3D1.png" style="width: 300px;" />
 </a>
@@ -391,9 +368,7 @@ document.write(`
 <p><span class="caption-text">蓝牙 SPP</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="bluetooth-ble">
-<h2>蓝牙 BLE<a class="headerlink" href="#bluetooth-ble" title="Link to this heading">#</a></h2>
+<p class="rubric" id="bluetooth-ble">蓝牙 BLE</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D3.png"><img alt="../../media/AT2BMODE3D3.png" src="../../media/AT2BMODE3D3.png" style="width: 300px;" />
 </a>
@@ -405,9 +380,7 @@ document.write(`
 <p class="admonition-title">备注</p>
 <p>蓝牙 SPP 和 蓝牙 BLE 是用于软件对接的模式。 如果您需要通过系统蓝牙搜索和配对，您需要使用 [蓝牙HID] (#bluetooth-hid)</p>
 </div>
-</section>
-<section id="clear-pairing-information">
-<h2>清除配对信息<a class="headerlink" href="#clear-pairing-information" title="Link to this heading">#</a></h2>
+<p class="rubric" id="clear-pairing-information">清除配对信息</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2525ALL-CH.png"><img alt="../../media/2525ALL-CH.png" src="../../media/2525ALL-CH.png" style="width: 300px;" />
 </a>
@@ -419,9 +392,7 @@ document.write(`
 <p class="admonition-title">备注</p>
 <p>与新设备重新配对，或者如果配对失败，请扫描设置码再次配对。</p>
 </div>
-</section>
-<section id="ios-popup-hide-keyboard">
-<h2>IOS 弹出/隐藏键盘<a class="headerlink" href="#ios-popup-hide-keyboard" title="Link to this heading">#</a></h2>
+<p class="rubric" id="ios-popup-hide-keyboard">IOS 弹出/隐藏键盘</p>
 <figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/25250S.png"><img alt="../../media/25250S.png" src="../../media/25250S.png" style="width: 300px;" />
 </a>
@@ -433,9 +404,7 @@ document.write(`
 <p class="admonition-title">备注</p>
 <p>您也可以连续按两次扫描按钮来弹出/隐藏键盘，而不需要扫描此设置码。 此功能仅支持iOS系统上的蓝牙配置。</p>
 </div>
-</section>
-<section id="bluetooth-keyboard-transmission-speed">
-<h2>蓝牙键盘传输速度<a class="headerlink" href="#bluetooth-keyboard-transmission-speed" title="Link to this heading">#</a></h2>
+<p class="rubric" id="bluetooth-keyboard-transmission-speed">蓝牙键盘传输速度</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY.png"><img alt="../../media/AT2BHIDDLY.png" src="../../media/AT2BHIDDLY.png" style="width: 300px;" />
 </a>
@@ -443,8 +412,7 @@ document.write(`
 <p><span class="caption-text">获取蓝牙键盘传输速度</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="high-speed">
-<h3>高速<a class="headerlink" href="#high-speed" title="Link to this heading">#</a></h3>
+<p class="rubric" id="high-speed">高速</p>
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D2.png"><img alt="../../media/AT2BHIDDLY3D2.png" src="../../media/AT2BHIDDLY3D2.png" style="width: 300px;" />
 </a>
@@ -452,9 +420,7 @@ document.write(`
 <p><span class="caption-text">高速</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="medium-speed">
-<h3>中速<a class="headerlink" href="#medium-speed" title="Link to this heading">#</a></h3>
+<p class="rubric" id="medium-speed">中速</p>
 <figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D10.png"><img alt="../../media/AT2BHIDDLY3D10.png" src="../../media/AT2BHIDDLY3D10.png" style="width: 300px;" />
 </a>
@@ -462,9 +428,7 @@ document.write(`
 <p><span class="caption-text">中速</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="low-speed">
-<h3>低速<a class="headerlink" href="#low-speed" title="Link to this heading">#</a></h3>
+<p class="rubric" id="low-speed">低速</p>
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/AT2BHIDDLY3D25.png"><img alt="../../media/AT2BHIDDLY3D25.png" src="../../media/AT2BHIDDLY3D25.png" style="width: 300px;" />
 </a>
@@ -472,12 +436,9 @@ document.write(`
 <p><span class="caption-text">低速</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-</section>
-<section id="modify-bluetooth-name">
-<h2>修改蓝牙名称<a class="headerlink" href="#modify-bluetooth-name" title="Link to this heading">#</a></h2>
+<p class="rubric" id="modify-bluetooth-name">修改蓝牙名称</p>
     <iframe src="../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
-</section>
+</div>
 </section>
 
 
@@ -515,32 +476,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> 目录
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-hid">蓝牙 HID</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-spp">蓝牙 SPP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-ble">蓝牙 BLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-pairing-information">清除配对信息</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ios-popup-hide-keyboard">IOS 弹出/隐藏键盘</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bluetooth-keyboard-transmission-speed">蓝牙键盘传输速度</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-speed">高速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-speed">中速</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-speed">低速</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-bluetooth-name">修改蓝牙名称</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
